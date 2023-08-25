@@ -1,9 +1,11 @@
 #
-#mk
 #
-# roboutil
+# robo-utils - useful commonly used functions
+# for mobile robotics and related applications
 #
-#v0.01.05b3
+# (c) 2022 - 2023  Mike Knerr
+#
+# pypi releases start from dev v0.01.05b3
 #
 #
 
@@ -38,15 +40,11 @@ def fmap(x, in_min, in_max, out_min, out_max):
 #fmap(1024/2,0,1024,0,255) # 127.5
 #imap(1024/2,0,1024,0,255) # 127 GOOD! 
 
-#def constrain(val, min_val, max_val):
-#    return min(max_val, max(min_val, val))
-
 def constrain(x, xmin, xmax):
     return min(xmax, max(xmin, x))
 
 def relerr(measured,expected):
     return (measured-expected)/expected
-
 
 def rad2deg(radian):
     degree = radian/0.017453292519943295
