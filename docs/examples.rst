@@ -10,7 +10,6 @@ For example:
 
 >>> import robo-utils
 
->>> p = basic_pid.BasicPid()
 
 Or just:
 
