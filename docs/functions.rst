@@ -3,24 +3,23 @@ Functions
 ---------
 
 .. py:mod: 
-
 .. py:mod:: py_mod
 
+.. py:function:: imap(x, in_min, in_max, out_min, out_max)
+  
+   maps an integer value in the range [in_min, in_max] to interval [out_min, out_max]
+   analogous to arduino map function that uses long int numeric types
+   if the vaule x non-integer type it is converted to an int
 
+   :param x: input numeric value to map
+   :param in_min: lower bound of input range
+   :param in_max: upper bound of input range
+   :param out_min: lower bound of output range
+   :param out_max: upper bound of output range
 
- .. py:function::  indent 1 imap(x, in_min, in_max, out_min, out_max)
-
-  .. py:function:: indent 2 imap(x, in_min, in_max, out_min, out_max)
-
-  .. function:: imap(x, in_min, in_max, out_min, out_max)
-
-.. py:function:: no indent 1 imap(x, in_min, in_max, out_min, out_max)
-
-integer version of fmap
-similar to arduino map function (that uses long int numeric types)
-but uses the python version of int 
-
-
+    a typical use of this function with robotic control would be to take a
+    value in decimal range of [0,100] and map into [0,255] (or [0,$FF] hex) 
+    and send it to a motor controller
 
 .. py:function:: function(sender, recipient, message_body, [priority=1])
 
@@ -35,3 +34,11 @@ but uses the python version of int
    :rtype: int
    :raises ValueError: if the message_body exceeds 160 characters
    :raises TypeError: if the message_body is not a basestring
+
+
+
+ .. py:function::  indent 1 imap(x, in_min, in_max, out_min, out_max)
+
+  .. py:function:: indent 2 imap(x, in_min, in_max, out_min, out_max)
+
+  .. function:: imap(x, in_min, in_max, out_min, out_max)
