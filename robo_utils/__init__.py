@@ -7,7 +7,7 @@ robo-utils  - useful functions for mobile robotics
 # note: pep whatever doesnt like > 'x.y.<number>c'
 # for example: 0.01.08d doesnt fly building from pyproject.toml
 
-__version__ = '0.01.03a'
+__version__ = '0.01.03b'
 
 # import acts to export 
 
