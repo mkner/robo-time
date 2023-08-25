@@ -41,7 +41,7 @@ Functions
   :param  xmin: lower bound
   :param  xmax: upper bound
 
- :return: the bounded value
+  :return: the bounded value
 
 
 
