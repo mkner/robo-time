@@ -10,12 +10,13 @@ Functions
    maps an integer value in the range [in_min, in_max] to interval [out_min, out_max]
    analogous to arduino map function that uses long int numeric types\
    if the vaule x non-integer type it is converted to an int
+   :param parameters
 
-   :param x: input numeric value to map
-   :param in_min: lower bound of input range
-   :param in_max: upper bound of input range
-   :param out_min: lower bound of output range
-   :param out_max: upper bound of output range
+   :param  x: input numeric value to map
+    in_min: lower bound of input range
+   :param  in_max: upper bound of input range
+   :param  out_min: lower bound of output range
+   :param  out_max: upper bound of output range
 
    :return: bounded value
    :rtype: int
