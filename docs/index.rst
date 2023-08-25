@@ -10,6 +10,7 @@ robo-utils
    :maxdepth: 1
 
    install
+   functions
    interface
    examples
 
