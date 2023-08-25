@@ -8,8 +8,8 @@ Functions
 .. function:: imap(x, in_min, in_max, out_min, out_max)
   
    maps an integer value in the range **[in_min, in_max]** to interval **[out_min, out_max]**
-   analogous to arduino map function that uses long int numeric types\
-   if the vaule x non-integer type it is converted to an int
+   analogous to arduino map function that uses long int numeric types
+   if the value x is a non-integer type it is converted to an int
 
   :param x: input numeric value to map
   :param in_min: lower bound of input range
@@ -20,8 +20,8 @@ Functions
   :return: bounded value
   :rtype: int
 
-  note: the input is not constrained
-  use the **constrain(...)** function to bound it first
+  note: the input is *not* constrained
+  use the **constrain(...)** function to bound it first if required
  
   a typical use of this function with robotic control would be to take a
   value in decimal range of **[0,100]** and map into **[0,255]** (or **[0,FF]** hex) 
@@ -38,6 +38,7 @@ Functions
   :param out_max: upper bound of output range
 
   :return: bounded value
+  :rtype: float
 
 .. function:: constrain(x, xmin, xmax)
   
