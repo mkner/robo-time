@@ -2,6 +2,8 @@
 Functions
 ---------
 
+.. automodule:: robo_utils.roboutils
+    :members:
 
 :py:func:`imap(x, in_min, in_max, out_min, out_max)`
 
