@@ -8,7 +8,7 @@ Functions
 
 .. py:function:: robo_utils
 
- .. py:function:: no indent 1 imap(x, in_min, in_max, out_min, out_max)
+ .. py:function::  indent 1 imap(x, in_min, in_max, out_min, out_max)
 
   .. py:function:: indent 2 imap(x, in_min, in_max, out_min, out_max)
 
