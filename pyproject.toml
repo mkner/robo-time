@@ -3,7 +3,7 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "basic_pid"
+name = "robo_utils"
 authors = [{name = "Mike Knerr"}]
 #authors = [{name = "author", email = "author@email"}]
 dynamic = ["version"] 
@@ -21,7 +21,7 @@ classifiers = [
 ]
 
 [project.urls]
-homepage = "https://github.com/mkner/basic-pid/"
+homepage = "https://github.com/mkner/robo-utils/"
 
 
 
