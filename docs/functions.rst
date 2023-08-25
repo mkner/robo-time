@@ -5,7 +5,7 @@ Functions
 .. py:mod: 
 .. py:mod:: py_mod
 
-.. py:function:: imap(x, in_min, in_max, out_min, out_max)
+.. function:: imap(x, in_min, in_max, out_min, out_max)
   
    maps an integer value in the range [in_min, in_max] to interval [out_min, out_max]
    analogous to arduino map function that uses long int numeric types\
