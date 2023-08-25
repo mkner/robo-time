@@ -3,11 +3,11 @@ Functions
 ---------
 
 
-.. py:function:: imap(x, in_min, in_max, out_min, out_max)
+.. py:function:: robo_utils
 
   .. py:function:: indent 2 imap(x, in_min, in_max, out_min, out_max)
 
- .. function:: imap(x, in_min, in_max, out_min, out_max)
+  .. function:: imap(x, in_min, in_max, out_min, out_max)
 
 integer version of fmap
 similar to arduino map function (that uses long int numeric types)
