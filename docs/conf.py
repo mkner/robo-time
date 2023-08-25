@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "PID Controller for Discrete Time"
+project = "robo-utils - useful functions for mobile robotics"
 copyright = "(c) 2023 Mike Knerr"
 author = ""
 
