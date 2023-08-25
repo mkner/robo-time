@@ -1,4 +1,10 @@
 
+Functions
+---------
+
+
+.. :py:func:`imap(x, in_min, in_max, out_min, out_max)` integer version of fmap
+
 
 imap(x, in_min, in_max, out_min, out_max)
 
