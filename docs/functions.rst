@@ -3,7 +3,7 @@ Functions
 ---------
 
 
-.. :py:func:`imap(x, in_min, in_max, out_min, out_max)` integer version of fmap
+:py:func:`imap(x, in_min, in_max, out_min, out_max)` integer version of fmap
 
 
 imap(x, in_min, in_max, out_min, out_max)
@@ -14,3 +14,4 @@ but uses the python version of int
 
 assumes bound checking already done
 
+:func:`modulename.funcname` returns...
