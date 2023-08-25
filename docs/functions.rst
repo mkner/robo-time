@@ -51,6 +51,25 @@ Functions
   :return: bounded value
 
 
+.. function:: rad2deg(rad)
+
+   converts angle in radians to degrees
+
+  :param  rad: input angle in radians
+
+  :return: angle in degrees
+  :rtype: float
+
+
+.. function:: deg2rad(deg)
+
+   converts angle in degrees to radians
+
+  :param  deg: input angle in degrees
+
+  :return: angle in radians
+  :rtype: float
+
 
    
 
