@@ -11,14 +11,14 @@ Functions
    analogous to arduino map function that uses long int numeric types\
    if the vaule x non-integer type it is converted to an int
 
-    x: input numeric value to map
-    in_min: lower bound of input range
-    in_max: upper bound of input range
-    out_min: lower bound of output range
-    out_max: upper bound of output range
+  :param x: input numeric value to map
+  :paran in_min: lower bound of input range
+  :param in_max: upper bound of input range
+  :param out_min: lower bound of output range
+  :param out_max: upper bound of output range
 
-   :return: bounded value
-   :rtype: int
+  :return: bounded value
+  :rtype: int
 
   note: the input is not constrained
   use the **constrain(...)** function to bound it first
@@ -29,19 +29,20 @@ Functions
 
 .. function:: fmap(x, in_min, in_max, out_min, out_max)
   
-   maps an float value in the range [in_min, in_max] to interval [out_min, out_max]
+   maps an float value in the range **[in_min, in_max]** to interval **[out_min, out_max]**
   :return: bounded value
+
 
 .. function:: constrain(x, xmin, xmax)
   
-  bounds a numeric value to range [xmin, xmax]
+   bounds a numeric value to range [xmin, xmax]
 
   :param  x: input numeric value to map
   :param  x: input numeric value 
   :param  xmin: lower bound
   :param  xmax: upper bound
 
-  :return: the bounded value
+  :return: bounded value
 
 
 
