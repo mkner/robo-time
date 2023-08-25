@@ -24,8 +24,8 @@ Functions
   use the **constrain(...)** function to bound it first
  
   a typical use of this function with robotic control would be to take a
-  value in decimal range of [0,100] and map into [0,255] (or [0,$FF] hex) 
-  and send it to a motor controller
+  value in decimal range of [0,100] and map into [0,255] (or [0,FF] hex) 
+  before sending it to a motor controller
 
 .. py:function:: function(sender, recipient, message_body, [priority=1])
 
