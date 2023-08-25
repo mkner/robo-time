@@ -8,7 +8,7 @@ Functions
 .. py:function:: imap(x, in_min, in_max, out_min, out_max)
   
    maps an integer value in the range [in_min, in_max] to interval [out_min, out_max]
-   analogous to arduino map function that uses long int numeric types
+   analogous to arduino map function that uses long int numeric types\
    if the vaule x non-integer type it is converted to an int
 
    :param x: input numeric value to map
@@ -17,9 +17,15 @@ Functions
    :param out_min: lower bound of output range
    :param out_max: upper bound of output range
 
-    a typical use of this function with robotic control would be to take a
-    value in decimal range of [0,100] and map into [0,255] (or [0,$FF] hex) 
-    and send it to a motor controller
+   :return: bounded value
+   :rtype: int
+
+  note: the input is not constrained
+  use the **constrain(...)** function to bound it first
+ 
+  a typical use of this function with robotic control would be to take a
+  value in decimal range of [0,100] and map into [0,255] (or [0,$FF] hex) 
+  and send it to a motor controller
 
 .. py:function:: function(sender, recipient, message_body, [priority=1])
 
