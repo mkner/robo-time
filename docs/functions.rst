@@ -17,7 +17,7 @@ Functions
    :raises TypeError: if the message_body is not a basestring
 
 
-..py:function:: imap(x, in_min, in_max, out_min, out_max)
+.. py:function:: imap(x, in_min, in_max, out_min, out_max)
 
  integer version of fmap
  similar to arduino map function (that uses long int numeric types)
