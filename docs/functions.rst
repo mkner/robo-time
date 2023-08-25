@@ -2,6 +2,7 @@
 Functions
 ---------
 
+.. py:mod: robo_utils
 
 .. py:function:: robo_utils
 
