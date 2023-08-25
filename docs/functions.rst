@@ -6,7 +6,7 @@ Functions
 
 .. py:mod:: py_mod
 
-.. py:function:: robo_utils
+
 
  .. py:function::  indent 1 imap(x, in_min, in_max, out_min, out_max)
 
