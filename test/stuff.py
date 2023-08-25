@@ -1,17 +1,11 @@
 
 # the usual
 
-import basic_pid
+import robo_utils
 
-from basic_pid import BasicPid
+from robo_utils import fmap
+from robo_utils import imap
 
-p = BasicPid()
-
-p.name()
-
-p.desc()
-
-p.vers()
 
 
 
