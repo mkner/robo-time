@@ -7,12 +7,15 @@ robo-utils  - useful functions for mobile robotics
 # note: pep whatever doesnt like > 'x.y.<number>c'
 # for example: 0.01.08d doesnt fly building from pyproject.toml
 
-__version__ = '0.01.03b3'
+__version__ = '0.01.03b4'
 
 # import acts to export 
 
-import robo_utils as roboutils # make it avail like this also
+from . import roboutils # make avail as this name
+from .roboutils import *
 
+
+"""
 from .roboutils import imap
 from .roboutils import fmap
 from .roboutils import rad2deg
@@ -33,7 +36,7 @@ from .roboutils import getPointDistanceFrom
 
 from .roboutils import mps2kmph
 from .roboutils import mps2mph
-
+"""
 
 
 
