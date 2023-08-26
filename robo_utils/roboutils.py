@@ -76,7 +76,7 @@ def radPerSecToDegPerSec(rad):
     #return rad*57.295779513082
 
 
-def boundto2pi(angle):
+def boundTo2pi(angle):
     # angle and bounded angle in radians
     # wind or unwind
     while (angle > 2.0 * np.pi):
@@ -88,9 +88,9 @@ def boundto2pi(angle):
     return angle;
 
 
-#rad2deg(boundto2pi(2*np.pi+(1/4)*np.pi))
+#rad2deg(boundTo2pi(2*np.pi+(1/4)*np.pi))
 #Out[11]: 45.0
-#rad2deg(boundto2pi(2*np.pi+(1/4)*2*np.pi))
+#rad2deg(boundTo2pi(2*np.pi+(1/4)*2*np.pi))
 #Out[9]: 90.0
 
 def bound2pi(angle):
