@@ -173,8 +173,20 @@ def boundAtanDeg(theta):
 def boundAtanRad(theta):
     # radian version
     return np.arctan2(np.sin(theta),np.cos(theta))
+    
+# conversion constants
+#        self._to_mph=2.237 # meters per second to mph
+#        self._to_kmph=3.6 # meters per second to kmph
 
 
+def mps2kmph( mps):
+        # meters per second to kmph
+        return mps * 3.6 # meters per second to kmph
+
+def mps2mph(mps):
+        # meters per second to mph
+        return mps * 2.237 # meters per second to mph
+        
 # was put in wheel?
 #def velocityToRate(v,wheel):
 #    # wheel angular velocity omega is w hter
@@ -185,17 +197,5 @@ def boundAtanRad(theta):
 #   rate = fmap(rpm,0,max_rpm,0,100)
 #    
 #    return(rate)
-    
-# conversion constants
-#        self._to_mph=2.237 # meters per second to mph
-#        self._to_kmph=3.6 # meters per second to kmph
-
-def mps2kmph( mps):
-        # meters per second to kmph
-        return mps * 3.6 # meters per second to kmph
-
-def mps2mph(mps):
-        # meters per second to mph
-        return mps * 2.237 # meters per second to mph
 
 
