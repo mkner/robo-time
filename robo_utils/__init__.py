@@ -1,6 +1,6 @@
 
 """
-roboutils  - useful functions for mobile robotics
+robo-utils  - useful functions for mobile robotics
 """
 
 # flit uses this as one source version #
