@@ -24,7 +24,7 @@ Functions
   use the **constrain(...)** function to bound it first if required
  
   a typical use of this function with robotic control would be to take a
-  value in decimal range of **[0,100]** and map into **[0,255]** (or **[0,FF]** hex) 
+  value in decimal range of **[0,100]** and map into **[0,255]** (**[0,FF]** hex) 
   before sending it to a motor controller
 
 .. function:: fmap(x, in_min, in_max, out_min, out_max)
