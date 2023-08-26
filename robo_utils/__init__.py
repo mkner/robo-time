@@ -11,7 +11,7 @@ __version__ = '0.01.03c1'
 
 # import acts to export 
 
-from . import roboutils # make avail as this name
+from . import roboutils #
 
 from .roboutils import *
 
