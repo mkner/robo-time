@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "robo-utils - useful functions for mobile robotics"
+project = "roboutils - useful functions for mobile robotics"
 copyright = "(c) 2023 Mike Knerr"
 author = ""
 
