@@ -71,5 +71,29 @@ Functions
   :rtype: float
 
 
+.. function::  radPerSecToRpm(rps)
+
+   converts angular velocity in radians per second
+   to RPM (revolutions per minute)
+
+  :param  rps - angular velocity in radians per second
+
+  :return: angular velocity in revolutions per second
+  :rtype: float
+
+.. function::  rpmToRadPerSec(rpm)
+
+   converts angular velocity in RPM (revolutions per minute)
+   to radians per second
+
+  :param  rpm - angular velocity in RPM
+
+  :return: angular velocity radians per second
+  :rtype: float
+
+
+def 
+    a = (rpm/60)*(2*np.pi)
+    return a
    
 
