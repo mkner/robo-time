@@ -108,9 +108,21 @@ Functions
    converts angular rotational rate in radians per second
    to degrees per second
 
-  :param  rad: -angular rotational rate in radians per second 
+  :param  rad: angular rotational rate in radians per second 
 
   :return: angular rotational rate in degrees per second
+  :rtype: float
+
+.. function::  boundTo2pi(angle)
+
+  bounds angle into one circular rotation of 2 pi radians (360 degrees)
+  so even if input is spinning perpertually to an even greater (or lesser) 
+  angle, the output is contained into only one equivalent full circular 
+  rotation of 2 pi radians (360 degres)
+
+  :param  angle: angle in radians
+
+  :return: bounded angle in radians
   :rtype: float
 
 
