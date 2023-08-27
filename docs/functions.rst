@@ -81,6 +81,7 @@ Functions
   :return: angular velocity in revolutions per second
   :rtype: float
 
+
 .. function::  rpmToRadPerSec(rpm)
 
    converts angular velocity in RPM (revolutions per minute)
@@ -92,8 +93,26 @@ Functions
   :rtype: float
 
 
-def 
-    a = (rpm/60)*(2*np.pi)
-    return a
-   
+.. function::  degPerSecToRadPerSec(deg)
+
+   converts angular rotational rate in degrees per second
+   to radians per second
+
+  :param  rpm - angular rotational rate in degrees per second 
+
+  :return: angular rotational rate in radians per second
+  :rtype: float
+
+
+.. function::  radPerSecToDegPerSec(rad)
+
+   converts angular rotational rate in radians per second
+   to degrees per second
+
+  :param  rpm - angular rotational rate in radians per second 
+
+  :return: angular rotational rate in degrees per second
+  :rtype: float
+
+
 
