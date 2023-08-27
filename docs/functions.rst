@@ -55,7 +55,7 @@ Functions
 
    converts angle in radians to degrees
 
-  :param  rad: input angle in radians
+  :param  rad - input angle in radians
 
   :return: angle in degrees
   :rtype: float
@@ -65,7 +65,7 @@ Functions
 
    converts angle in degrees to radians
 
-  :param  deg: input angle in degrees
+  :param  deg - input angle in degrees
 
   :return: angle in radians
   :rtype: float
@@ -98,7 +98,7 @@ Functions
    converts angular rotational rate in degrees per second
    to radians per second
 
-  :param  rpm - angular rotational rate in degrees per second 
+  :param  deg - angular rotational rate in degrees per second 
 
   :return: angular rotational rate in radians per second
   :rtype: float
@@ -109,7 +109,7 @@ Functions
    converts angular rotational rate in radians per second
    to degrees per second
 
-  :param  rpm - angular rotational rate in radians per second 
+  :param  rad - angular rotational rate in radians per second 
 
   :return: angular rotational rate in degrees per second
   :rtype: float
