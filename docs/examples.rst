@@ -8,12 +8,12 @@ robo-utils
 
 For example:
 
->>> import robo-utils
+>>> import robo_utils
 
 
 Or just:
 
->>> from robo-utils import fmap
+>>> from robo_utils import fmap
 
 
 
