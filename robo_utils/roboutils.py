@@ -166,30 +166,6 @@ def getPointDistanceFrom(x0,y0,distance,angle):
     y1 = y0+distance*sin(theta)
     return(x1,y1)
 
-def boundArctan(theta):
-    # aka 
-    return boundAtanDeg(theta)
-    
-def boundAtanDeg(theta):
-#def boundArctan(theta):
-    # degrees version
-    # best way to keep rotations bounded
-    # with +- angles & differential drive robots!
-    # its not clever, just clearer?
-    alpha = theta
-    alpha = deg2rad(alpha)
-    alpha= np.arctan2(np.sin(alpha),np.cos(alpha))
-    alpha = rad2deg(alpha)
-    return alpha
-
-def boundAtanRad(theta):
-    # radian version
-    return np.arctan2(np.sin(theta),np.cos(theta))
-    
-# conversion constants
-#        self._to_mph=2.237 # meters per second to mph
-#        self._to_kmph=3.6 # meters per second to kmph
-
 
 def mps2kmph( mps):
         # meters per second to kmph
@@ -199,15 +175,32 @@ def mps2mph(mps):
         # meters per second to mph
         return mps * 2.237 # meters per second to mph
         
-# was put in wheel?
-#def velocityToRate(v,wheel):
-#    # wheel angular velocity omega is w hter
-#    r = wheel.getRadius()
-#    max_rpm = wheel.motor.getMaxRpm()
-#    w = v/r
-#    rpm  = abs(radPerSecToRpm( w))
-#   rate = fmap(rpm,0,max_rpm,0,100)
-#    
-#    return(rate)
+#def boundArctan(theta):
+#    # aka 
+#    return boundAtanDeg(theta)
+    
+#def boundAtanDeg(theta):
+#def boundArctan(theta):
+    # degrees version
+    # best way to keep rotations bounded
+    # with +- angles & differential drive robots!
+    # its not clever, just clearer?
+#    alpha = theta
+#    alpha = deg2rad(alpha)
+#    alpha= np.arctan2(np.sin(alpha),np.cos(alpha))
+#    alpha = rad2deg(alpha)
+ #   return alpha
+
+#def boundAtanRad(theta):
+#    # radian version
+ #   return np.arctan2(np.sin(theta),np.cos(theta))
+    
+# conversion constants
+#        self._to_mph=2.237 # meters per second to mph
+#        self._to_kmph=3.6 # meters per second to kmph
+
+
+
+        
 
 
