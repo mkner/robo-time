@@ -139,9 +139,9 @@ Functions
 
   bounds angle to (+/-) 180 degrees
 
-  :param  angle: angle in radians
+  :param  angle: angle in degrees
 
-  :return: bounded angle in radians
+  :return: bounded angle in degrees
   :rtype: float
 
 .. function::  mps2kmph(mps)
