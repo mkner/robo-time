@@ -95,13 +95,20 @@ def boundTo2pi(angle):
 
 def bound2pi(angle):
     # angle and bounded angle in radians
+    # bounds angle to (+/-) pi radians
     return(np.arctan2(sin(angle),cos(angle)))
 
 
 def bound2piDeg(angle):
     # angle and bounded angle in degrees
+    # bounds angle to (+/-) 180 degrees
     return(rad2deg(np.arctan2( sin(deg2rad(angle)) ,cos(deg2rad(angle)))))
-        
+   
+#bound2piDeg(181)
+#Out[27]: -179.0
+
+#bound2piDeg(-181)
+#Out[28]: 179.0     
 
 def getAngleFromTo(x0,y0,x1,y1,deg360=False):
     # 
