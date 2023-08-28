@@ -126,6 +126,46 @@ Functions
   :rtype: float
 
 
+.. function::  bound2pi(angle)
+
+  bounds angle to (+/-) pi radians
+
+  :param  angle: angle in radians
+
+  :return: bounded angle in radians
+  :rtype: float
+
+.. function::  bound2piDeg(angle)
+
+  bounds angle to (+/-) 180 degrees
+
+  :param  angle: angle in radians
+
+  :return: bounded angle in radians
+  :rtype: float
+
+.. function::  mps2kmph(mps)
+
+   converts meters per second to kmph
+
+  :param  mps: rate in meters per second
+
+  :return: rate in kilometers per hour
+
+  :rtype: float
+
+.. function::  mps2mph(mps)
+
+   converts meters per second to mph
+
+  :param  mps: rate in meters per second
+
+  :return: rate in miles per hour
+
+  :rtype: float
+        
+
+
 
 
 
