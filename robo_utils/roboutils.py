@@ -167,7 +167,7 @@ def getPointDistanceFrom(x0,y0,distance,angle):
     return(x1,y1)
 
 
-def mps2kmph( mps):
+def mps2kmph(mps):
         # meters per second to kmph
         return mps * 3.6 # meters per second to kmph
 
