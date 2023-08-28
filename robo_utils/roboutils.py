@@ -98,6 +98,11 @@ def bound2pi(angle):
     return(np.arctan2(sin(angle),cos(angle)))
 
 
+def bound2piDeg(angle):
+    # angle and bounded angle in degrees
+    return(rad2deg(np.arctan2( sin(deg2rad(angle)) ,cos(deg2rad(angle)))))
+        
+
 def getAngleFromTo(x0,y0,x1,y1,deg360=False):
     # 
     # return angle (in degrees) of line segment
