@@ -125,7 +125,7 @@ Functions
   :rtype: float
 
 
-.. function::  degPerSecToRadPerSec(deg)
+.. function::  degPerSecToRadPerSec(dps)
 
    converts angular rotational rate in degrees per second
    to radians per second
@@ -136,7 +136,7 @@ Functions
   :rtype: float
 
 
-.. function::  radPerSecToDegPerSec(rad)
+.. function::  radPerSecToDegPerSec(rps)
 
    converts angular rotational rate in radians per second
    to degrees per second
