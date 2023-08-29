@@ -19,12 +19,12 @@ Functions
   :return: bounded value
   :rtype: int
 
-  note: the input is *not* constrained
-  use the **constrain(...)** function to bound it first if required
+  note: The input is *not* bounded.
+  Use the **constrain(...)** function to bound it first if required
  
-  a typical use of this function with robotic control would be to take a
-  value in decimal range of **[0,100]** and map into **[0,255]** (**[0,FF]** hex) 
-  before sending it to a motor controller
+  A typical use of this function with robotic control would be to take a
+  value in decimal range of **[0,100]** and map into **[0,255]** ie. (**[0,FF]** hex) 
+  before sending it to a motor controller.
 
 .. function:: fmap(x, in_min, in_max, out_min, out_max)
   
@@ -38,6 +38,7 @@ Functions
 
   :return: bounded value
   :rtype: float
+
 
 .. function:: constrain(x, xmin, xmax)
   
