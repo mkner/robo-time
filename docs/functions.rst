@@ -216,7 +216,7 @@ Functions
   :param  deg360:  = False (default) to bound angle to 180 degrees
                    = True to  bound in full rotation of 360 degrees
  
-  :return: phi angle in degrees
+  :return: angle in degrees
 
   :rtype: float
 
