@@ -47,7 +47,7 @@ def relerr(measured,expected):
     return (measured-expected)/expected
 
 def rad2deg(rad):
-    degree = radian/0.017453292519943295
+    degree = rad/0.017453292519943295
     return degree
 
 def deg2rad(deg):
