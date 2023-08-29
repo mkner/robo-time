@@ -108,8 +108,6 @@ def radPerSecToDegPerSec(rps):
     #return rad*57.295779513082
 
 
-
-
 def mps2kmph(mps):
         # meters per second to kmph
         return mps * 3.6 # meters per second to kmph
@@ -162,16 +160,16 @@ def getAngleFromTo(x0,y0,x1,y1,deg360=False):
     else: # keep in [-180,180]
       return angle
             
-def getPositionAt(x0,y0,distance,angle):
-#def getPointDistanceFrom(x0,y0,distance,angle):
+def getPositionAt(x0,y0,d,theta):
     # useful for ranging sensors
-    # angle is in degrees
+    # angle theta is in degrees
     # distance in units of choice
-    theta = deg2rad(angle)
-    x1 = x0+distance*cos(theta)
-    y1 = y0+distance*sin(theta)
+    theta = deg2rad(theta)
+    x1 = x0+d*cos(theta)
+    y1 = y0+d*sin(theta)
     return(x1,y1)
-
+        
+#def getPointDistanceFrom(x0,y0,d,angle):
 
 #def getDistanceBetween(x0,y0,x1,y1):
 #    # aka
