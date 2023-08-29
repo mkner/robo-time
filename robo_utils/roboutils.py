@@ -46,7 +46,7 @@ def constrain(x, xmin, xmax):
 def relerr(measured,expected):
     return (measured-expected)/expected
 
-def rad2deg(radian):
+def rad2deg(rad):
     degree = radian/0.017453292519943295
     return degree
 
@@ -54,44 +54,6 @@ def deg2rad(deg):
     rad = deg*0.017453292519943295
     #rad = deg*((2*np.pi)/360)
     return rad
-
-def radPerSecToRpm(rps):
-    a = (rps*60)/(2*np.pi) # better fpoint
-    return a
-   
-def rpmToRadPerSec(rpm):
-    a = (rpm/60)*(2*np.pi)
-    return a
-
-
-def degPerSecToRadPerSec(deg):
-    # better fpoint 
-    a = fmap(deg,0,360,0,2*np.pi)
-    return a
-    #return deg*0.017453292519943
-
-def radPerSecToDegPerSec(rad):
-    a = fmap(rad,0,2*np.pi,0,360)
-    return a
-    #return rad*57.295779513082
-
-
-def boundTo2pi(angle):
-    # angle and bounded angle in radians
-    # wind or unwind
-    while (angle > 2.0 * np.pi):
-        angle -= 2.0 * np.pi
-
-    while (angle < -2.0*np.pi):
-        angle += 2.0 * np.pi
-
-    return angle;
-
-
-#rad2deg(boundTo2pi(2*np.pi+(1/4)*np.pi))
-#Out[11]: 45.0
-#rad2deg(boundTo2pi(2*np.pi+(1/4)*2*np.pi))
-#Out[9]: 90.0
 
 def bound2pi(angle):
     # angle and bounded angle in radians
@@ -109,6 +71,41 @@ def bound2piDeg(angle):
 
 #bound2piDeg(-181)
 #Out[28]: 179.0     
+
+def boundTo2pi(angle):
+    # angle and bounded angle in radians
+    # wind or unwind
+    while (angle > 2.0 * np.pi):
+        angle -= 2.0 * np.pi
+
+    while (angle < -2.0*np.pi):
+        angle += 2.0 * np.pi
+
+    return angle;
+
+#rad2deg(boundTo2pi(2*np.pi+(1/4)*np.pi))
+#Out[11]: 45.0
+#rad2deg(boundTo2pi(2*np.pi+(1/4)*2*np.pi))
+#Out[9]: 90.0
+
+def radPerSecToRpm(rps):
+    a = (rps*60)/(2*np.pi) # better fpoint
+    return a
+   
+def rpmToRadPerSec(rpm):
+    a = (rpm/60)*(2*np.pi)
+    return a
+
+def degPerSecToRadPerSec(dps):
+    # better fpoint 
+    a = fmap(deg,0,360,0,2*np.pi)
+    return a
+    #return deg*0.017453292519943
+
+def radPerSecToDegPerSec(rps):
+    a = fmap(rad,0,2*np.pi,0,360)
+    return a
+    #return rad*57.295779513082
 
 def getAngleFromTo(x0,y0,x1,y1,deg360=False):
     # 
@@ -145,6 +142,14 @@ def getAngleFromTo(x0,y0,x1,y1,deg360=False):
     
       return angle
 
+def mps2kmph(mps):
+        # meters per second to kmph
+        return mps * 3.6 # meters per second to kmph
+
+def mps2mph(mps):
+        # meters per second to mph
+        return mps * 2.237 # meters per second to mph
+
 
 def getDistanceFromTo(x0,y0,x1,y1):
     #usual 2-space euclidian
@@ -167,14 +172,7 @@ def getPointDistanceFrom(x0,y0,distance,angle):
     return(x1,y1)
 
 
-def mps2kmph(mps):
-        # meters per second to kmph
-        return mps * 3.6 # meters per second to kmph
 
-def mps2mph(mps):
-        # meters per second to mph
-        return mps * 2.237 # meters per second to mph
-        
 #def boundArctan(theta):
 #    # aka 
 #    return boundAtanDeg(theta)
