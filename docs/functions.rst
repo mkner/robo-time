@@ -168,7 +168,7 @@ Functions
   :rtype: float
 
 
-.. function::  getDistanceFromTo(x0,y0,x1,y1)
+.. function::  getDistance(x0,y0,x1,y1)
 
    usual 2-space euclidian distance
 
@@ -182,9 +182,9 @@ Functions
   :rtype: float
 
 
-.. function::  getDistance(x0,y0,x1,y1)
+.. function::  getDistanceFromTo(x0,y0,x1,y1)
 
-  same as getDistanceFromTo(x0,y0,x1,y1)
+  same as getDistance(x0,y0,x1,y1)
 
 
 .. function::  getPositionAt(x0,y0, d, theta)
