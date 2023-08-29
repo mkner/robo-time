@@ -69,18 +69,6 @@ Functions
   :return: angle in radians
   :rtype: float
 
-.. function::  boundTo2pi(angle)
-
-  bounds angle into one circular rotation of 2 pi radians (360 degrees)
-  so even if input is spinning perpertually to an even greater (or lesser) 
-  angle, the output is contained into only one equivalent full circular 
-  rotation of 2 pi radians (360 degres)
-
-  :param  angle: angle in radians
-
-  :return: bounded angle in radians
-  :rtype: float
-
 
 .. function::  bound2pi(angle)
 
@@ -91,6 +79,7 @@ Functions
   :return: bounded angle in radians
   :rtype: float
 
+
 .. function::  bound2piDeg(angle)
 
   bounds angle to (+/-) 180 degrees
@@ -98,6 +87,19 @@ Functions
   :param  angle: angle in degrees
 
   :return: bounded angle in degrees
+  :rtype: float
+
+
+.. function::  boundTo2pi(angle)
+
+  bounds angle into one circular rotation of 2 pi radians (360 degrees)
+  so even if input is spinning perpertually to an even greater (or lesser) 
+  angle, the output is contained into only one equivalent full circular 
+  rotation of 2 pi radians (360 degres)
+
+  :param  angle: angle in radians
+
+  :return: bounded angle in radians
   :rtype: float
 
 
