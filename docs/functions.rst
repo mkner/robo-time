@@ -186,7 +186,7 @@ Functions
 
 .. function::  getDistanceFromTo(x0,y0,x1,y1)
 
-  same as getDistance(x0,y0,x1,y1)
+  short-hand for getDistance(...) above
 
 
 .. function::  getPositionAt(x0,y0, d, theta)
@@ -207,6 +207,12 @@ Functions
 
   :rtype: float
 
+
+.. function::  getPosAt(x0,y0, d, theta)
+
+  short-hand for getPositionAt(...)
+
+ 
 
 .. function::  getAngleFromTo(x0,y0,x1,y1,<deg360>)
 
