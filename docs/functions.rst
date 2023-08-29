@@ -206,6 +206,20 @@ Functions
   :rtype: float
 
 
+.. function::  getAngleFromTo(x0,y0,x1,y1,deg360=False)
+
+  
+  :param  x0: start pos x
+  :param  y0: start pos y
+  :param  x1: end pos x
+  :param  y1: end pos y
+  :param  deg360:  = False (default) for bounding angle to 180 degrees
+                   = True for bound in full rotation of 360 degrees
+ 
+  :return: phi angle in degrees
+
+  :rtype: float
+
 
 
 
