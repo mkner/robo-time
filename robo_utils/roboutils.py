@@ -107,6 +107,7 @@ def radPerSecToDegPerSec(rps):
     return a
     #return rad*57.295779513082
 
+# conversion 
 
 def mps2kmph(mps):
         # meters per second to kmph
@@ -168,7 +169,12 @@ def getPositionAt(x0,y0,d,theta):
     x1 = x0+d*cos(theta)
     y1 = y0+d*sin(theta)
     return(x1,y1)
-        
+
+def getPosAt(x0,y0,d,theta):
+    #shorthand
+    return getPositionAt(x0,y0,d,theta)
+
+
 #def getPointDistanceFrom(x0,y0,d,angle):
 
 #def getDistanceBetween(x0,y0,x1,y1):
@@ -197,9 +203,7 @@ def getPositionAt(x0,y0,d,theta):
 #    # radian version
  #   return np.arctan2(np.sin(theta),np.cos(theta))
     
-# conversion constants
-#        self._to_mph=2.237 # meters per second to mph
-#        self._to_kmph=3.6 # meters per second to kmph
+
 
 
 
