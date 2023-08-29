@@ -166,7 +166,46 @@ Functions
   :return: rate in miles per hour
 
   :rtype: float
-        
+
+
+.. function::  getDistanceFromTo(x0,y0,x1,y1)
+
+   usual 2-space euclidian distance
+
+  :param  x0: start pos x
+  :param  y0: start pos y
+  :param  x1: end pos x
+  :param  y1: end pos y
+
+  :return: distance
+
+  :rtype: float
+
+
+.. function::  getDistance(x0,y0,x1,y1)
+
+  same as getDistanceFromTo(x0,y0,x1,y1)
+
+
+.. function::  getPositionAt(x0,y0, d, theta)
+
+  returns point (x1,y1) of position d distance away
+  from (x0,y0) at relative angle theta
+
+  useful for ranging sensors, for instance IR sensors, that return distance
+  at some know sensor mounting angle theta relative to robots frame forward heading 
+  when robot is at current position (x0,y0)
+
+  :param  x0: start pos x
+  :param  y0: start pos y
+  :param  d: distance from some current position (x0,y0) to remote point
+  :param  theta: angle (deg) relative to current heading (x0,y0) to remote point
+ 
+  :return: (x1,y1): tuple of remote coordinates 
+
+  :rtype: float
+
+
 
 
 
