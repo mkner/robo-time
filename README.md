@@ -1,6 +1,6 @@
 **robo-utils** 
 
-useful functions for mobile robotics 
+Useful functions for mobile robotics 
 and related applications
 
 
