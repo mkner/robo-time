@@ -26,6 +26,7 @@ Functions
   value in decimal range of **[0,100]** and map into **[0,255]** ie. (**[0,FF]** hex) 
   before sending it to a motor controller.
 
+
 .. function:: fmap(x, in_min, in_max, out_min, out_max)
   
    maps an float value in the range **[in_min, in_max]** to interval **[out_min, out_max]**
