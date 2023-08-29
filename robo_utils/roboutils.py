@@ -107,6 +107,28 @@ def radPerSecToDegPerSec(rps):
     return a
     #return rad*57.295779513082
 
+
+
+
+def mps2kmph(mps):
+        # meters per second to kmph
+        return mps * 3.6 # meters per second to kmph
+
+def mps2mph(mps):
+        # meters per second to mph
+        return mps * 2.237 # meters per second to mph
+
+
+def getDistance(x0,y0,x1,y1):
+    #usual 2-space euclidian
+    d = np.sqrt(((x1-x0)**2 +(y1-y0)**2))
+    return(d)
+  
+def getDistanceFromTo(x0,y0,x1,y1):
+    #call above
+    #usual 2-space euclidian
+    return getDistance(x0,y0,x1,y1)
+        
 def getAngleFromTo(x0,y0,x1,y1,deg360=False):
     # 
     # return angle (in degrees) of line segment
@@ -137,29 +159,9 @@ def getAngleFromTo(x0,y0,x1,y1,deg360=False):
           return 0
       else:
           return rad2deg(boundto2pi(deg2rad(360+angle)))
-      
     else: # keep in [-180,180]
-    
       return angle
-
-def mps2kmph(mps):
-        # meters per second to kmph
-        return mps * 3.6 # meters per second to kmph
-
-def mps2mph(mps):
-        # meters per second to mph
-        return mps * 2.237 # meters per second to mph
-
-
-def getDistanceFromTo(x0,y0,x1,y1):
-    #usual 2-space euclidian
-    d = np.sqrt(((x1-x0)**2 +(y1-y0)**2))
-    return(d)
-
-def getDistance(x0,y0,x1,y1):
-    #call above
-    return getDistanceFromTo(x0,y0,x1,y1)
-
+            
 def getPositionAt(x0,y0,distance,angle):
 #def getPointDistanceFrom(x0,y0,distance,angle):
     # useful for ranging sensors
@@ -169,6 +171,7 @@ def getPositionAt(x0,y0,distance,angle):
     x1 = x0+distance*cos(theta)
     y1 = y0+distance*sin(theta)
     return(x1,y1)
+
 
 #def getDistanceBetween(x0,y0,x1,y1):
 #    # aka
