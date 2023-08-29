@@ -189,8 +189,8 @@ Functions
 
 .. function::  getPositionAt(x0,y0, d, theta)
 
-  returns point (x1,y1) of position d distance away
-  from (x0,y0) at relative angle theta
+  returns position **(x1,y1)** that is  **d** distance away
+  from **(x0,y0)** at relative angle **theta**
 
   Useful for getting the point of a remote object when using ranging sensors
   For example, IR sensors, that return distance at a known sensor mounting angle
