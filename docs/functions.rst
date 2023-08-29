@@ -210,7 +210,11 @@ Functions
 
 .. function::  getAngleFromTo(x0,y0,x1,y1,<deg360>)
 
-  
+    returns angle (in degrees) of line segment from (x0,y0) to (x1,y1)  
+    uses usual trig conventions for signed angles of rotation
+    positive angle are to left (counter-clockwise)
+    negative angles are to right (clockwise)
+   
   :param  x0: start pos x
   :param  y0: start pos y
   :param  x1: end pos x
