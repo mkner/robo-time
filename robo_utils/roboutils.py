@@ -98,12 +98,12 @@ def rpmToRadPerSec(rpm):
 
 def degPerSecToRadPerSec(dps):
     # better fpoint 
-    a = fmap(deg,0,360,0,2*np.pi)
+    a = fmap(dps,0,360,0,2*np.pi)
     return a
     #return deg*0.017453292519943
 
 def radPerSecToDegPerSec(rps):
-    a = fmap(rad,0,2*np.pi,0,360)
+    a = fmap(rps,0,2*np.pi,0,360)
     return a
     #return rad*57.295779513082
 
