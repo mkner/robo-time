@@ -193,7 +193,7 @@ Functions
   from **(x0,y0)** at relative angle **theta**
 
   Useful for getting the point of a remote object when using ranging sensors
-  For example, IR sensors, that return distance at a known sensor mounting angle
+  For example, IR sensors, that return distance from a known sensor mounted at angle
   theta relative to robots frame forward heading when robot is at current position (x0,y0)
 
   :param  x0: start pos x
