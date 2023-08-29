@@ -156,21 +156,24 @@ def getDistanceFromTo(x0,y0,x1,y1):
     d = np.sqrt(((x1-x0)**2 +(y1-y0)**2))
     return(d)
 
+def getDistance(x0,y0,x1,y1):
+    #call above
+    return getDistanceFromTo(x0,y0,x1,y1)
 
-def getDistanceBetween(x0,y0,x1,y1):
-    # aka
-    d = getDistanceFromTo(x0,y0,x1,y1)
-    return(d)
-
-
-def getPointDistanceFrom(x0,y0,distance,angle):
+def getPositionAt(x0,y0,distance,angle):
+#def getPointDistanceFrom(x0,y0,distance,angle):
+    # useful for ranging sensors
     # angle is in degrees
-    # distance can be signed?
+    # distance in units of choice
     theta = deg2rad(angle)
     x1 = x0+distance*cos(theta)
     y1 = y0+distance*sin(theta)
     return(x1,y1)
 
+#def getDistanceBetween(x0,y0,x1,y1):
+#    # aka
+#    d = getDistanceFromTo(x0,y0,x1,y1)
+#    return(d)
 
 
 #def boundArctan(theta):
