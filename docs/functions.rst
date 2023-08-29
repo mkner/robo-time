@@ -194,6 +194,10 @@ Functions
   returns position **(x1,y1)** that is  **d** distance away
   from **(x0,y0)** at relative angle **theta**
 
+  Useful for getting the position of a remote object when using ranging sensors
+  For example, IR sensors, that return distance from a known sensor mounted at angle
+  theta relative to robots frame forward heading when robot is at current position (x0,y0)
+
   :param  x0: start pos x
   :param  y0: start pos y
   :param  d: distance from some current position (x0,y0) to remote point
@@ -203,14 +207,16 @@ Functions
 
   :rtype: float
 
-  Useful for getting the position of a remote object when using ranging sensors
-  For example, IR sensors, that return distance from a known sensor mounted at angle
-  theta relative to robots frame forward heading when robot is at current position (x0,y0)
-
 
 .. function::  getAngleFromTo(x0,y0,x1,y1,<deg360>)
 
-  returns angle (in degrees) of line segment from (x0,y0) to (x1,y1)  
+   returns angle (in degrees) of line segment from (x0,y0) to (x1,y1)  
+
+   Uses usual trig conventions for signed angles of rotation:
+   positive angle are to left (counter-clockwise)
+   negative angles are to right (clockwise)
+   
+
 
   :param  x0: start pos x
   :param  y0: start pos y
@@ -222,11 +228,6 @@ Functions
   :return: angle in degrees
 
   :rtype: float
-
-    Uses usual trig conventions for signed angles of rotation:
-    positive angle are to left (counter-clockwise)
-    negative angles are to right (clockwise)
-   
 
 
 
