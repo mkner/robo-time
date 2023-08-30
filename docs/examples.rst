@@ -23,7 +23,7 @@ For example:
 
 .. code-block:: python
 
-   def boundPiDeg(angle): 
+   def bound2PiDeg(angle): 
     
      # input: angle in degrees
      # output: bounded angle in (+/-) 180 degrees
