@@ -3,8 +3,8 @@
 Example
 -------
 
-robo-utils
-**********
+.. |robo-utils
+.. |**********
 
 For example:
 
