@@ -12,6 +12,8 @@ For example:
 
 >>> from robo_utils import rad2deg, deg2rad
 
+.. code-block:: python
+
 # use arctan2 function to bound angles to +/- 180 degrees
 
 def bound2piDeg(angle):
