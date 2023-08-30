@@ -9,7 +9,7 @@ and related applications.
 | frequently needed and convenient to have in one place.
 
 
-Installation: 
+|Installation: 
 
 $ **pip** install robo-utils
 
