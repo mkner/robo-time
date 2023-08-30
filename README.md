@@ -6,7 +6,7 @@ and related applications.
 
 This toolkit contains mapping, bounding and conversion functions\
 for the development of mobile robotic units and systems that are\
-frequently needed and convenient to have in one place.\
+frequently needed and convenient to have in one place\
 
 
 
