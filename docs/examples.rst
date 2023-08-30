@@ -15,6 +15,7 @@ For example:
 
 .. code-block:: python
 
+   import numpy as np
    from math import sin, cos
    from robo_utils import rad2deg, deg2rad
 
