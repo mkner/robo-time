@@ -9,8 +9,8 @@ robo-utils
 For example:
 
 
-| Use rad/deg conversion functions and 
-| the classic arctan2 method to bound angles to +/- 180 degrees
+| Use rad/deg conversion functions and the classic 
+| arctan2 method to bound angles to +/- 180 degrees
 |
 
 
