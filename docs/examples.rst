@@ -13,7 +13,7 @@ For example:
 | arctan2 method to bound angles to +/- 180 degrees
 |
 
-
+>>> from math import sin, cos
 >>> from robo_utils import rad2deg, deg2rad
 
 .. code-block:: python
