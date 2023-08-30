@@ -11,7 +11,7 @@ and related applications.
 |
 
 | Installation: 
-
+|
 | $ **pip** install robo-utils
 |
 
