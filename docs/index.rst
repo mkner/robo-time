@@ -9,6 +9,7 @@ robo-utils
 .. toctree::
    :maxdepth: 1
 
+   about
    install
    functions
    examples
