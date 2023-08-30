@@ -9,13 +9,13 @@ and related applications.
 | frequently needed and convenient to have in one place.
 
 |
-|
 
 | Installation: 
 
-$ **pip** install robo-utils
+| $ **pip** install robo-utils
+|
 
-For documentation see https://robo-utils.readthedocs.io/en/latest/
+| For documentation see https://robo-utils.readthedocs.io/en/latest/
 
 
 
