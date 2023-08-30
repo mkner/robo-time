@@ -15,8 +15,8 @@ For example:
 
 .. code-block:: python
 
-from math import sin, cos
-from robo_utils import rad2deg, deg2rad
+   from math import sin, cos
+   from robo_utils import rad2deg, deg2rad
 
 .. code-block:: python
 
