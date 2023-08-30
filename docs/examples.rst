@@ -30,10 +30,5 @@ For example:
 
 
 
->>> from robo_utils import imap
-
-
-
-
 
 
