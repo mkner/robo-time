@@ -186,7 +186,7 @@ Functions
 
 .. function::  getDistanceFromTo(x0,y0,x1,y1)
 
-  short-hand for getDistance(...) above
+  same as getDistance(...) 
 
 
 .. function::  getPositionAt(x0,y0, d, theta)
