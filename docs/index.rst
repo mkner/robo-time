@@ -11,8 +11,7 @@ robo-utils
 
    about
    install
-   functions
-   examples
+  
 
 
 
