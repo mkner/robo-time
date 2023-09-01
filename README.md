@@ -11,7 +11,7 @@ Installation:
 $ **pip** install robo-clocks
 
 
-For documentation see https://robo-utils.readthedocs.io/en/latest/
+For documentation see https://robo-clocks.readthedocs.io/en/latest/
 
 
 
