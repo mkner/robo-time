@@ -3,7 +3,7 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "robo_utils"
+name = "robo_clocks"
 authors = [{name = "Mike Knerr"}]
 #authors = [{name = "author", email = "author@email"}]
 dynamic = ["version"] 
@@ -13,15 +13,20 @@ license = {text = "MIT"}
 #license = LICENSE.md" =
 license-files = ['LICENSE*']
 requires-python = ">=3.6"
-keywords = ["robotics", "mobile robotics", "utilities","functions","toolkit"]
+keywords = ["robotics", "mobile robotics", "clocks", "timing", "timestamps", "utilities","functions","toolkit"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 
+dependencies = [
+  'robo-base >= 0.1.2',
+]
+
+
 [project.urls]
-homepage = "https://github.com/mkner/robo-utils/"
+homepage = "https://github.com/mkner/robo-clocks/"
 
 
 
