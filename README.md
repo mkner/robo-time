@@ -1,18 +1,14 @@
-**robo-utils** 
+**robo-clocks** 
 
 
-Useful functions for mobile robotics 
-and related applications.
-
-This toolkit contains mapping, bounding and conversion functions\
-for the development of mobile robotic units and systems that are\
-frequently needed and convenient to have in one place
+Local, system and world clocks and related timing and timestamp\
+functions for mobile robotics.
 
 
 
 Installation:
 
-$ **pip** install robo-utils
+$ **pip** install robo-clocks
 
 
 For documentation see https://robo-utils.readthedocs.io/en/latest/
