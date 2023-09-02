@@ -8,5 +8,6 @@ VERSION = roboclocks.__version__  # gets from init??
 # does not need the compiled code??
 
 import roboclocks 
-import import roboclocks.time as robotime
+import import roboclocks.time as time
+
 
