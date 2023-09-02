@@ -7,8 +7,9 @@ robo-clocks  - useful functions for mobile robotics
 
 __version__ = '0.01.01b' 
 
-from . import roboclocks
-from roboclocks import Clock
+from . import clocks
+from . import time
+
 
 
 
