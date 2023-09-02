@@ -11,6 +11,7 @@ robo-clocks
 
    about
    install
+   example
   
 
 
