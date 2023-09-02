@@ -1,8 +1,8 @@
 **robo-clocks** 
 
 
-Local, system and world clocks and related timing and timestamp\
-functions for mobile robotics.
+Clocks, timing, and timestamping \
+objects for mobile robotics.
 
 
 
