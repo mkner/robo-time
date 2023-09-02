@@ -7,7 +7,7 @@ VERSION = roboclocks.__version__  # gets from init??
 # import a restricted version of roboclocks
 # does not need the compiled code??
 
-import roboclocks 
-import import roboclocks.time as time
+import robo_clocks as roboclocks
+#import import roboclocks.time as time
 
 
