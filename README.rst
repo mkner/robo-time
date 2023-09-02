@@ -1,8 +1,8 @@
-**robo-utils** 
+**robo-clocks** 
 
 
-Useful functions for mobile robotics 
-and related applications.
+Clocks, timing devices, and timestamping 
+for mobile robotics and related applications
 
 | This toolkit contains mapping, bounding and conversion functions
 | for the development of mobile robotic units and systems that are
