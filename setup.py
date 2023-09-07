@@ -1,14 +1,15 @@
+#! /usr/bin/env python
+
+from setuptools import Command, Extension, setup, find_packages
+from setuptools.command.build_ext import build_ext
 
 DISTNAME = "robo-clocks"
-DESCRIPTION = "clocks, timing, timstamping"
+#DESCRIPTION = "clocks "
 
-VERSION = robo_clocks.__version__  # gets from init??
+#mk  ok
+import roboclocks
 
-# import a restricted version of roboclocks
-# does not need the compiled code??
-
-import robo_clocks as roboclocks
-
-#import import roboclocks.time as time
+if __name__ == "__main__":
+    setup()
 
 
