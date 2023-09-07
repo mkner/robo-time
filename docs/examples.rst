@@ -17,8 +17,8 @@ For example:
 
 .. code-block:: python
 
-   import robo_clocks
-   from robo_clocks import Clock
+   import roboclocks
+   from roboclocks import Clock
 
    c = Clock()
 
