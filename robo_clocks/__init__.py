@@ -1,7 +1,6 @@
 
 """
-robo-clocks  - useful functions for mobile robotics
-"""
+robo-clocks  - 
 
 __version__ = '0.01.02a' 
 
