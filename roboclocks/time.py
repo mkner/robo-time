@@ -1,6 +1,6 @@
 #
 #
-# robo-clocks - 
+# robo-clocks - time
 # for mobile robotics and related applications
 #
 # (c) 2022 - 2023  Mike Knerr
