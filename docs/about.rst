@@ -4,8 +4,8 @@ About
 
 **robo-clocks** 
 
-| Clocks, timing, timestamping 
-| and related device for mobile robotics
+| Clocks, timing, timestamps
+| for mobile robotics
 
 
 
