@@ -1,9 +1,8 @@
 **robo-clocks** 
 
 
-Clocks, timing, and timestamping \
-objects for mobile robotics.
-
+Clocks, timing, and timestamps\
+for mobile robotics.
 
 
 Installation:
