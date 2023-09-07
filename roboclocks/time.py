@@ -1,10 +1,13 @@
 #
-#mk
 #
-#name: robotime
-
-#vers:  v01.02.04
-
+# robo-clocks - 
+# for mobile robotics and related applications
+#
+# (c) 2022 - 2023  Mike Knerr
+#
+# 
+#
+#
 
 import numpy as np
 
@@ -22,42 +25,10 @@ import ntplib
 #from threading import Thread
 import threading
 
+from robobase import Object # from robot_object import Object
 
-from robobase import Object
-
-#from robo_time.time import *
-
-from robotime import *
-
-# from robot_object import Object
 import time
 import threading
-
-
-#from robobase import Object
-
-
-
-def delay_test(delay_time):
-    
-    thread = threading.Thread(target=delay_threaded, args=(delay_time,))
-    #thread1 = Thread(target = function01, args = (10,'thread1', ))
-    thread.start()
-    
-    
-def delay_threaded(delay_time):
-
-    timer_seconds = abs(delay_time/1000)
-    start_time = time.monotonic() #c.getMonotime()
-    while (True):
-        
-       if (time.monotonic() - start_time) >= timer_seconds:
-           print("delay_threaded finished",delay_time)
-           break;
-           
-       time.sleep(0.000000001)
-      
-    return
 
 
 def delay(delay_time):
@@ -144,6 +115,27 @@ def delay_mn(delay_time):
     
     while (time.monotonic() - start_time) < timer_seconds:
          time.sleep(0.0000000001)# 1/10 nanosec 0.000 000 000 1      
+    return
+
+def delay_test(delay_time):
+    
+    thread = threading.Thread(target=delay_threaded, args=(delay_time,))
+    #thread1 = Thread(target = function01, args = (10,'thread1', ))
+    thread.start()
+    
+    
+def delay_threaded(delay_time):
+
+    timer_seconds = abs(delay_time/1000)
+    start_time = time.monotonic() #c.getMonotime()
+    while (True):
+        
+       if (time.monotonic() - start_time) >= timer_seconds:
+           print("delay_threaded finished",delay_time)
+           break;
+           
+       time.sleep(0.000000001)
+      
     return
 
 
