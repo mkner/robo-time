@@ -4,8 +4,13 @@
 requires = [
    "setuptools",
    "wheel",
-   "numpy",]
+   "numpy",
+   "time",
+   "datetime",
+   "calendar",
+   "ntplib",]
    
+   # robobase
    #"math",]
    
 #Minimum requirements to build package in venv w/ setuptools 
