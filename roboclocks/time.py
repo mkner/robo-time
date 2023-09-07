@@ -8,19 +8,6 @@
 # 
 #
 
-#import numpy as np
-
-#import math as m
-#import math
-
-#import time
-#import datetime
-#from datetime import datetime, timezone
-#from datetime import timedelta
-#import calendar
-
-#import ntplib
-
 #from threading import Thread
 import threading
 
