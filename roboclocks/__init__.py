@@ -8,9 +8,13 @@ __version__ = '0.01.02c'
 from . import clocks
 from . import time
 
+from .clocks import Clock
+from .clocks import SystemClock
+from .clocks import WorldClock
+
 from .clocks import *
 from .time import *
-#
+
 
 
 
