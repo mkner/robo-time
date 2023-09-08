@@ -47,9 +47,6 @@ WorldClock
    robot.worldclock.time()
    00:01:49
 
-   robot.worldclock.today()
-   Fri Sep 01 1970 00:02:01 UTC
-
    robot.worldclock.now()
    1970-01-01 00:02:04 UTC
 
