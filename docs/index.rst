@@ -11,6 +11,8 @@ robo-clocks
 
    about
    install
+   design
+   interface
    examples
   
 
