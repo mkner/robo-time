@@ -10,8 +10,11 @@ robo-clocks
    :maxdepth: 1
 
    about
-   install
    design
+   install
+   timing 
+   clocks
+   timestamps
    interface
    examples
   
