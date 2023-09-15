@@ -3,7 +3,7 @@
 # robo-clocks
 
 
-__version__ = '0.01.06a' 
+__version__ = '0.01.06b' 
 
 from . import clocks
 from . import time
