@@ -6,22 +6,18 @@ Examples
 .. |robo-clocks
 .. |***********
 
-|
-
-For example:
 
 Clock
 *****
 
 | create a primary object clock
-| 
-|
 
 .. code-block:: python
 
    from roboclocks import Clock
 
    c = Clock()
+
 
 
 WorldClock
