@@ -10,7 +10,7 @@ About
 |
 | All clock types have an intuitive interface for basic timedate and timestamping outputs.
 |
-| Much of the interface is available as both command line mode and functional output mode for source code.
+| Much of the interface is available in both command line mode and functional output mode for source code.
 |
 | The output formats have commonly used options and forms that allow easy and flexible reformatting for specific requirements.
 | 
