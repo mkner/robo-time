@@ -61,6 +61,7 @@ WorldClock
 
 | Running the initialization routine for WorldClock updates and
 | synchronizes its time to the global NTP UTC servers.
+|
 
 .. code-block:: python
 
@@ -98,9 +99,10 @@ WorldClock
 | WorldClock can also by resynced at any time. A resync is not as
 | thorough as an full initialization, but can be useful to keep the
 | WorldClock accurate within a certain delta threshold.
-
+|
 | A resync can be scheduled periodically at some interval
 | as frequently as required. 
+|
 
 .. code-block:: python
 
