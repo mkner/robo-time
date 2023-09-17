@@ -28,10 +28,11 @@ Clock
 WorldClock
 **********
 
- Before WorldClock is initialized and synced to global servers
- its only sense of date & time is relative to the 
- only beginning of time it knows. The Unix epoch.
- And **now** is its uptime offset from  1970-01-01 00:00:00 UTC
+| Before WorldClock is initialized and synced to global servers
+| its only sense of date & time is relative to the only beginning 
+| of time it knows. The Unix epoch.
+
+| And **now** is its uptime offset from  1970-01-01 00:00:00 UTC
 
 .. code-block:: python
    
@@ -54,7 +55,12 @@ WorldClock
    
    wc.timestamp()
    1970-01-01 00:00:49 734483
-   
+
+| Running the initialization routine for WorldClock updates and
+| synchronizes its time to the global NTP UTC servers.
+
+.. code-block:: python
+
    wc.init()
    
    WorldClock version: v0.01.14b
@@ -103,27 +109,6 @@ WorldClock
    wc.timestamp()
    2023-09-17 20:50:55 953406
 
-   robot.worldclock.uptime()
-   00:01:11
-
-   robot.worldclock.now()
-   1970-01-01 00:01:19 UTC
-
-   robot.worldclock.date()
-   1970-01-01
-
-   robot.worldclock.time()
-   00:01:49
-
-   robot.worldclock.now()
-   1970-01-01 00:02:04 UTC
-
-   robot.worldclock.now()
-   1970-01-01 00:02:09 UTC
-
-   robot.worldclock.now();delay(1000);robot.worldclock.now()
-   1970-01-01 00:06:59 UTC
-   1970-01-01 00:07:00 UTC
 
 .. code-block:: python
 
