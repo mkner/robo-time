@@ -35,6 +35,74 @@ WorldClock
 
 .. code-block:: python
    
+   wc = WorldClock()
+   
+   wc.uptime()
+   00:00:03
+   
+   wc.time()
+   00:00:09
+   
+   wc.date()
+   1970-01-01
+   
+   wc.now()
+   1970-01-01 00:00:22 UTC
+   
+   wc.today()
+   Thu Jan 01 1970 00:00:26 UTC
+   
+   wc.timestamp()
+   1970-01-01 00:00:49 734483
+   
+   wc.init()
+   
+   WorldClock version: v0.01.14b
+   
+   Starting up...
+   Current WorldClock NTP (UTC) time: 1970-01-01 00:01:14.412665
+   Begin initialization from global NTP system...
+   Checking NTP connection...
+   Connection established...
+   Initializing UTC time from NTP reference signal...
+   Synchronization phase # 1  OK
+   Synchronization phase # 2  OK
+   Synchronization phase # 3
+   Resynchronizing world clock...
+   Connection to NTP server OK!
+   Checking delta threshold...
+   Within range. Updating...
+   Get time check...
+   Current WorldClock NTP (UTC) time: 2023-09-17 20:49:51.506208
+   Initialization done!
+   
+   
+   wc.now()
+   2023-09-17 20:49:57 UTC
+   
+   wc.today()
+   Sun Sep 17 2023 20:50:02 UTC
+   
+   wc.timestamp()
+   2023-09-17 20:50:10 174461
+   
+   wc.resync()
+   Resynchronizing world clock...
+   Connection to NTP server OK!
+   Checking delta threshold...
+   Within range. Updating...
+   Get time check...
+   Current WorldClock NTP (UTC) time: 2023-09-17 20:50:32.701712
+   
+   wc.now()
+   2023-09-17 20:50:50 UTC
+   
+   wc.today()
+   Sun Sep 17 2023 20:50:53 UTC
+
+   wc.timestamp()
+   2023-09-17 20:50:55 953406
+
    robot.worldclock.uptime()
    00:01:11
 
@@ -59,33 +127,5 @@ WorldClock
 
 .. code-block:: python
 
-   robot.worldclock.init()
    
-   WorldClock version: v0.01.12c starting up...
-   Begin initialization from global NTP system...
-   Checking NTP connection...
-   Connection established...
-   Initializing UTC time from NTP reference signal...
-   Synchronization phase # 1
-   Synchronization phase # 2
-   Current WorldClock NTP time (UTC): 2023-09-08 21:17:41.688104
-   Synchronization phase # 3
-   Resynchronizing world clock...
-   checking delta threshold: ||0.0094454288|| < 0.05
-   delta within range. Updating...
-   Get time check...
-   After adjustment... 
-   delta: 0.009749889373779297 (fp)
-   delta: 9 (ms)
-   Initialization done!
-
-   robot.worldclock.now()
-   2023-09-08 21:18:18 UTC
-   
-   robot.worldclock.now();delay(1000);robot.worldclock.now()
-   2023-09-08 21:18:21 UTC
-   2023-09-08 21:18:22 UTC
-
-
-
 
