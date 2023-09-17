@@ -91,7 +91,15 @@ WorldClock
    
    wc.timestamp()
    2023-09-17 20:50:10 174461
-   
+
+| WorldClock can also by resynced at any time. A resync is not as
+| thorough as an full initialization, but can be useful to keep the
+| WorldClock accurate within a certain delta threshold.
+
+| A resync can be scheduled periodically at some interval
+| as frequently as required. 
+
+.. code-block:: python
    wc.resync()
    Resynchronizing world clock...
    Connection to NTP server OK!
