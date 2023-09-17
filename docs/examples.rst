@@ -19,7 +19,6 @@ Clock
 
 .. code-block:: python
 
-   import roboclocks
    from roboclocks import Clock
 
    c = Clock()
@@ -35,7 +34,9 @@ WorldClock
 | And **now** is its uptime offset from  1970-01-01 00:00:00 UTC
 
 .. code-block:: python
-   
+
+   from roboclocks import WorldClock
+
    wc = WorldClock()
    
    wc.uptime()
