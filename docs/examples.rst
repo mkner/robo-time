@@ -100,6 +100,7 @@ WorldClock
 | as frequently as required. 
 
 .. code-block:: python
+
    wc.resync()
    Resynchronizing world clock...
    Connection to NTP server OK!
@@ -119,6 +120,7 @@ WorldClock
 
 
 .. code-block:: python
+
 
    
 
