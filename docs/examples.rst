@@ -17,6 +17,22 @@ Clock
    from roboclocks import Clock
 
    c = Clock()
+   
+   c.uptime()
+   00:00:08
+   
+   c.time()
+   00:00:14
+   
+   c.date()
+   0000-00-00
+   
+   c.now()
+   0000-00-00 00:00:26
+   
+   c.today()
+   0000-00-00 00:00:30
+
 
 SystemClock
 ***********
@@ -44,29 +60,6 @@ SystemClock
    sc.today()
    Sun Sep 17 2023 18:04:34 EDT
 
-
-WorldClock version: v0.01.14b
-
-Starting up...
-Current WorldClock NTP (UTC) time: 1970-01-01 00:01:04.086574
-Begin initialization from global NTP system...
-Checking NTP connection...
-Connection established...
-Initializing UTC time from NTP reference signal...
-Synchronization phase # 1  OK
-Synchronization phase # 2  OK
-Synchronization phase # 3
-Resynchronizing world clock...
-Connection to NTP server OK!
-Checking delta threshold...
-Within range. Updating...
-Get time check...
-Current WorldClock NTP (UTC) time: 2023-09-17 22:05:07.920846
-Initialization done!
-
-
-wc.today()
-Sun Sep 17 2023 22:05:12 UTC
 
 
 WorldClock
