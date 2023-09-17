@@ -102,6 +102,7 @@ WorldClock
 .. code-block:: python
 
    wc.resync()
+
    Resynchronizing world clock...
    Connection to NTP server OK!
    Checking delta threshold...
