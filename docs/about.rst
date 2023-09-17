@@ -12,7 +12,7 @@ About
 |
 | Much of the interface is available as both command line mode and functional output mode for source code.
 |
-| The output formats have some commonly used options and is in forms that also allow easy and flexible reformatting for specific requirements.
+| The output formats have some commonly used options and forms that also allow easy and flexible reformatting for specific requirements.
 | 
 
 
