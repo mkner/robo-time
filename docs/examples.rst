@@ -27,7 +27,7 @@ SystemClock
 
    from roboclocks import SystemClock
 
-   sc = Clock()
+   sc = SystemClock()
 
    sc.uptime()
    00:00:10
