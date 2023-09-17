@@ -31,8 +31,9 @@ WorldClock
 | its only sense of date & time is relative to the only beginning 
 | of time it knows. The Unix epoch.
 |
-| So **now()** is its uptime offset from  1970-01-01 00:00:00 UTC
+| And **now()** is its uptime offset from  1970-01-01 00:00:00 UTC
 | and not from the current UTC time.
+|
 
 .. code-block:: python
 
