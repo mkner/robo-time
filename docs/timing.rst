@@ -6,10 +6,11 @@ Functions
 
 .. function:: delay(delay_time)
 
-    initiates a delay for an amount of time in milliseconds
-    and is an equivilent to the arduino delay function
-    underlying timing mechanism  uses the most accurate, 
-    valid monotonic time that only goes forward in time
+    Initiates a delay for the specified amount of time in milliseconds
+    It is an equivilent to the arduino delay function.
+    The underlying timing mechanism uses the most accurate, 
+    valid monotonic time available. This delay function can be
+    used safely inside a process thread
 
   :param delay_time: amount of time to delay (milliseconds)
 
