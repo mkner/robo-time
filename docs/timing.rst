@@ -24,7 +24,7 @@ Timing Functions
 
   Example
 
-.. code block:: python
+.. code-block:: python
 
     from roboclocks.time import Clock
     from roboclocks import Clock
@@ -42,7 +42,7 @@ Timing Functions
         print(c.getUptimeStr())
         delay(1000)
     
-.. code block:: python
+.. code-block:: python
 
     00:00:00
     00:00:01
