@@ -22,6 +22,38 @@ Timing Functions
 
   :return: None
 
-  
+  Example
+
+.. code block:: python
+
+    from roboclocks.time import Clock
+    from roboclocks import Clock
+    
+    c = Clock()
+    
+    for i in range(5): 
+        print(c.getUptimeStr())
+        delay(1000)
+    
+    print()
+    delay(3000) # wait 3 sec
+    
+    for i in range(5):
+        print(c.getUptimeStr())
+        delay(1000)
+    
+.. code block:: python
+
+    00:00:00
+    00:00:01
+    00:00:02
+    00:00:03
+    00:00:04
+    
+    00:00:08
+    00:00:09
+    00:00:10
+    00:00:11
+    00:00:12
 
 
