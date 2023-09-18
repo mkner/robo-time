@@ -33,31 +33,31 @@ Timing Functions
     from roboclocks.time import delay
     from roboclocks import Clock
     c = Clock()
-
-for i in range(5): 
-    print(c.getUptimeStr())
-    delay(1000)
-
-print()
-delay(1000) # wait 3 sec
-
-for i in range(5):
-    print(c.getUptimeStr())
-    delay(1000)
     
-print()
-c.delay(1000) # use delay on Clock() interface
-
-c.uptime()
-
-for i in range(2):
- for j in range(10): # same as delay(1000)
-      delay(100)
-      
- c.uptime()
- delay(1000) # same delay as j loop
- c.uptime()
- 
+    for i in range(5): 
+        print(c.getUptimeStr())
+        delay(1000)
+    
+    print()
+    delay(1000) # wait 3 sec
+    
+    for i in range(5):
+        print(c.getUptimeStr())
+        delay(1000)
+        
+    print()
+    c.delay(1000) # use delay on Clock() interface
+    
+    c.uptime()
+    
+    for i in range(2):
+     for j in range(10): # same as delay(1000)
+          delay(100)
+          
+     c.uptime()
+     delay(1000) # same delay as j loop
+     c.uptime()
+     
 
 .. code-block:: python
 
