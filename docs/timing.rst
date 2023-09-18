@@ -1,5 +1,5 @@
-Functions
----------
+Timing Functions
+----------------
 
 .. py:mod: 
 .. py:mod:: py_mod
