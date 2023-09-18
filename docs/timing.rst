@@ -52,7 +52,7 @@ Timing Functions
      for j in range(10): # same as delay(1000)
           delay(100)
      c.uptime()
-     delay(1000) # same as delay in j loop
+     delay(1000) # # same delay as j loop
      c.uptime()
  
 .. code-block:: python
