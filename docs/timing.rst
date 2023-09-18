@@ -10,6 +10,7 @@ Timing Functions
 | lightweight, streamlined inline requirements. 
 
 
+
 .. function:: delay(delay_time)
 
     Initiates a delay for the specified amount of time in milliseconds
