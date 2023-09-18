@@ -13,10 +13,10 @@ Timing Functions
 .. function:: delay(delay_time)
 
     Initiates a delay for the specified amount of time in milliseconds
-    It is an equivalent to the **arduino** delay function.
     The underlying timing mechanism uses the most accurate, 
     valid monotonic time available. This delay function can be
-    used safely inside a process thread.
+    used safely inside a process thread. It is an equivalent to
+    the **arduino** delay function.
 
   :param delay_time: amount of time to delay (milliseconds)
 
@@ -51,7 +51,7 @@ Timing Functions
      for j in range(10): # same as delay(1000)
           delay(100)
      c.uptime()
-     delay(1000) # same delay as j loop
+     delay(1000) # same as delay in j loop
      c.uptime()
  
 .. code-block:: python
