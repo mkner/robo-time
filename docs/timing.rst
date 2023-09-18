@@ -26,7 +26,7 @@ Timing Functions
 
 .. code-block:: python
 
-    from roboclocks.time import Clock
+    from roboclocks.time import delay
     from roboclocks import Clock
     
     c = Clock()
@@ -41,7 +41,19 @@ Timing Functions
     for i in range(5):
         print(c.getUptimeStr())
         delay(1000)
+        
+    print()
+    delay(1000)
     
+    c.uptime()
+    
+    for i in range(2):
+     for j in range(10): # same as delay(1000)
+          delay(100)
+     c.uptime()
+     delay(1000) # same delay as j loop
+     c.uptime()
+ 
 .. code-block:: python
 
     00:00:00
@@ -55,5 +67,11 @@ Timing Functions
     00:00:10
     00:00:11
     00:00:12
+    
+    00:00:14
+    00:00:15
+    00:00:16
+    00:00:17
+    00:00:18
 
 
