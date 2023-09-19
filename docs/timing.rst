@@ -80,6 +80,7 @@ Timing Functions
     00:00:17
     00:00:18
 
+|
 
 .. function:: delayMicros(delay_time)
 
