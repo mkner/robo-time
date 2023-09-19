@@ -14,10 +14,11 @@ Timing Functions
 .. function:: delay(delay_time)
 
     Initiates a delay for the specified amount of time in milliseconds
-    The underlying timing mechanism uses the most accurate, 
-    valid monotonic time available. This delay function can be
-    used safely inside a process thread. It is named after the
-    **arduino** delay function.
+    The underlying timing mechanism uses the most accurate, valid monotonic
+    time available. Monotonic time moves unidirectionally forward and runs
+    independently of the variations that occur with a system clock. This delay
+    function can be  used safely inside a process thread. It is named after
+    the **arduino** delay function.
 
   :param delay_time: amount of time to delay (milliseconds)
 
@@ -114,4 +115,36 @@ Timing Functions
    00:00:03
    00:00:04 
 
+|
 
+.. function:: delaySp(delay_time)
+
+    Initiates a delay for the specified amount of time in microseconds
+    This is a time.sleep() based version of delay. Included here for comparison
+    testing or other applications. Never as accurate as monotime based delay.
+
+  :param delay_time: amount of time to delay (microseconds)
+
+  :return: None
+
+
+.. function:: delayTc(delay_time)
+
+    Initiates a delay for the specified amount of time in microseconds
+    This is a time.clock() based version of delay. Included here for 
+    comparison testing or other applications. Never as accurate as 
+    monotime based delay.
+
+  :param delay_time: amount of time to delay (microseconds)
+
+  :return: None
+
+
+def delayTm(delay_time):
+
+    Initiates a delay for the specified amount of time in microseconds
+    This is a time.time() based version of delay. The timing delay mechanism can
+    skew forward or backward in time depending on the underlying HW/SW OS system
+    clock and its adjustments for regions, time zones and other geographic specific
+    parameters. Or abrupltly jump or change time if the OS system clock is set or reset.
+    Never as accurate as monotime based delay.
