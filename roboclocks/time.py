@@ -47,7 +47,7 @@ def delayMicros(delay_time):
 
 
 
-def delay_sp(delay_time):
+def delaySp(delay_time):
      # sleep version for comparison 
      ## not as accurate monotonic time
      ## can be accurate to 1 ms 
@@ -60,7 +60,7 @@ def delay_sp(delay_time):
     return
 
 
-def delay_tc(delay_time):
+def delayTc(delay_time):
     
     # time.clock() process time
     # can go backward/forward & other issues
@@ -75,7 +75,7 @@ def delay_tc(delay_time):
     return
 
 
-def delay_tm(delay_time):
+def delayTm(delay_time):
     
     # uses time.time() system time
     # can go backward/forward 
@@ -91,7 +91,7 @@ def delay_tm(delay_time):
     return
 
 
-def delay_mn(delay_time):
+def delayMn(delay_time):
     # included for comparative purposes
     # uses monotonic time.monotonic() explicitly
     # same as delay above
@@ -101,6 +101,7 @@ def delay_mn(delay_time):
     while (time.monotonic() - start_time) < timer_seconds:
          time.sleep(0.0000000001)# 1/10 nanosec 0.000 000 000 1      
     return
+
 
 def delay_test(delay_time):
     
