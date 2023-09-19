@@ -5,7 +5,7 @@ Timing Functions
 .. py:mod:: py_mod
 
 | The most frequently used timing delay functions. Some are also available on the
-| various clock interfaces but these standalone versions are decoupled here
+| various clock interfaces, but these standalone versions are decoupled here
 | for more lightweight, streamlined inline requirements. For accurate and precise
 | timing only **delay(...)** and **delayMicros(...)** are recommended. The other
 | versions are for testing and comparative purposes only.
