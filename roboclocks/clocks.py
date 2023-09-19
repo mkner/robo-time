@@ -7,8 +7,8 @@
 #
 # 
 
-# SIX
-#package release: 0.01.06
+# SEVEN
+#package release: 0.01.07a
 
 
 import numpy as np
@@ -33,7 +33,7 @@ class Clock(Object):
         super(Clock, self).__init__()
          
         self._name = "Clock"
-        self._vers = "v01.02.08a" 
+        self._vers = "v01.02.08B" 
         self._desc = "Clock" #" - "+self._vers
         self._model = ""
         
@@ -397,7 +397,9 @@ class Clock(Object):
 
         print(self.getUptimeStr())
         return
-       
+
+    def up(self):
+        return self.uptime() #short form
           
     def getUptime(self):
         # returns tuple of integers 
@@ -456,7 +458,6 @@ class Clock(Object):
            print(self.mkTimestampStr(self._start_epoch_time))
     
    
-    
     def _isCalSymmetric(self):
          # keep this function!!!
         days_in_year = self._cal_days_in_year
