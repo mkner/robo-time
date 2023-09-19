@@ -13,8 +13,7 @@ Clocks, timing, and timestamp functionality used in mobile robotics and other ap
   
 
 
-
-<\br>
+.
 
 Installation:
 
