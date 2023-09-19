@@ -81,3 +81,36 @@ Timing Functions
     00:00:18
 
 
+.. function:: delayMicros(delay_time)
+
+    Initiates a delay for the specified amount of time in microseconds
+    The underlying timing mechanism uses the most accurate, 
+    valid monotonic time available. This delay function can be
+    used safely inside a process thread. 
+
+  :param delay_time: amount of time to delay (microseconds)
+
+  :return: None
+
+  Example
+
+.. code-block:: python
+    
+    from roboclocks.time import delayMicros
+    from roboclocks import Clock
+
+    c = Clock()
+
+    for i in range(5): 
+        print(c.getUptimeStr())
+        delayMicros(1000000) # 1 second
+
+.. code-block:: python
+
+   00:00:00
+   00:00:01
+   00:00:02
+   00:00:03
+   00:00:04 
+
+
