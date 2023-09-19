@@ -3,7 +3,7 @@
 
 Clocks, timing, and timestamp functionality used in mobile robotics and other applications
 
-Provides three important clocks: Uptime Clock, System Clock, World Clock (NTP/UTC)
+* Provides three important clocks: Uptime Clock, System Clock, World Clock (NTP/UTC)
 
 Intuitive commands for basic uptime, timedate and timestamping outputs
 
