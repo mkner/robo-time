@@ -25,8 +25,7 @@ Timing Functions
 
   Example
 
-  | Variations on 1 second delays
-  | with 2 forms of output for uptime
+  | Variations on 1 second delays with 2 forms of output for uptime
 
 .. code-block:: python
     
