@@ -32,6 +32,7 @@ Timing Functions
     
     from roboclocks.time import delay
     from roboclocks import Clock
+
     c = Clock()
     
     for i in range(5): 
@@ -39,7 +40,7 @@ Timing Functions
         delay(1000)
     
     print()
-    delay(1000) # wait 3 sec
+    delay(1000) # wait 1 sec
     
     for i in range(5):
         print(c.getUptimeStr())
