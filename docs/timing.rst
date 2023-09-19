@@ -148,7 +148,7 @@ Timing Functions
     comparison testing. The timing delay mechanism can skew forward or backward
     in time depending on the underlying HW/SW OS system clock and its adjustments
     for regions, time zones and other geographic specific  parameters. Or abrupltly
-    jump or change time if the OS system clock is set or reset.  Never as accurate
+    jump or change time if the system clock is set or reset.  Never as accurate
     as monotime based delay.
 
   :param delay_time: amount of time to delay (microseconds)
