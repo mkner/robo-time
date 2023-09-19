@@ -16,8 +16,8 @@ Timing Functions
     Initiates a delay for the specified amount of time in milliseconds
     The underlying timing mechanism uses the most accurate, 
     valid monotonic time available. This delay function can be
-    used safely inside a process thread. It is an equivalent to
-    the **arduino** delay function.
+    used safely inside a process thread. It is named after the
+    **arduino** delay function.
 
   :param delay_time: amount of time to delay (milliseconds)
 
