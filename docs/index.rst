@@ -1,8 +1,8 @@
 Documentation
 ------------------------
 
-robo-clocks
-***********
+robo-time
+*********
 
 
 
