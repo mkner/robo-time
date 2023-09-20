@@ -3,7 +3,8 @@ About
 -----
 
 *robo-time*
- |
+===========
+ 
 * Clocks, timing, and timestamp functionality for mobile robotics and other applications
   
 * Three important clocks: Uptime Clock, System Clock, and World Clock (NTP/UTC)
