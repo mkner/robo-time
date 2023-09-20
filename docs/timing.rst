@@ -29,8 +29,8 @@ Timing Functions
 
 .. code-block:: python
     
-    from roboclocks.time import delay
-    from roboclocks import Clock
+    from robotime.time import delay
+    from robotime.clocks import Clock
 
     c = Clock()
     
@@ -96,8 +96,8 @@ Timing Functions
 
 .. code-block:: python
     
-    from roboclocks.time import delayMicros
-    from roboclocks import Clock
+    from robotime.time import delayMicros
+    from robotime.clocks import Clock
 
     c = Clock()
 
