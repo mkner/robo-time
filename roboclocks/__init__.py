@@ -1,6 +1,6 @@
 
 
-# robo-clocks
+# robo-time
 
 
 __version__ = '0.01.07b' 
