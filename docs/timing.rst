@@ -139,14 +139,15 @@ Timing Functions
 
 
 .. function:: delayTm(delay_time):
-
+ 
     Initiates a delay for the specified amount of time in microseconds.
-    This is a time.time() based version of delay. Included here only for 
-    comparison testing. The timing delay mechanism can skew forward or backward
-    in time depending on the underlying HW/SW OS system clock and its adjustments
-    for regions, time zones and other geographic specific  parameters. Or abrupltly
-    jump or change time if the system clock is set or reset.  Never as accurate
-    as monotime based delay.
+    This is a time.time() based version of delay. Included here only for
+    comparison testing. The timing delay mechanism can skew forward or 
+    backward in time depending on the underlying OS (HW/SW) system clock and
+    its adjustments for regions, time zones and other geographic related 
+    parameters. Or abruptly jump or change time if the system clock is set
+    or reset. Never as accurate as monotime based delay.
+
 
   :param delay_time: amount of time to delay (microseconds)
 
