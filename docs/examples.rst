@@ -42,7 +42,7 @@ SystemClock
 
 .. code-block:: python
 
-   from roboclocks import SystemClock
+   from robtime.clocks import SystemClock
 
    sc = SystemClock()
 
@@ -76,7 +76,7 @@ WorldClock
 
 .. code-block:: python
 
-   from roboclocks import WorldClock
+   from robotime.clocks import WorldClock
 
    wc = WorldClock()
    
