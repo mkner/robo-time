@@ -1,6 +1,6 @@
 #
 #
-# robo-clocks - clocks
+# robo-time - clocks
 # for mobile robotics and related applications
 #
 # (c) 2022 - 2023  Mike Knerr
@@ -23,7 +23,7 @@ import calendar
 import ntplib
 
 from robobase import Object
-from roboclocks.time import delay
+from robotime.time import delay
 
 
 class Clock(Object):
