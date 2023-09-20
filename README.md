@@ -17,10 +17,10 @@ Clocks, timing, and timestamp functionality for mobile robotics and other applic
 
 Installation:
 
-$ **pip** install robo-clocks
+$ **pip** install robo-time
 
 
-For documentation see https://robo-clocks.readthedocs.io/en/latest/
+For documentation see https://robo-time.readthedocs.io/en/latest/
 
 
 
