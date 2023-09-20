@@ -1,7 +1,12 @@
 
 # the usual
 
-import robo_clocks
+import robotime
+import robotime.clocks as rc
+import robotime.time as rt
+
+from robotime.clocks import Clock
+
 
 
 
