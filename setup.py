@@ -7,7 +7,7 @@ DISTNAME = "robo-clocks"
 #DESCRIPTION = "clocks "
 
 #mk  ok
-import roboclocks
+import robotime
 
 if __name__ == "__main__":
     setup()
