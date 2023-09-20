@@ -3,8 +3,8 @@
 Examples
 --------
 
-.. |robo-clocks
-.. |***********
+.. |robo-time
+.. |*********
 
 
 Clock
@@ -13,8 +13,9 @@ Clock
 | create a primary clock
 
 .. code-block:: python
-
-   from roboclocks import Clock
+   
+   from robotime.clocks import Clock
+   # or from robotime import Clock
 
    c = Clock()
    
