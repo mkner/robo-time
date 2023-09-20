@@ -2,7 +2,7 @@
 About
 -----
 
-*robo-clocks*
+*robo-time*
  |
 * Clocks, timing, and timestamp functionality for mobile robotics and other applications
   
