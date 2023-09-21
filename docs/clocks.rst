@@ -31,10 +31,12 @@ Clocks
 .. function:: time()
 
    command line function
+
    prints the current time in HH:MM:SS format
 
-   maps an integer value in the range **[in_min, in_max]** to interval **[out_min, out_max]**
-   analogous to arduino map function that uses long int numeric types
+   command line function maps an integer value in the range **[in_min, in_max]** to interval **[out_min, out_max]**
+   prints the current time in HH:MM:SS format analogous to arduino map function that uses long int numeric types
+
    if the value x is a non-integer type it is converted to an int
 
 
