@@ -13,6 +13,17 @@ Clocks
 |
 
 
+.. function:: uptime()
+   
+   | Prints the uptime for the clock as HH:MM:SS at a minimal
+   | If the clock is running longer than 24 hours then days are added in the 
+   | format as DDD:MM:SS where the number of days is the number of days in the year.
+   | After one year the format is extended to the full format YYYY:DDD:HH:MM:SS
+   | This function is available on all 3 clocks
+
+  :param: None
+  :return: printed string 
+
 .. function:: time()
 
    | prints the current time in HH:MM:SS format 
@@ -39,7 +50,7 @@ Clocks
 
  | Example:
 
- |  now() for Clock(), WorldClock(), SystemClock()
+ |  now() format for Clock, WorldClock, SystemClock
 
  |  0000-00-00 01:37:13 
  |  2023-09-21 19:36:06 UTC
@@ -52,7 +63,7 @@ Clocks
 
   :param: None
   :return: printed string 
-  
+
 
 .. code-block:: python
 
