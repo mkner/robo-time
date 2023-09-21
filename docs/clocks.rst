@@ -13,24 +13,41 @@ Clocks
 |
 
 
-  Clock()
-
-  SystemClock()
-
-  WorldClock()
-
-  Command Line 
 .. function:: time()
   
-Command line mode
+   command line version
+   prints the current time in HH:MM:SS format
 
-  :param delay_time: amount of time to delay (milliseconds)
+  :param: None
+  :return: printed string of current time in HH:MM:SS format
 
-  :return: prints the current time in YYYY:MM:DD format
 
-  Example
+.. function:: date()
 
-  | Variations on 1 second delays with 2 forms of output for uptime
+   command line version
+   prints the current date in YYYY:MM:DD format
+
+  :param: None
+  :return: printed string of curent date in YYYY:MM:DD format
+
+
+.. function:: now()
+
+   command line version
+   prints the current date in YYYY:MM:DD format
+
+  :param: None
+  :return: printed string of curent date in YYYY:MM:DD format
+
+
+.. function:: today()
+
+   command line version
+   prints the current date in YYYY:MM:DD format
+
+  :param: None
+  :return: printed string of curent date in YYYY:MM:DD format
+  
 
 .. code-block:: python
 
