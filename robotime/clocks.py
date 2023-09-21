@@ -7,8 +7,8 @@
 #
 # 
 
-# SEVEN
-#package release: 0.01.07a
+# EIGHT
+#package release: 0.01.08a
 
 
 import numpy as np
@@ -33,7 +33,7 @@ class Clock(Object):
         super(Clock, self).__init__()
          
         self._name = "Clock"
-        self._vers = "v01.02.08B" 
+        self._vers = "v01.02.09" 
         self._desc = "Clock" #" - "+self._vers
         self._model = ""
         
