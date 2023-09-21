@@ -16,7 +16,6 @@ Clocks
 .. function:: time()
 
    | prints the current time in HH:MM:SS format 
-   | (command line function)
 
   :param: None
   :return: printed string
@@ -32,26 +31,23 @@ Clocks
 
 .. function:: now()
 
-   |command line function
    | prints date/time/zone in the format YYYY-MM-DD HH:MM:SS <ZONE> 
    | Whatever "now" is depends on the specific clock's worldview 
-
+   
   :param: None
   :return: printed string 
 
+ | Example:
 
-  Example:
+ |  now() for Clock(), WorldClock(), SystemClock()
 
-  now() for Clock, WorldClock, SystemClock 
-
-  0000-00-00 01:37:13 
-  2023-09-21 19:36:06 UTC
-  2023-09-21 15:36:06 EDT
+ |  0000-00-00 01:37:13 
+ |  2023-09-21 19:36:06 UTC
+ |  2023-09-21 15:36:06 EDT
 
 
 .. function:: today()
 
-   | command line version 
    | prints the current date in YYYY:MM:DD format 
 
   :param: None
