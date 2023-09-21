@@ -1,52 +1,38 @@
 #
 #
-# robo-time - test
+# robotime - test
+#
 # for mobile robotics and related applications
 #
 # some useful functions for testing
-# and sanity checks
+# and sanity checks using robo-time
 #
 # (c) 2022 - 2023  Mike Knerr
 #
 # 
 
-from datetime import datetime
-from datetime import timezone
-
-import calendar
-import time
+#from datetime import datetime
+#from datetime import timezone
+#import calendar
+#import time
 
 import robotime
-
+from robotime.time import delay
 
 #robot = False
-
-from robot import Robot
-
+#from robot import Robot
 #robot = robot
-
-#not work import roboclocks as clocks
 
 from robotime.clocks import Clock
 #from clocks import Clock
 c=Clock()
-#or
-
 
 from robotime.clocks import SystemClock
 #from clocks import SystemClock
-sc = SystemClock()
-#or
-
 
 from robotime.clocks import WorldClock
 #from clocks import WorldClock# from local dir working version
 wc = WorldClock()
-#or
-
-from robotime.time import delay
-
-#datetime.now()
 
 
 def up():
