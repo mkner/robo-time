@@ -43,7 +43,7 @@ Clocks
 .. function:: now()
 
    | prints date/time/zone in the format YYYY-MM-DD HH:MM:SS <ZONE> 
-   | Whatever "now" is depends on the specific clock's worldview 
+   | Whatever "now" is depends on the particular clock's worldview 
    
   :param: None
   :return: printed string 
