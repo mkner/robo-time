@@ -34,8 +34,8 @@ Clocks
    
    prints the current time in HH:MM:SS format
 
-   command line function 
-   prints the current time in HH:MM:SS format 
+   | command line function 
+   | prints the current time in HH:MM:SS format 
 
 
 
