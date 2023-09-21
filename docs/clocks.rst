@@ -5,7 +5,7 @@ Clocks
 .. py:mod:: py_mod
 
 | The three most important primary clocks are Uptime Clock, World Clock,
-| and System Clock. The primordal clock is the Uptime Clock. Both World Clock
+| and System Clock. The primordal clock is the Clock . Both World Clock
 | and System Clock are directly derived from Clock. The projects object oriented
 | design makes it easier to use the various clocks in logical and consistent way.
 | There is a common interface for many features. Additional functionality is provided
