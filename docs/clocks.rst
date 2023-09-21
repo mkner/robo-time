@@ -66,6 +66,34 @@ Clocks
   :return: printed string 
 
 
+.. function:: getUptime()  
+   
+   | returns the current uptime in a tuple of integers 
+   | in the format (days, hours, minutes, seconds) 
+
+  :param: None
+  :return: tuple 
+
+
+.. function:: getUptime()  
+   
+   | returns the current uptime in a tuple of integers 
+   | in the format (days, hours, minutes, seconds) 
+
+  :param: None
+  :return: tuple
+  
+
+.. function:: getUptimeStr()
+
+   | string version of command line uptime()
+   | returns the same format as uptime() but in a string
+   | useful for parsing and reformatting
+
+  :param: None
+  :return: string
+
+
 .. code-block:: python
 
 .. code-block:: python
