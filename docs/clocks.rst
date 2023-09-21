@@ -40,25 +40,5 @@ Clocks
   | Variations on 1 second delays with 2 forms of output for uptime
 
 .. code-block:: python
-    
-    from robotime.time import delay
-    from robotime.clocks import Clock
-
-    c = Clock()
-    
-    for i in range(5): 
-        print(c.getUptimeStr())
-        delay(1000)
-    
-    print()
-    delay(1000) # wait 1 sec
-    
-    for i in range(5):
-        print(c.getUptimeStr())
-
-     c.uptime()
-     delay(1000) # same delay as j loop
-     c.uptime()
-     
 
 .. code-block:: python
