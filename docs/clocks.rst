@@ -19,6 +19,7 @@ Clocks
    prints the current time in HH:MM:SS format
 
   :param: None
+
   :return: printed string 
 
 
@@ -28,6 +29,7 @@ Clocks
    prints the current date in YYYY:MM:DD format
 
   :param: None
+
   :return: printed string 
 
 
@@ -38,6 +40,7 @@ Clocks
    Whatever "now" is depends on the specific clock's worldview
 
   :param: None
+
   :return: printed string 
 
   Example:
@@ -54,6 +57,7 @@ Clocks
    prints the current date in YYYY:MM:DD format
 
   :param: None
+
   :return: printed string of curent date in YYYY:MM:DD format
   
 
