@@ -15,8 +15,8 @@ Clocks
 
 .. function:: time()
 
-   command line function 
-   prints the current time in HH:MM:SS format 
+  command line function 
+  prints the current time in HH:MM:SS format 
 
   :param: None
 
@@ -25,8 +25,8 @@ Clocks
 
 .. function:: date()
 
-   command line function 
-   prints the current date in YYYY:MM:DD format 
+  command line function 
+  prints the current date in YYYY:MM:DD format 
 
   :param: None
 
@@ -35,13 +35,14 @@ Clocks
 
 .. function:: now()
 
-   command line function
-   prints date/time/zone in the format YYYY-MM-DD HH:MM:SS <ZONE> 
-   Whatever "now" is depends on the specific clock's worldview 
+  command line function
+  prints date/time/zone in the format YYYY-MM-DD HH:MM:SS <ZONE> 
+  Whatever "now" is depends on the specific clock's worldview 
 
   :param: None
 
   :return: printed string 
+
 
   Example:
 
@@ -53,12 +54,12 @@ Clocks
 
 .. function:: today()
 
-   command line version 
-   prints the current date in YYYY:MM:DD format 
+  command line version 
+  prints the current date in YYYY:MM:DD format 
 
   :param: None
 
-  :return: printed string of curent date in YYYY:MM:DD format 
+  :return: printed string 
   
 
 .. code-block:: python
