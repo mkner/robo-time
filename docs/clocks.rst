@@ -48,6 +48,7 @@ Clocks
   :param: None
   :return: printed string 
 
+
  | Example:
 
  |  now() format for Clock, WorldClock, SystemClock
