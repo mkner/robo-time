@@ -27,14 +27,22 @@ Clocks
   :return: bounded value
   :rtype: int
 
-.. function:: time()
 
-   command line function 
+.. function:: time()
+  
+   command line function
    prints the current time in HH:MM:SS format 
 
- :param: None
+   maps an integer value in the range **[in_min, in_max]** to interval **[out_min, out_max]**
+   analogous to arduino map function that uses long int numeric types
+   if the value x is a non-integer type it is converted to an int
 
- :return: printed string 
+  :param none: 
+  :return: printed string 
+
+
+#redid to here
+
 
 
 .. function:: date()
