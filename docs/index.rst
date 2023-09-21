@@ -16,6 +16,7 @@ robo-time
    clocks
    timestamps
    interface
+   test
    examples
   
 
