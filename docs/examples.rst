@@ -166,8 +166,8 @@ WorldClock
 
 .. code-block:: python
 
-Python Comand Line Mode
-***********************
+Python Comand Line
+******************
 
 
 Accsss some basic clock functions of clocks
