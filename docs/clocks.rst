@@ -86,6 +86,57 @@ Clocks
   :return: string
 
 
+ Uptime Functions
+ ----------------
+
+.. function:: millis()
+     
+     Returns uptime of the clock in floating 
+     point milliseconds since this clock was instantiated
+     and initialized. Similar to as the ubiquitous
+     Arduino millis() function but not necessarily aligned
+     with or offset from the actual underlying hardware startup.
+   
+  :param: None
+  :return: clocks uptime in milliseconds
+  :rtype: float
+
+
+.. function:: micros()
+
+     Returns uptime of the clock in floating 
+     point microseconds since this clock was instantiated
+     and initialized. 
+        
+  :param: None
+  :return: clocks uptime in microseconds
+  :rtype: float
+
+
+.. function:: nanos()
+
+     Returns uptime of this clock in floating 
+     point nanoseconds since this clock was instantiated
+     and initialized.
+
+  :param: None
+
+  :return: clocks uptime in nanoseconds
+  :rtype: float
+
+
+.. function:: getMonotime()
+
+     Returns a monotonic time floating point seconds.
+     Its starting value depends on the underlying OS/HW configuration.
+     Can be used for the most accurate relative time offset 
+     references but not as an absolute hardware uptime.
+        
+  :param: None
+
+  :return: current monotonic time 
+  :rtype: float
+
 
 .. code-block:: python
 
