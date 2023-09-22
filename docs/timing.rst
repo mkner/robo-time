@@ -113,7 +113,18 @@ Timing Functions
    00:00:03
    00:00:04 
 
-|
+
+|.. function:: getMonotime()
+
+     Returns monotonic time in floating point seconds 
+     since system startup or when the system board started 
+     running This depends on the underlying OS/HW configuration
+        
+  :param None
+
+  :return: current monotonic time 
+  :rtype: float
+
 
 .. function:: delaySp(delay_time)
 
