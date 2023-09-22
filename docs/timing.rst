@@ -92,6 +92,7 @@ Timing Functions
 
   :return: None
 
+
   Example
 
 .. code-block:: python
@@ -113,6 +114,7 @@ Timing Functions
    00:00:03
    00:00:04 
 
+|
 
 .. function:: getMonotime()
 
@@ -120,7 +122,7 @@ Timing Functions
      since system startup or when the system board started 
      running This depends on the underlying OS/HW configuration
         
-  :param None
+  :param: None
 
   :return: current monotonic time 
   :rtype: float
