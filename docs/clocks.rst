@@ -126,7 +126,9 @@ Clocks
 
 .. function:: getMonotime()
 
-     Returns a monotonic time floating point seconds.
+     Returns a monotonic floating point time in seconds.
+     Monotonic time moves unidirectionally forward and runs
+     independently of the variations that occur with a system clock.
      Its starting value depends on the underlying OS/HW configuration.
      Can be used for the most accurate relative time offset 
      references but not as an absolute hardware uptime.
