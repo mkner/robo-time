@@ -114,51 +114,7 @@ Timing Functions
    00:00:03
    00:00:04 
 
-
-Uptime Functions
-----------------
-
-.. function:: millis()
-
-     Returns uptime in floating point milliseconds 
-     since system startup or when the system board started 
-     running. This depends on the underlying OS/HW configuration.
-     Same as the ubiquitous Arduino millis() function. 
-        
-  :param: None
-
-  :return: current uptime in milliseconds
-  :rtype: float
-
-
-.. function:: micros()
-
-     Returns uptime in floating point microseconds 
-     since system startup or when the system board started 
-     running. This depends on the underlying OS/HW configuration.
-     Same as the ubiquitous Arduino millis() function. 
-        
-  :param: None
-
-  :return: current uptime in microseconds
-  :rtype: float
-
-
-
-.. function:: getMonotime()
-
-     Returns monotonic time in floating point seconds 
-     since system startup or when the system board started 
-     running This depends on the underlying OS/HW configuration
-        
-  :param: None
-
-  :return: current monotonic time 
-  :rtype: float
-
-
-Alternate Delay Test Functions
-------------------------------
+|
 
 .. function:: delaySp(delay_time)
 
