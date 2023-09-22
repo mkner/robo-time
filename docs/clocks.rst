@@ -43,8 +43,8 @@ Clocks
 
 .. function:: now()
 
-   | prints date/time/zone in the format YYYY-MM-DD HH:MM:SS <ZONE> 
-   | Whatever "now" is depends on the particular clock's worldview 
+    prints date/time/zone in the format YYYY-MM-DD HH:MM:SS <ZONE> 
+    Whatever "now" is depends on the particular clock's worldview 
    
   :param: None
   :return: printed string 
@@ -69,8 +69,8 @@ Clocks
 
 .. function:: getUptime()  
    
-   | returns the current uptime in a tuple of integers 
-   | in the format (days, hours, minutes, seconds) 
+    returns the current uptime in a tuple of integers 
+    in the format (days, hours, minutes, seconds) 
 
   :param: None
   :return: tuple 
@@ -87,9 +87,9 @@ Clocks
 
 .. function:: getUptimeStr()
 
-   | string version of command line uptime()
-   | returns the same format as uptime() but in a string
-   | useful for parsing and reformatting
+    string version of command line uptime()
+    returns the same format as uptime() but in a string
+    useful for parsing and reformatting
 
   :param: None
   :return: string
