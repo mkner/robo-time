@@ -114,7 +114,7 @@ Timing Functions
    00:00:04 
 
 
-|.. function:: getMonotime()
+.. function:: getMonotime()
 
      Returns monotonic time in floating point seconds 
      since system startup or when the system board started 
