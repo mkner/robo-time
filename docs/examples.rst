@@ -170,7 +170,7 @@ WorldClock
 Robot
 *****
 
-Exmaple using python command line interface
+Example using python command line interface
 
 Accsss some basic clock functions of an autonomous mobile robot 
 that is running the primary clocks: Clock, WorldClock, and SystemClock
