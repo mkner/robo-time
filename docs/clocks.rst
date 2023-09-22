@@ -73,7 +73,8 @@ Clocks
    | in the format (days, hours, minutes, seconds) 
 
   :param: None
-  :return: tuple
+  :return: clocks uptime as a tuple of integers
+  :rtype: tuple
   
 
 .. function:: getUptimeStr()
@@ -83,7 +84,17 @@ Clocks
     useful for parsing and reformatting
 
   :param: None
-  :return: string
+  :return: clocks formatted uptime 
+  :rtype: string
+
+
+.. function:: getUptimeFp()
+
+   returns clocks uptime in a floating point representaion
+
+  :param: None
+  :return: clocks uptime as a floating point value
+  :rtype: float
 
 
 .. function:: millis()
@@ -119,7 +130,6 @@ Clocks
      operating system, hardware subsystems and the python implementation.
 
   :param: None
-
   :return: clocks uptime in nanoseconds
   :rtype: float
 
@@ -134,7 +144,6 @@ Clocks
      references but not as an absolute hardware uptime.
         
   :param: None
-
   :return: current monotonic time 
   :rtype: float
 
