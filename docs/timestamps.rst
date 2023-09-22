@@ -20,7 +20,7 @@ Timestamps
 
   :param: None
   :return: prints timestamp string
-
+  :rtype: None
 
 .. function:: getTimestampStr()
 
