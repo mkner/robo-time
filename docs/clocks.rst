@@ -86,14 +86,11 @@ Clocks
   :return: string
 
 
- Uptime Functions
- ----------------
-
 .. function:: millis()
      
      Returns uptime of the clock in floating 
      point milliseconds since this clock was instantiated
-     and initialized. Similar to as the ubiquitous
+     and initialized. Similar to the ubiquitous
      Arduino millis() function but not necessarily aligned
      with or offset from the actual underlying hardware startup.
    
@@ -117,7 +114,9 @@ Clocks
 
      Returns uptime of this clock in floating 
      point nanoseconds since this clock was instantiated
-     and initialized.
+     and initialized. Whether there is any accurate nanosecond
+     resolution offset time available depends on the underlying
+     operating system, hardware subsystems and the python implementation.
 
   :param: None
 
