@@ -69,15 +69,6 @@ Clocks
 
 .. function:: getUptime()  
    
-    returns the current uptime in a tuple of integers 
-    in the format (days, hours, minutes, seconds) 
-
-  :param: None
-  :return: tuple 
-
-
-.. function:: getUptime()  
-   
    | returns the current uptime in a tuple of integers 
    | in the format (days, hours, minutes, seconds) 
 
@@ -93,6 +84,7 @@ Clocks
 
   :param: None
   :return: string
+
 
 
 .. code-block:: python
