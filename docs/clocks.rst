@@ -81,7 +81,7 @@ Clocks
 
     string version of command line uptime()
     returns the same format as uptime() but in a string
-    useful for parsing and reformatting
+    useful for printing, parsing or reformatting
 
   :param: None
   :return: clocks formatted uptime 
