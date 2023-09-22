@@ -169,13 +169,11 @@ WorldClock
 Python Comand Line
 ******************
 
-
-Accsss some basic clock functions of clocks
-of an autonomous mobile robot that is usin 
-the 3 primary clocks: Clock, WorldClock, SystemClock.
+Accsss some basic clock functions of an autonomous mobile robot 
+that is running the primary clocks: Clock, WorldClock, and SystemClock
 
 The robot has been logged into via a secure shell and
-python (command mode) is launced from there.
+python (command mode) is launched from there
 
 
 .. code-block:: python
