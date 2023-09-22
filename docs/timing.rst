@@ -114,7 +114,9 @@ Timing Functions
    00:00:03
    00:00:04 
 
-|
+
+Uptime Functions
+----------------
 
 .. function:: getMonotime()
 
@@ -127,6 +129,9 @@ Timing Functions
   :return: current monotonic time 
   :rtype: float
 
+
+Alternate Delay Test Functions
+------------------------------
 
 .. function:: delaySp(delay_time)
 
