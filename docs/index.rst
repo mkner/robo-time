@@ -4,8 +4,6 @@ Documentation
 robo-time
 *********
 
-
-
 .. toctree::
    :maxdepth: 1
 
@@ -15,9 +13,9 @@ robo-time
    timing 
    clocks
    timestamps
-   interface
    test
    examples
+
   
 
 
