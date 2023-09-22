@@ -66,6 +66,13 @@ Clocks
   :param: None
   :return: printed string 
 
+.. function:: epoch()
+
+   | prints a timestmap of clocks epoch
+
+  :param: None
+  :return: printed string 
+
 
 .. function:: getUptime()  
    
