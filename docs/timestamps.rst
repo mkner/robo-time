@@ -18,8 +18,8 @@ Timestamps
 
     short call for timestamp()
 
-   :param: None
-   :return: prints timestamp string
+  :param: None
+  :return: prints timestamp string
 
 
 .. function:: getTimestampStr()
