@@ -40,3 +40,16 @@ Timestamps
   :return: timestamp components as integers in tuple form
   :rtype: tuple
 
+
+.. function:: mkTimestamp()
+
+   | make a timestamp from floating point time 
+   | returns a timestamp string
+   | this is epoch dependent
+  
+  :param: time as floating point value
+  :return: timestamp string
+  :rtype: string
+
+
+
