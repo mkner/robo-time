@@ -319,9 +319,9 @@ a standard globally.
    wc.setTimestampFormat('iso-utc')
    sc.setTimestampFormat('iso-utc')
 
-c.timestamp()
-wc.timestamp()
-sc.timestamp()
+   c.timestamp()
+   wc.timestamp()
+   sc.timestamp()
 
 .. code-block:: python
 
