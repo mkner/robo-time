@@ -17,8 +17,8 @@ Clock
    from robotime.clocks import Clock
 
    # alternate forms 
-   # or from robotime import UptimeClock
-   # or from robotime import Clock
+   # from robotime import UptimeClock
+   # from robotime import Clock
 
    c = Clock() 
    
