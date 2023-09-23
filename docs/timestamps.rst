@@ -42,23 +42,23 @@ Timestamps
 
 .. function:: getTimestampFp()
 
-   | returns current timestamp as floating point number
-   | this depends on the type of clock that it is called from
+   | returns current timestamp for the particular clock type
+   | as floating point number
     
   :param: None
   :return: timestamp as floating point value
   :rtype: floag
 
 
-.. function:: mkTimestamp()
+.. function:: mkTimestamp(fptime)
 
    | make a timestamp from floating point time 
-   | returns a timestamp string
-   | this is epoch dependent
+   | returns a timestamp in tuple form 
   
-  :param: time as floating point value
-  :return: timestamp string
-  :rtype: string
+  :param fptime: time as floating point value
+  :return: timestamp components as integers in tuple form
+  :rtype: tuple
+
 
 
 
