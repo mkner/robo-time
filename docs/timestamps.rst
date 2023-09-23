@@ -40,6 +40,15 @@ Timestamps
   :return: timestamp components as integers in tuple form
   :rtype: tuple
 
+.. function:: getTimestampFp()
+
+   | returns current timestamp as floating point number
+   | this depends on the type of clock that it is called from
+    
+  :param: None
+  :return: timestamp as floating point value
+  :rtype: floag
+
 
 .. function:: mkTimestamp()
 
