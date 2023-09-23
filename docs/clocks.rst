@@ -97,7 +97,7 @@ Clocks
 
 .. function:: getUptimeFp()
 
-   returns clocks uptime in a floating point value
+   returns clocks uptime as a floating point value
 
   :param: None
   :return: clocks uptime 
