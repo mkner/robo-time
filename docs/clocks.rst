@@ -68,7 +68,7 @@ Clocks
 
 .. function:: epoch()
 
-   | prints a timestmap of the beginning of the epoch of the clock
+   | prints a timestamp of the beginning of the epoch of the clock
 
   :param: None
   :return: printed string 
@@ -97,10 +97,10 @@ Clocks
 
 .. function:: getUptimeFp()
 
-   returns clocks uptime in a floating point representaion
+   returns clocks uptime in a floating point value
 
   :param: None
-  :return: clocks uptime as a floating point value
+  :return: clocks uptime 
   :rtype: float
 
 
