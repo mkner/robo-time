@@ -52,7 +52,7 @@ Timestamps
     
   :param: None
   :return: timestamp as floating point value
-  :rtype: floag
+  :rtype: float
 
 
 .. function:: mkTimestamp(fptime)
