@@ -251,13 +251,16 @@ Timestamps
 Example - floating point timestamp
 
 Comparision of floating point timetamp times for all 3 clock types.
+
 The floating point timestamp time is always dependent on the epoch start 
 date/time in floating point. This is the UNIX epoch.
 
-Comparative output shows the timestamp values before WorldClock initialization then after.
+Comparative output shows the timestamp values before WorldClock initialization and then after.
+SystemClock get its system time from the underlying Linux system and its local timezone settings.
 
 In this example, the floating point sync between the WorldClock and the SystemClock is 
-to the tenth of a second but no further. This is a limitation of the NTP/UTC global
+to the tenth of a second or about 100 milliseconds but no further. In general, the UTC/NTP system
+can be repeatedly accurate within millisecond ranges. This is a limitation of the NTP/UTC global
 internet sync system. For many purposes it is accurate enough and is widely used as
 a standard globally.
 
