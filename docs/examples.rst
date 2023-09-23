@@ -241,4 +241,26 @@ python (command mode) is launched from there
    >>> robot.uptime()
    00:04:35
 
+Uptime
+******
+Every clock has an uptime counter
+
+Timestamps
+**********
+
+Example - floating point uptime
+
+Comparision of floating point timetamp times for all 3 clock types.
+The floating point timestamp time is always dependent on the epoch start 
+date/time in floating point. This is the UNIX epoch.
+
+Comparative output shows the timestamp values before WorldClock initialization then after.
+
+In this example, the floating point sync between the WorldClock and the SystemClock is 
+to the tenth of a second but no further. This is a limitation of the NTP/UTC global
+internet sync system. For many purposes it is accurate enough and is widely used as
+a standard globally.
+
+
+
 
