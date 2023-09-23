@@ -241,9 +241,6 @@ python (command mode) is launched from there
    >>> robot.uptime()
    00:04:35
 
-Uptime
-******
-Every clock has an uptime counter
 
 Timestamps
 **********
@@ -403,4 +400,8 @@ enough and is widely used as a standard globally.
    2023-09-23T16:17:44.851667-0400
    
 
+
+Uptime
+******
+Every clock has an uptime counter
 
