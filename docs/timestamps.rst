@@ -22,6 +22,7 @@ Timestamps
   :return: prints timestamp string
   :rtype: None
 
+
 .. function:: getTimestampStr()
 
     returns a string containing the formatted timestamp
@@ -40,10 +41,14 @@ Timestamps
   :return: timestamp components as integers in tuple form
   :rtype: tuple
 
+
 .. function:: getTimestampFp()
 
-   | returns current timestamp for the particular clock type
-   | as floating point number
+   returns current timestamp for the particular clock type
+   as floating point number
+   this is necessarily epoch dependent since the current time
+   is always an offset from the beginning of the particular epoch
+   for a given timesystem
     
   :param: None
   :return: timestamp as floating point value
@@ -52,9 +57,9 @@ Timestamps
 
 .. function:: mkTimestamp(fptime)
 
-   | make a timestamp from floating point time 
-   | returns a timestamp in tuple form 
-  
+   | makes a timestamp from a floating point time 
+   | in the form of a tuple of integers 
+   
   :param fptime: time as floating point value
   :return: timestamp components as integers in tuple form
   :rtype: tuple
