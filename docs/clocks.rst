@@ -68,7 +68,7 @@ Clocks
 
 .. function:: epoch()
 
-   | prints a timestmap of clocks epoch
+   | prints a timestmap of the beginning of the epoch of the clock
 
   :param: None
   :return: printed string 
