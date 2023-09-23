@@ -259,10 +259,10 @@ Comparative output shows the timestamp values before WorldClock initialization a
 SystemClock get its system time from the underlying Linux system and its local timezone settings.
 
 In this example, the floating point sync between the WorldClock and the SystemClock is 
-to the tenth of a second or about 100 milliseconds but no further. In general, the UTC/NTP system
-can be repeatedly accurate within millisecond ranges. This is a limitation of the NTP/UTC global
-internet sync system. For many purposes it is accurate enough and is widely used as
-a standard globally.
+to the 1/10 second or about 100 milliseconds but no further. This is a limitation of
+the NTP/UTC global internet sync system and the current test environment. In general, the NTP/UTC 
+system can be repeatedly accurate within millisecond ranges. For many purposes it is accurate
+enough and is widely used as a standard globally.
 
 
 .. code-block:: python
