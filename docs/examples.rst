@@ -265,7 +265,6 @@ a standard globally.
 .. code-block:: python
 
    from robotime.clocks import Clock
-   
    #from robotime.clocks import UptimeClock # robotime version >= 0.01.08
    from robotime.clocks import WorldClock
    from robotime.clocks import SystemClock
@@ -282,8 +281,8 @@ a standard globally.
        print(c.getTimestampFp())
        print(wc.getTimestampFp())
        print(sc.getTimestampFp())
-
-
+       
+   
    def tsfploop(count):
        count = abs(count)
        print()
@@ -303,50 +302,52 @@ a standard globally.
    delay(1000)
    
    wc.init()
+   delay(1000)
    
    tsfploop(3)
-
-   # try a resync
-   wc.resync() 
+   delay(1000)
+   
+   # after a resync
+   wc.resync()
    
    tsfploop(3)
    
-   # compare to 
+   # compare to
    # timestamp output in ISO-8601 format for 
    # each clock type
    
    c.setTimestampFormat('iso-utc')
    wc.setTimestampFormat('iso-utc')
    sc.setTimestampFormat('iso-utc')
-
+   
    c.timestamp()
    wc.timestamp()
    sc.timestamp()
 
-.. code-block:: python
 
-   1.500181182000233
-   1.50019106200034
-   1695498915.849561
+.. code-block:: python
    
-   2.500375730000087
-   2.5003642980000222
-   1695498916.849731
+   1.5001420569988113
+   1.5001360289988952
+   1695500245.02725
    
-   3.500576070000534
-   3.5005647790003422
-   1695498917.849951
+   2.500298708999253
+   2.5002869050003937
+   1695500246.027396
    
-   4.500750733000132
-   4.500740315999792
-   1695498918.850108
+   3.5004274419989088
+   3.500416478000261
+   1695500247.027525
    
+   4.50056647800011
+   4.500554522999664
+   1695500248.027663
    
    
    WorldClock version: v0.01.14b
    
    Starting up...
-   Current WorldClock NTP (UTC) time: 1970-01-01 00:00:06.501043
+   Current WorldClock NTP (UTC) time: 1970-01-01 00:00:06.500824
    Begin initialization from global NTP system...
    Checking NTP connection...
    Connection established...
@@ -359,42 +360,44 @@ a standard globally.
    Checking delta threshold...
    Within range. Updating...
    Get time check...
-   Current WorldClock NTP (UTC) time: 2023-09-23 19:55:25.749453
+   Current WorldClock NTP (UTC) time: 2023-09-23 20:17:34.557621
    Initialization done!
    
    
-   11.377809771000102
-   1695498925.7496994
-   1695498925.727207
+   12.034300036999412
+   1695500255.5578709
+   1695500255.561397
    
-   12.378032802000234
-   1695498926.7499032
-   1695498926.727389
+   13.034432016998835
+   1695500256.5580013
+   1695500256.561528
    
-   13.37819263900019
-   1695498927.750062
-   1695498927.727548
+   14.034629161998964
+   1695500257.5582378
+   1695500257.56177
    
    Resynchronizing world clock...
    Connection to NTP server OK!
    Checking delta threshold...
    Within range. Updating...
    Get time check...
-   Current WorldClock NTP (UTC) time: 2023-09-23 19:55:31.119947
+   Current WorldClock NTP (UTC) time: 2023-09-23 20:17:41.848998
    
-   16.755631441000332
-   1695498931.1201806
-   1695498931.105037
+   18.323208375999457
+   1695500261.849695
+   1695500261.850624
    
-   17.75590639500024
-   1695498932.1204555
-   1695498932.105313
+   19.323674803999893
+   1695500262.8501484
+   1695500262.850771
    
-   18.75611856100022
-   1695498933.1206436
-   1695498933.105474
+   20.324074559999644
+   1695500263.8505542
+   1695500263.851183
    
-   0000-00-00T00:00:19.756389
-   2023-09-23T19:55:34.120932Z
-   2023-09-23T15:55:34.105802-0400
+   0000-00-00T00:00:21.324426
+   2023-09-23T20:17:44.850927Z
+   2023-09-23T16:17:44.851667-0400
+   
+
 
