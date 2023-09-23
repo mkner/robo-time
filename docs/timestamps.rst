@@ -55,15 +55,3 @@ Timestamps
   :rtype: float
 
 
-.. function:: mkTimestamp(fptime)
-
-   | makes a timestamp from a floating point time 
-   | in the form of a tuple of integers 
-   
-  :param fptime: time as floating point value
-  :return: timestamp components as integers in tuple form
-  :rtype: tuple
-
-
-
-
