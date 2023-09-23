@@ -248,7 +248,7 @@ Every clock has an uptime counter
 Timestamps
 **********
 
-Example - floating point uptime
+Example - floating point timestamp
 
 Comparision of floating point timetamp times for all 3 clock types.
 The floating point timestamp time is always dependent on the epoch start 
@@ -262,5 +262,141 @@ internet sync system. For many purposes it is accurate enough and is widely used
 a standard globally.
 
 
+.. code-block:: python
 
+from robotime.clocks import Clock
+
+#from robotime.clocks import UptimeClock # robotime version >= 0.01.08
+from robotime.clocks import WorldClock
+from robotime.clocks import SystemClock
+
+from robotime.time import delay
+
+c = Clock()
+#c = UptimeClock() # aka Clock
+wc = WorldClock()
+sc = SystemClock()
+
+
+def  tsfp():
+    print(c.getTimestampFp())
+    print(wc.getTimestampFp())
+    print(sc.getTimestampFp())
+    
+
+def tsfploop(count):
+    count = abs(count)
+    print()
+    for i in range(count):
+        tsfp()
+        c.delay(1000)
+        print()
+
+
+delay(1500)
+print()
+
+tsfp()
+
+delay(1000)
+
+tsfploop(3)
+
+delay(1000)
+
+wc.init()
+
+tsfploop(3)
+
+# after a resync
+wc.resync()
+
+tsfploop(3)
+
+# compare to 
+# timestamp output in ISO-8601 format for 
+# each clock type
+
+c.setTimestampFormat('iso-utc')
+wc.setTimestampFormat('iso-utc')
+sc.setTimestampFormat('iso-utc')
+
+c.timestamp()
+wc.timestamp()
+sc.timestamp()
+
+.. code-block:: python
+
+1.500181182000233
+1.50019106200034
+1695498915.849561
+
+2.500375730000087
+2.5003642980000222
+1695498916.849731
+
+3.500576070000534
+3.5005647790003422
+1695498917.849951
+
+4.500750733000132
+4.500740315999792
+1695498918.850108
+
+
+
+WorldClock version: v0.01.14b
+
+Starting up...
+Current WorldClock NTP (UTC) time: 1970-01-01 00:00:06.501043
+Begin initialization from global NTP system...
+Checking NTP connection...
+Connection established...
+Initializing UTC time from NTP reference signal...
+Synchronization phase # 1  OK
+Synchronization phase # 2  OK
+Synchronization phase # 3
+Resynchronizing world clock...
+Connection to NTP server OK!
+Checking delta threshold...
+Within range. Updating...
+Get time check...
+Current WorldClock NTP (UTC) time: 2023-09-23 19:55:25.749453
+Initialization done!
+
+
+11.377809771000102
+1695498925.7496994
+1695498925.727207
+
+12.378032802000234
+1695498926.7499032
+1695498926.727389
+
+13.37819263900019
+1695498927.750062
+1695498927.727548
+
+Resynchronizing world clock...
+Connection to NTP server OK!
+Checking delta threshold...
+Within range. Updating...
+Get time check...
+Current WorldClock NTP (UTC) time: 2023-09-23 19:55:31.119947
+
+16.755631441000332
+1695498931.1201806
+1695498931.105037
+
+17.75590639500024
+1695498932.1204555
+1695498932.105313
+
+18.75611856100022
+1695498933.1206436
+1695498933.105474
+
+0000-00-00T00:00:19.756389
+2023-09-23T19:55:34.120932Z
+2023-09-23T15:55:34.105802-0400
 
