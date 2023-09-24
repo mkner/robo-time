@@ -140,9 +140,17 @@ Timestamps
   :return: None
 
 
+.. function:: setTimestampTimeSep(tsep)
 
+   Sets the character used in HH:MM:SS between the hour HH
+   the minute MM and the seconds SS for the format
+   HH<tsep>MM<tsep>SS to tsep in the timestamp output
 
+   Builtin character used for presets is a colon ':'
+   for all 3 presets: 'basic', iso-utc' and 'iso-local'
 
+  :param: tsep
+  :return: None
 
 
 
