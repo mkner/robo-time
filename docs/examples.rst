@@ -10,7 +10,7 @@ Examples
 Clock
 *****
 
-| create a primary clock
+| basic time & date 
 
 .. code-block:: python
    
@@ -41,7 +41,7 @@ Clock
 SystemClock
 ***********
 
-| Create a system clock
+| basic time & date 
 
 .. code-block:: python
 
