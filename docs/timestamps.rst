@@ -44,11 +44,10 @@ Timestamps
 
 .. function:: getTimestampFp()
 
-   returns current timestamp for the particular clock type
-   as floating point number
-   this is necessarily epoch dependent since the current time
-   is always an offset from the beginning of the particular epoch
-   for a given timesystem
+   Returns current timestamp for the particular clock type
+   as floating point number. The actual date and time for the clock
+   is necessarily epoch dependent since the returned value is an offset
+   from the beginning of the particular epoch for a given timesystem.
     
   :param: None
   :return: timestamp as floating point value
