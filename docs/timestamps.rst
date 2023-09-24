@@ -108,8 +108,20 @@ Timestamps
    - 'none'  - no fractional remainder is used
 
 
+.. function:: setTimestampDateSep(dtsep)
 
+   Sets the character used between the year YYYY-MM-DD 
+   and the time HH:MM:SS in the timestamp output to dtsep
 
+   Builting characters used for presets are:
+
+   - 'basic' - or 'default'  - ' ' a space
+   - 'iso-utc'  - ISO-8601 format 'T'
+   - 'iso-local' - ISO-8601 format 'T'
+
+  :param: dtsep
+  :return: None
+ 
 
 
 
