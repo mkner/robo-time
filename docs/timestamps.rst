@@ -154,4 +154,18 @@ Timestamps
   :return: None
 
 
+.. function:: setTimestampResSep(rsep)
+
+   Sets the character used between the timedate section
+   of the timestamp and the fractional remainder at the
+   end of the timestamp (if used)
+
+   Builtin character used for presets is a blank space ' ' 
+   for the 'basic' preset and a period '.' for iso-utc'
+   and 'iso-local'
+
+  :param: rsep
+  :return: None
+
+
 
