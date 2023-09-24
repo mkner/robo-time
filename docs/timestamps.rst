@@ -113,9 +113,10 @@ Timestamps
 
 .. function:: setTimestampDateSep(dsep)
 
-   Sets the character used between the year YYYY, 
-   month MM and day DD in the sequence YYYY<dsep>MM<dsep>DD
-   in the timestamp output to dsep
+   Sets the character used between the year YYYY,
+   month MM and day DD to dsep in the
+   timestamp output sequence YYYY<**dsep**>MM<dsep>DD
+  
 
    Builtin character used for presets is a dash '-'
    for all 3 presets: 'basic', iso-utc' and 'iso-local'
@@ -126,9 +127,9 @@ Timestamps
 
 .. function:: setTimestampSep(dtsep)
 
-   Sets the character used between the year YYYY-MM-DD 
-   and the time HH:MM:SS in the timestamp output
-   YYYY-MM-DD<dtsep>HH:MM:SS to dtsep
+   Sets the character used between the year and 
+   the time to dtsep in the timestamp output
+   sequence YYYY<dsep>MM<dsep>DD<**dtsep**>HH<tsep>MM<tsep>SS
 
    Builtin characters used for presets are:
 
@@ -142,9 +143,9 @@ Timestamps
 
 .. function:: setTimestampTimeSep(tsep)
 
-   Sets the character used in HH:MM:SS between the hour HH
-   the minute MM and the seconds SS for the format
-   HH<tsep>MM<tsep>SS to tsep in the timestamp output
+   Sets the character used between the hour HH
+   the minute MM and the seconds SS to *tsep* in the
+   timestamp output sequence HH<tsep>MM<tsep>SS 
 
    Builtin character used for presets is a colon ':'
    for all 3 presets: 'basic', iso-utc' and 'iso-local'
