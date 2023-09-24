@@ -56,7 +56,7 @@ Timestamps
 
 .. function:: setTimestampFormat(tsformat)
 
-   Sets the format for the timestamps.  
+   Sets the format for the timestamps 
 
    Choices for tsformat are:
 
