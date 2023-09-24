@@ -64,11 +64,19 @@ Timestamps
    - 'iso-utc'  - ISO-8601 format using UTC time
    - 'iso-local' - ISO-8601 format using system local time
 
+   **basic** is the same format for all 3 clocks: Uptime Clock, 
+   System Clock and World Clock
+
    **iso-local** for WorldClock is UTC time once a WorldClock is
    initialized since its *"local"* time is *always* UTC
 
    **iso-utc** for SystemClock uses ISO-8601 format and local system
    time is expressed in UTC with an offset to its zone
+
+   **iso-local** for SystemClock uses ISO-8601 for its format
+   but local system time is expressed in local time with no zone
+   offset and not in UTC time
+
 
   :param: tsformat
   :return: None
