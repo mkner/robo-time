@@ -96,6 +96,18 @@ Timestamps
   :rtype: literal
 
 
+.. function:: setTimestampRes(res)
+
+   Sets the resolution for the fractional part of
+   the timestamp
+
+   Choices for res are:
+
+   - 'milli' - milliseconds (3 digits)
+   - 'micro' - microseconds (6 digits)
+   - 'none'  - no fractional remainder is used
+
+
 
 
 
