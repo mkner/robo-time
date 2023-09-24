@@ -83,9 +83,9 @@ Timestamps
 
 .. function:: getTimestampFormat()
 
-  Returns the format for the timestamps 
+   Returns the format for the timestamps 
 
-  Return values for are:
+   Return values for are:
 
    - 'basic' - or 'default' the default format - plain, ordinary, easy to read
    - 'iso-utc'  - ISO-8601 format using UTC time
@@ -126,33 +126,33 @@ Timestamps
   :return: None
 
 
- .. function:: setTimestampDateSep(dsep)
+.. function:: setTimestampDateSep(dsep)
 
-    Sets the character used between the year YYYY, 
-    month MM and day DD in the sequence YYYY<dsep>MM<dsep>DD
-    in the timestamp output to dsep
+   Sets the character used between the year YYYY, 
+   month MM and day DD in the sequence YYYY<dsep>MM<dsep>DD
+   in the timestamp output to dsep
 
-    Builtin character used for presets is a dash '-'
-    for all 3 presets: 'basic', iso-utc' and 'iso-local'
+   Builtin character used for presets is a dash '-'
+   for all 3 presets: 'basic', iso-utc' and 'iso-local'
 
-   :param: dsep
-   :return: None
+  :param: dsep
+  :return: None
 
 
- .. function:: setTimestampSep(dtsep)
+.. function:: setTimestampSep(dtsep)
 
-    Sets the character used between the year YYYY-MM-DD 
-    and the time HH:MM:SS in the timestamp output
-    YYYY-MM-DD<dtsep>HH:MM:SS to dtsep
+   Sets the character used between the year YYYY-MM-DD 
+   and the time HH:MM:SS in the timestamp output
+   YYYY-MM-DD<dtsep>HH:MM:SS to dtsep
 
-    Builtin characters used for presets are:
+   Builtin characters used for presets are:
 
-    - 'basic' or 'default'  - ' ' one blank space
-    - 'iso-utc'  - ISO-8601 format - 'T'
-    - 'iso-local' - ISO-8601 format - 'T'
+   - 'basic' or 'default'  - ' ' one blank space
+   - 'iso-utc'  - ISO-8601 format - 'T'
+   - 'iso-local' - ISO-8601 format - 'T'
 
-   :param: dtsep
-   :return: None
+  :param: dtsep
+  :return: None
 
 
 
