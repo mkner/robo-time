@@ -111,21 +111,6 @@ Timestamps
   :return: None
 
 
-.. function:: setTimestampSep(dtsep)
-
-   Sets the character used between the year YYYY-MM-DD 
-   and the time HH:MM:SS in the timestamp output to dtsep
-
-   Builtin characters used for presets are:
-
-   - 'basic' or 'default'  - ' ' one blank space
-   - 'iso-utc'  - ISO-8601 format 'T'
-   - 'iso-local' - ISO-8601 format 'T'
-
-  :param: dtsep
-  :return: None
-
-
 .. function:: setTimestampDateSep(dsep)
 
    Sets the character used between the year YYYY, 
