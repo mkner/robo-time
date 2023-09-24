@@ -107,6 +107,9 @@ Timestamps
    - 'micro' - microseconds (6 digits)
    - 'none'  - no fractional remainder is used
 
+:param: res
+:return: None
+
 
 .. function:: setTimestampSep(dtsep)
 
@@ -132,8 +135,8 @@ Timestamps
     Builtin character used for presets is a dash '-'
     for all 3 presets: 'basic', iso-utc' and 'iso-local'
 
-  :param: dsep
-  :return: None
+   :param: dsep
+   :return: None
 
 
  .. function:: setTimestampSep(dtsep)
@@ -148,8 +151,9 @@ Timestamps
     - 'iso-utc'  - ISO-8601 format - 'T'
     - 'iso-local' - ISO-8601 format - 'T'
 
-  :param: dtsep
-  :return: None
+   :param: dtsep
+   :return: None
+
 
 
 
