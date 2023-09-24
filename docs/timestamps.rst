@@ -72,7 +72,6 @@ Timestamps
 
   :param: tsformat
   :return: None
-  :rtype: None
 
 
 
