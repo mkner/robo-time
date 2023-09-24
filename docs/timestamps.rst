@@ -107,8 +107,8 @@ Timestamps
    - 'micro' - microseconds (6 digits)
    - 'none'  - no fractional remainder is used
 
-:param: res
-:return: None
+  :param: res
+  :return: None
 
 
 .. function:: setTimestampSep(dtsep)
