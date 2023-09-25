@@ -191,6 +191,18 @@ Timestamps
    Removes all delimiters as separators between the
    sections of the timestamp format. The output is
    a "compressed" ASCII string of only numbers and letters.
+   Settings are saved and can be restored with **setTimestampCompressOff()**
+ 
+
+  :param: None
+  :return: None
+
+
+.. function:: setTimestampCompressOff()
+
+   Restores all delimiters as separators between the
+   sections of the timestamp format from previous settings
+   if was currently in compressed mode. 
 
   :param: None
   :return: None
