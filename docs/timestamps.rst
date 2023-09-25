@@ -185,3 +185,13 @@ Timestamps
   :param: None
   :return: None
 
+
+.. function:: setTimestampCompressOn()
+
+   Removes all delimiters as separators between the
+   sections of the timestamp format. The output is
+   a "compressed" ASCII string of only numbers and letters.
+
+  :param: None
+  :return: None
+
