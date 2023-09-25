@@ -168,4 +168,19 @@ Timestamps
   :return: None
 
 
+.. function:: setZtailOn()
 
+   Use the **Z** character at the end of UTC time for 
+   zone 0 instead of **+00:00** (ISO-8601 formatting).
+   
+  :param: None
+  :return: None
+
+
+.. function:: setZtailOff()
+
+   Use **+00:00** at the end of UTC time for zone 0 
+   instead of the **Z** character (ISO-8601 formatting)
+   
+  :param: None
+  :return: None
