@@ -202,7 +202,7 @@ Timestamps
 
    Restores all delimiters as separators between the
    sections of the timestamp format from previous settings
-   if is currently in compressed mode. 
+   if currently in compressed mode. 
 
   :param: None
   :return: None
