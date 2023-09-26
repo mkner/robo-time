@@ -45,10 +45,9 @@ Timestamps
 .. function:: getTimestamp()
 
    | same as getTimestampStr()
-   | future version may let the type of format that is 
-   | a default for this call to be set
-   | components (year, month, day, hour, minute, second, remainder)
-    
+   | future version may let the type of format
+   | that is a default for this call to be set
+   
   :param: None
   :return: timestamp 
   :rtype: string
