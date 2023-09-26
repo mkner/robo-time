@@ -32,7 +32,7 @@ Timestamps
   :rtype: string
 
 
-.. function:: getTimestamp()
+.. function:: getTimestampInt()
 
    | returns a tuple of integers containing the timestamp
    | components (year, month, day, hour, minute, second, remainder)
@@ -40,6 +40,18 @@ Timestamps
   :param: None
   :return: timestamp components as integers in tuple form
   :rtype: tuple
+
+
+.. function:: getTimestamp()
+
+   | same as getTimestampStr()
+   | future version may let the type of format that is 
+   | a default for this call to be set
+   | components (year, month, day, hour, minute, second, remainder)
+    
+  :param: None
+  :return: timestamp 
+  :rtype: string
 
 
 .. function:: getTimestampFp()
