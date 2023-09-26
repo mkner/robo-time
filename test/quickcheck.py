@@ -88,6 +88,16 @@ def tsr():
     print(wc.getTimestampStr())
     print(sc.getTimestampStr())
 
+def tsi():
+    print(c.getTimestampInt())
+    print(wc.getTimestampInt())
+    print(sc.getTimestampInt())
+
+def tsf():
+    print(c.getTimestampFp())
+    print(wc.getTimestampFp())
+    print(sc.getTimestampFp())
+
 def tsfp():
     print(c.getTimestampFp())
     print(wc.getTimestampFp())
@@ -155,8 +165,6 @@ def setcompoff():
     sc.setTimestampCompressedOff()
     wc.setTimestampCompressedOff()
 
-
-
 def ztailon():
     c.setZtailOn()
     wc.setZtailOn()
@@ -202,7 +210,7 @@ def roll():
     print("format")
     getTstype()
     print()
-    delay(2000)
+    delay(1000)
     
     print("up")
     up()
@@ -238,5 +246,19 @@ def roll():
     tsr()
     print()
     delay(2000)
+    
+    print("getTimestampInt()")
+    tsi()
+    print()
+    delay(2000)
 
-  
+    print("getTimestampFp()")
+    tsf()
+    print()
+    delay(2000)
+    
+    print("getUptimeFp()")
+    upfp()
+    print()
+    delay(2000)
+    
