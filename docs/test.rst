@@ -191,12 +191,27 @@ Every function below calls all 3 clocks:
   :return: None
 
 
-.. function:: setcompoff():
+.. function:: setcompoff()
 
    calls setTimestampCompressedOff()
 
   :param: None
   :return: None
 
+
+.. function:: ztailon()
+
+   calls setZtailOn()
+
+  :param: None
+  :return: None
+
+
+.. function:: ztailoff()
+
+   calls setZtailOff()
+
+  :param: None
+  :return: None
 
 
