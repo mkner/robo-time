@@ -89,7 +89,57 @@ Every function below calls all 3 clocks:
     calls getTimestampInt() 
     
   :param: None
-  :return: timestamp strings
+  :return: timestamp tuples
+
+
+.. function:: tsf()
+
+    calls getTimestampFp()
+    
+  :param: None
+  :return: timestamps in floating point form
+
+
+.. function:: tsf()
+
+    calls getTimestampFp()
+    
+  :param: None
+  :return: timestamps in floating point form
+
+
+.. function:: upfp()
+
+    calls getUptimeFp()
+    
+  :param: None
+  :return: clocks uptimes in floating point form
+
+
+.. function:: ep()
+
+    calls epoch()
+    
+  :param: None
+  :return: clocks epoch start date/time 
+
+
+.. function:: roll()
+
+    The most useful for quick comparisions
+    calls most of the above functions in sequence
+    
+  :param: None
+  :return: None
+
+
+.. function:: setTstype(ts)
+
+   sets the timestamp type for all 3 clocks
+   calls setTimestampFormat(ts)
+
+  :param: ts
+  :return: None
 
 
 
