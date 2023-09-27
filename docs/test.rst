@@ -27,20 +27,33 @@ Three clocks are already instantiated in the module:
 | sc - SystemClock
 |
 
+Functions
+*********
+
+Every function below calls all 3 clocks:
+
+.. function:: up()
+
+    calls uptime() 
+
+  :param: None
+  :return: None
+
+.. function:: now()
+
+    calls now() 
+
+  :param: None
+  :return: None
+
 
 .. function:: ts()
 
-    prints timestamp strings for all clocks
+    calls timestamp() 
     
   :param: None
-  :return: prints timestamp string
-  :rtype: None
+  :return: none
 
 
-.. function:: ts()
 
-    short call for timestamp()
 
-  :param: None
-  :return: prints timestamp string
-  :rtype: None
