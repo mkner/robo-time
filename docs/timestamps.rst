@@ -6,11 +6,11 @@ Timestamps
 
 |
 | Timestamp interface functions for all clocks:
-|
-- UptimeClock (Clock)
+
+- Clock (UptimeClock)
 - WorldClock
 - SystemClock
-|
+
 
 .. function:: timestamp()
 
