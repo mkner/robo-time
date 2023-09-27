@@ -8,10 +8,15 @@ Test
 
 | Short command line functions to quickly 
 | check on and compare formatting of all clocks
+|
 
 - Clock (UptimeClock)
 - WorldClock
 - SystemClock
+
+Access the functions by importing them as
+
+from robotime.test import *
 
 Three clocks are already instantiated in the module:
 
