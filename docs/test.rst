@@ -75,6 +75,7 @@ Every function below calls all 3 clocks:
   :param: None
   :return: none
 
+
 .. function:: tsr()
 
     calls getTimestampStr() 
@@ -82,13 +83,13 @@ Every function below calls all 3 clocks:
   :param: None
   :return: timestamp strings
 
-.. function:: gts()
 
-    calls getTimestamp() 
+.. function:: tsi()
+
+    calls getTimestampInt() 
     
   :param: None
-  :return: timestamp tuples
-
+  :return: timestamp strings
 
 
 
