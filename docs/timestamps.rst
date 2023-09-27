@@ -4,6 +4,13 @@ Timestamps
 .. py:mod: 
 .. py:mod:: py_mod
 
+|
+Timestamp interface functions for all clocks:
+|
+- Clock (UptimeClock)
+- WorldClock
+- SystemClock
+|
 
 .. function:: timestamp()
 
