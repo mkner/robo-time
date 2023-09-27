@@ -22,9 +22,9 @@ Access the functions by importing them as
 
 Three clocks are already instantiated in the module:
 
-| c   Clock
-| wc  WorldClock
-| sc  SystemClock
+| c  - Clock
+| wc - WorldClock
+| sc - SystemClock
 |
 
 
