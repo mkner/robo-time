@@ -16,13 +16,15 @@ Test
 
 Access the functions by importing them as
 
-from robotime.test import *
+.. code-block:: python
+
+ from robotime.test import *
 
 Three clocks are already instantiated in the module:
 
-| c = robotime.test.c
-| wc = robotime.test.wc
-| sc = robotime.sc
+| c   Clock
+| wc  WorldClock
+| sc  SystemClock
 |
 
 
