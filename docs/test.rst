@@ -6,9 +6,9 @@ Test
 .. py:mod:: py_mod
 
 
-| Short command line functions to quickly 
-| check on and compare formatting of all clocks
-|
+| The test module contains short command line functions to 
+| quickly check on and compare formatting of all clocks
+| 
 
 - Clock (UptimeClock)
 - WorldClock
