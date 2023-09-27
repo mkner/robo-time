@@ -124,6 +124,14 @@ Every function below calls all 3 clocks:
   :return: clocks epoch start date/time 
 
 
+.. function:: vers()
+
+   prints out current versions for robotime modules
+    
+  :param: None
+  :return: prints module version ids
+
+
 .. function:: roll()
 
     The most useful for quick comparisions
@@ -142,4 +150,23 @@ Every function below calls all 3 clocks:
   :return: None
 
 
+.. function:: getTstype()
 
+   gets the timestamp type for all 3 clocks
+   calls getTimestampFormat()
+
+  :param: None
+  :return: format types
+
+
+    
+def setbasic():
+    setTstype('basic')
+    
+    
+def setlocal():
+    setTstype('iso-local')
+
+    
+def setutc():
+    setTstype('iso-utc')
