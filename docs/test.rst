@@ -20,9 +20,9 @@ from robotime.test import *
 
 Three clocks are already instantiated in the module:
 
-c = robotime.test.c
-wc = robotime.test.wc
-sc = robotime.sc
+| c = robotime.test.c
+| wc = robotime.test.wc
+| sc = robotime.sc
 
 
 .. function:: ts()
