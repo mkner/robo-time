@@ -143,7 +143,7 @@ Every function below calls all 3 clocks:
 
 .. function:: setTstype(ts)
 
-   sets the timestamp type for all 3 clocks
+   sets the timestamp type 
    calls setTimestampFormat(ts)
 
   :param: ts
@@ -159,14 +159,26 @@ Every function below calls all 3 clocks:
   :return: format types
 
 
-    
-def setbasic():
-    setTstype('basic')
-    
-    
-def setlocal():
-    setTstype('iso-local')
+.. function:: setbasic()
 
-    
-def setutc():
-    setTstype('iso-utc')
+   calls setTstype('basic') 
+
+  :param: None
+  :return: None
+
+
+.. function:: setlocal()
+
+   calls setTstype('iso-local') 
+
+  :param: None
+  :return: None
+
+
+.. function:: setutc()
+
+   calls setTstype('iso-utc')
+
+  :param: None
+  :return: None
+
