@@ -7,9 +7,9 @@ Timestamps
 |
 | Timestamp interface functions for all clocks:
 |
- - Clock (UptimeClock)
- - WorldClock
- - SystemClock
+- Clock (UptimeClock)
+- WorldClock
+- SystemClock
 |
 
 .. function:: timestamp()
