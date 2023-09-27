@@ -215,4 +215,29 @@ Every function below calls all 3 clocks:
   :return: None
 
 
+.. function:: setresMicros()
+
+   calls setTimestampRes('micro')
+
+  :param: None
+  :return: None
+
+
+.. function:: setresMillis()
+
+   calls setTimestampRes('milli')
+
+  :param: None
+  :return: None
+
+
+.. function:: setresOff()
+
+   calls setTimestampRes('none')
+
+  :param: None
+  :return: None
+
+
+
 
