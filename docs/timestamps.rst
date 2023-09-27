@@ -7,7 +7,7 @@ Timestamps
 |
 | Timestamp interface functions for all clocks:
 |
-- Clock (UptimeClock)
+- UptimeClock (Clock)
 - WorldClock
 - SystemClock
 |
