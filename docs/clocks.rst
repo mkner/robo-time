@@ -25,6 +25,15 @@ Clocks
   :param: None
   :return: printed string 
 
+
+.. function:: up()
+   
+    Short name for uptime(). Works the same.
+
+  :param: None
+  :return: printed string 
+
+
 .. function:: time()
 
    | prints the current time in HH:MM:SS format 
