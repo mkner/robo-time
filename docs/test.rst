@@ -182,3 +182,21 @@ Every function below calls all 3 clocks:
   :param: None
   :return: None
 
+
+.. function:: setcompon()
+
+   calls setTimestampCompressedOn()
+
+  :param: None
+  :return: None
+
+
+.. function:: setcompoff():
+
+   calls setTimestampCompressedOff()
+
+  :param: None
+  :return: None
+
+
+
