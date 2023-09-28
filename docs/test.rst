@@ -30,7 +30,24 @@ Three clocks are already instantiated in the module:
 Functions
 *********
 
-Every function below calls all 3 clocks:
+For the current configuration use this function:
+
+.. function:: vers()
+
+   prints out current versions for robotime modules
+    
+  :param: None
+  :return: prints module version ids
+
+For example:
+
+
+Every function below calls all 3 clocks in the order:
+
+Clock
+WorldClock
+SystemClock
+
 
 .. function:: up()
 
@@ -124,12 +141,6 @@ Every function below calls all 3 clocks:
   :return: clocks epoch start date/time 
 
 
-.. function:: vers()
-
-   prints out current versions for robotime modules
-    
-  :param: None
-  :return: prints module version ids
 
 
 .. function:: roll()
