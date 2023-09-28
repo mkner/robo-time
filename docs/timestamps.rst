@@ -146,7 +146,7 @@ Timestamps
 .. function:: setTimestampSep(dtsep)
 
    Sets the character used between the year and 
-   the time to dtsep in the timestamp output
+   the time to **dtsep** in the timestamp output
    sequence YYYY<dsep>MM<dsep>DD<**dtsep**>HH<tsep>MM<tsep>SS
 
    Builtin characters used for presets are:
