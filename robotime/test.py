@@ -142,7 +142,9 @@ def epoch():
     sc.epoch()
 
 
-
+def ep():
+    return(epoch())
+ 
 def setTstype(ts):
     c.setTimestampFormat(ts)
     wc.setTimestampFormat(ts)
