@@ -205,13 +205,10 @@ def setresOff():
 
 def vers():
     print()
-    print("robo-utils version "+str(roboutils.__version__))
+    print("robo-base - "+str(robobase.__version__))
+    print("robo-time - "+str(robotime.__version__))
+    print("robo-utils - "+str(roboutils.__version__))
     print()
-    print("robo-base version "+str(robobase.__version__))
-    print()
-    print("robo-time version "+str(robotime.__version__))
-    print()
-
 
 
 def roll():
