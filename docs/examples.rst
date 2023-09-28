@@ -401,7 +401,4 @@ enough and is widely used as a standard globally.
    
 
 
-Uptime
-******
-Every clock has an uptime counter
 
