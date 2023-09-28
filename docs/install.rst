@@ -10,7 +10,8 @@ To use this project, first install it using pip:
     $ pip install robo-time
 
 
-The main python package download site is: `here <https://pypi.org/project/robo-time/>`_.
+The main python package download site is: `here <https://pypi.org/project/robo-time/>`_
 
 
-Test hyperlink: `stack site <https://stackoverflow.com/>`_.
+
+
