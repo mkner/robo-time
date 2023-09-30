@@ -39,14 +39,14 @@ For the current configuration use this function:
   :param: None
   :return: prints module version ids
 
-For example:
-
-
 Every function below calls all 3 clocks in the order:
 
-Clock
-WorldClock
-SystemClock
+- Clock
+- WorldClock
+- SystemClock
+
+This allows a side-by-side comparison to check on the the output type
+settings and format
 
 
 .. function:: up()
@@ -141,7 +141,8 @@ SystemClock
   :return: clocks epoch start date/time 
 
 
-
+The **roll()** function cycles through most of the test functions
+to get a quick overview of the timestamp outputs and current formating
 
 .. function:: roll()
 
