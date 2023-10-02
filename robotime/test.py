@@ -217,32 +217,33 @@ def roll():
     print()
     delay(1000)
     
-    print("format")
+
+    print("getTimestampFormat()")
     getTstype()
     print()
     delay(1000)
     
-    print("up")
+    print("up()")
     up()
     print()
     delay(2000)
     
-    print("date")
+    print("date()")
     date()
     print()
     delay(2000)
     
-    print("time")
+    print("time()")
     time()
     print()
     delay(2000)
     
-    print("now")
+    print("now()")
     now()
     print()
     delay(2000)
     
-    print("today")
+    print("today()")
     today()
     print()
     delay(2000)
