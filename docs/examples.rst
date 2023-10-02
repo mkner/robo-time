@@ -265,69 +265,67 @@ And its only reference for any year, month or day is in its epoch! **1970-01-01 
 So its hours, minutes and seconds match those of UptimeClock but *only* because
 they started running at the same time within microseconds when the objects were
 instantiated. Each clock type has an internal uptime clock counter whether that
-is its primary purpose in the system or not. It can be access anytime by calling
+is its primary purpose in the system or not. It can be accessed anytime by calling
 the interface function **uptime()** for any of the clocks.
 
 
 .. code-block:: python
 
-   #format
-   getTstype()
+   getTimestampFormat()
    default
    default
    default
-
-   #uptime
+   
    up()
-   01:22:46
-   01:22:46
-   01:22:46
-
+   00:00:05
+   00:00:05
+   00:00:05
+   
    date()
    0000-00-00
    1970-01-01
    2023-10-02
    
    time()
-   01:22:50
-   01:22:50
-   17:57:03
+   00:00:09
+   00:00:09
+   18:42:37
    
    now()
-   0000-00-00 01:22:52
-   1970-01-01 01:22:52 UTC
-   2023-10-02 17:57:05 EDT
-
+   0000-00-00 00:00:11
+   1970-01-01 00:00:11 UTC
+   2023-10-02 18:42:39 EDT
+   
    today()
-   0000-00-00 01:22:54
-   Thu Jan 01 1970 01:22:54 UTC
-   Mon Oct 02 2023 17:57:07 EDT
+   0000-00-00 00:00:13
+   Thu Jan 01 1970 00:00:13 UTC
+   Mon Oct 02 2023 18:42:41 EDT
    
    timestamp()
-   0000-00-00 01:22:56 158234
-   1970-01-01 01:22:56 158220
-   2023-10-02 17:57:09 889590
-
+   0000-00-00 00:00:15 148874
+   1970-01-01 00:00:15 148889
+   2023-10-02 18:42:43 448861
+   
    getTimestamp()
-   0000-00-00 01:22:58 158454
-   1970-01-01 01:22:58 158433
-   2023-10-02 17:57:11 889797
-
+   0000-00-00 00:00:17 149209
+   1970-01-01 00:00:17 149230
+   2023-10-02 18:42:45 449231
+   
    getTimestampInt()
-   (0, 0, 0, 1, 23, 0, 158657)
-   (1970, 1, 1, 1, 23, 0, 158633)
-   (2023, 10, 2, 17, 57, 13, 889992)
-
+   (0, 0, 0, 0, 0, 19, 149632)
+   (1970, 1, 1, 0, 0, 19, 149619)
+   (2023, 10, 2, 18, 42, 47, 449579)
+   
    getTimestampFp()
-   4982.158804454999
-   4982.158780668
-   1696283835.890115
-
+   21.149832193999828
+   21.149808330999804
+   1696286569.449738
+   
    getUptimeFp()
-   4984.158967056999
-   4984.158931133001
-   4984.1589574459995
-
+   23.149955311000667
+   23.14992350600005
+   23.14994698999908
+      
 
 
 **Example - floating point timestamp**
