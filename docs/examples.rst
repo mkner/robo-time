@@ -320,7 +320,7 @@ getUptimeFp()
 
 
 
-Example - floating point timestamp
+**Example - floating point timestamp**
 
 Comparision of floating point timetamp times for all 3 clock types.
 
