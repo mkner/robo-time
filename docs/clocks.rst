@@ -164,6 +164,40 @@ Clocks
   :rtype: float
 
 
+WorldClock
+----------
+
+Additional interface functions for **WorldClock**
+
+
+.. function:: getDeltaThreshold()
+
+     Returns the current Delta threshold setting in milliseconds
+        
+  :param: None
+  :return: delta threshold
+  :rtype: int
+
+
+.. function:: setDeltaThreshold(delta)
+
+     Sets the current Delta threshold setting in milliseconds
+        
+  :param: delta
+  :return: None
+  :rtype: None
+
+
+.. function:: setDelta(delta)
+
+     same as **setDeltaThreshold(delta)**
+
+
+.. function:: getDelta()
+
+     same as **getDeltaThreshold(delta)**
+
+
 .. code-block:: python
 
 .. code-block:: python
