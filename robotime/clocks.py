@@ -7,8 +7,8 @@
 #
 # 
 
-# EIGHT-C
-#package release: 0.01.08c
+# NINE-C
+#package release: 0.01.09c
 
 
 import numpy as np
@@ -2062,21 +2062,27 @@ class WorldClock(Clock):
                 datetime.utcfromtimestamp(self._getTimeNow()))   
         return
     
-    def getDeltaThreshold(self):
-        return self._ntp_delta_threshold
+
     
     def setDeltaThreshold(self,delta):
         # delta is in milliseconds
-        delta = abs(delta) # just fix it 
-        delta = delta/1000 #in milliseconds
+        delta = int(abs(delta)) # just fix it  & make int
+        #delta = abs(delta) # just fix it
+        delta = delta/1000 # in float form for comparison
         
         if delta > 0:
          self._ntp_delta_threshold = delta
         else:
          print("Delta threshold needs to be > 0")
-         
+
+    def getDeltaThreshold(self):
+        # stored as float but
+        #return has to be in int milliseconds!
+        return int(1000*self._ntp_delta_threshold)
+        #return self._ntp_delta_threshold
+        
     def getDelta(self):
-        #shortfome
+        #shortform
         return self.getDeltaThreshold()
     
     def setDelta(self,delta):
@@ -2207,8 +2213,7 @@ class WorldClock(Clock):
       yr = self._cal_year #= dt.year
       mo = self._cal_month# = dt.month   
       dy = self._cal_day#= dt.day
-     
-     
+        
       h = self._cal_hours #= dt.hour
       m = self._cal_min #=  dt.minute
       s = self._cal_sec# = dt.second
