@@ -101,8 +101,8 @@ WorldClock
    wc.timestamp()
    1970-01-01 00:00:49 734483
 
-| Running the initialization routine for WorldClock updates and
-| synchronizes its time to the global NTP UTC servers.
+| Running the initialization routine for **WorldClock** updates and
+| synchronizes its time to the global NTP/UTC servers.
 |
 
 .. code-block:: python
