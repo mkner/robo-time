@@ -170,6 +170,35 @@ WorldClock
 Additional interface functions for **WorldClock**
 
 
+.. function:: initialize()
+
+   Multistage initialization and syncronization the **WorldClock**
+   to UTC time using the NTP network
+        
+  :param: None
+  :return: None
+
+
+.. function:: init()
+
+   Calls **initialize()** just shorter name
+        
+  :param: None
+  :return: None
+
+
+.. function:: reset()
+
+   Resets the UTC world time to the beginning of the epoch.
+   This does **not** affect the clocks's running uptime.
+   Once a WorldClock object is instantiated its uptime
+   clock continues to run until the object instance no
+   longer exists.
+
+        
+  :param: None
+  :return: None
+
 .. function:: getDeltaThreshold()
 
      Returns the current Delta threshold setting in milliseconds
