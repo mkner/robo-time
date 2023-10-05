@@ -269,6 +269,9 @@ So run init again.
    Current WorldClock NTP (UTC) time: 2023-10-05 19:57:34.718479
    Initialization done!
 
+So the multistage full initialization procedure was able to 
+finish including a resyncronization to bring the accuracy clock 
+within its Delta threshold setting.
 
 
 Robot
