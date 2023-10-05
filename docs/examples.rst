@@ -244,7 +244,8 @@ Here the initialization partially completes,
 but the last step of resync does not get a valid 
 UTC time that is within the Delta threshold.
 
-So run init again.
+It is possible to run the full **init()** again
+after a partial initialization. 
 
 .. code-block:: python
 
@@ -271,7 +272,10 @@ So run init again.
 
 So the multistage full initialization procedure was able to 
 finish including a resyncronization to bring the accuracy clock 
-within its Delta threshold setting.
+within its Delta threshold setting. 
+
+Also, If the initialzaiton is paritally completed, a shorter update 
+by running **resync()** is also possible.
 
 
 Robot
