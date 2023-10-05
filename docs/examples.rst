@@ -166,27 +166,22 @@ WorldClock
    wc.timestamp()
    2023-09-17 20:50:55 953406
 
-World Clock
-The threshold value
 
-First the delta threshold is set to 40 milliseconds instead of the default value.
+
+What if WorldClock cannot initialize?
+
+Here is an example of the versatility of the WorldClock syncronizaiton process.
+
+First set the delta threshold to 40 milliseconds instead of the default value.
+
 .. code-block:: python
 
    wc.getDelta()
-   Out[4]: 50
+   50
    
    wc.setDelta(40)
 
-
-World Clock
-What if WorldClock cannot initialize?
-
-
-In this example, it is possible to restart the initialization process.
-First the delta threshold is set to 40 milliseconds instead of the default value.
-
-And sometime there is a partial initialiaztion that is usable but might
-want to renite
+Then a first attempt to initialize is made
 
 .. code-block:: python
 
@@ -199,15 +194,20 @@ want to renite
    Unable to connect to NTP server!
    WorldClock not initialized!
 
-So the WorldClock time stays at the beginning of its epoch
-   
+The result is theat the WorldClock time stays at the beginning
+of its epoch since it was not able to communicate with the 
+global NTP/UTC system and synchronize its clock.
+
+.. code-block:: python
+
    ts()
    0000-00-00 00:08:08 219427
    1970-01-01 00:08:08 219501
    2023-10-05 15:56:55 423132
 
-Next try init() again. This time the initialization completes partiall.
-The last step of resync does not get the time within the Delta threshold.
+Next try **init()** again. The initialization partially completes,
+but the last step of resync does not get a valid UTC time that
+is within the Delta threshold.
 
 .. code-block:: python
 
@@ -259,6 +259,7 @@ So run init again.
    Get time check...
    Current WorldClock NTP (UTC) time: 2023-10-05 19:57:34.718479
    Initialization done!
+
 
 
 
