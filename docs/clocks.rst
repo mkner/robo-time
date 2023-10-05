@@ -195,7 +195,7 @@ Additional interface functions for **WorldClock**
 
 .. function:: getDelta()
 
-     same as **getDeltaThreshold(delta)**
+     same as **getDeltaThreshold()**
 
 
 .. code-block:: python
