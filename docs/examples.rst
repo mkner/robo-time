@@ -70,7 +70,7 @@ WorldClock
 **********
 
 | Before WorldClock is initialized and synced to global servers
-| its only sense of date & time is relative to the only beginning 
+| its only sense of date and time is relative to the only beginning 
 | of time it knows. The Unix epoch.
 |
 | And **now()** is its uptime offset from  1970-01-01 00:00:00 UTC
