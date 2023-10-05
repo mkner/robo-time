@@ -172,7 +172,7 @@ Additional interface functions for **WorldClock**
 
 .. function:: initialize()
 
-   Multistage initialization and syncronization the **WorldClock**
+   Multistage initialization and syncronization of **WorldClock**
    to UTC time using the NTP network
         
   :param: None
