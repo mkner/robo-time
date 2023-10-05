@@ -166,8 +166,100 @@ WorldClock
    wc.timestamp()
    2023-09-17 20:50:55 953406
 
+World Clock
+The threshold value
+
+First the delta threshold is set to 40 milliseconds instead of the default value.
+.. code-block:: python
+
+   wc.getDelta()
+   Out[4]: 50
+   
+   wc.setDelta(40)
+
+
+World Clock
+What if WorldClock cannot initialize?
+
+
+In this example, it is possible to restart the initialization process.
+First the delta threshold is set to 40 milliseconds instead of the default value.
+
+And sometime there is a partial initialiaztion that is usable but might
+want to renite
 
 .. code-block:: python
+
+   wc.init()
+
+   Starting up...
+   Current WorldClock NTP (UTC) time: 1970-01-01 00:07:57.117191
+   Begin initialization from global NTP system...
+   Checking NTP connection...
+   Unable to connect to NTP server!
+   WorldClock not initialized!
+
+So the WorldClock time stays at the beginning of its epoch
+   
+   ts()
+   0000-00-00 00:08:08 219427
+   1970-01-01 00:08:08 219501
+   2023-10-05 15:56:55 423132
+
+Next try init() again. This time the initialization completes partiall.
+The last step of resync does not get the time within the Delta threshold.
+
+.. code-block:: python
+
+   WorldClock version: v0.01.14c
+
+   Starting up...
+   Current WorldClock NTP (UTC) time: 1970-01-01 00:08:12.846186
+   Begin initialization from global NTP system...
+   Checking NTP connection...
+   Connection established...
+   Initializing UTC time from NTP reference signal...
+   Synchronization phase # 1  OK
+   Synchronization phase # 2  Unable to connect to NTP server!
+   No NTP connection!
+   Synchronization phase # 3
+   Resynchronizing world clock...
+   Connection to NTP server OK!
+   Checking delta threshold...
+   Above threshold. Not updating time
+   Current WorldClock NTP (UTC) time: 2023-10-05 19:57:07.148994
+   Initialization done (incomplete)
+
+   ts()
+   0000-00-00 00:08:31 693292
+   2023-10-05 19:57:18 886031
+   2023-10-05 15:57:18 896963
+
+So run init again.
+
+.. code-block:: python
+
+   wc.init()
+
+   WorldClock version: v0.01.14c
+
+   Re-initializing..
+   Current WorldClock NTP (UTC) time: 2023-10-05 19:57:30.192519
+   Begin initialization from global NTP system...
+   Checking NTP connection...
+   Connection established...
+   Initializing UTC time from NTP reference signal...
+   Synchronization phase # 1  OK
+   Synchronization phase # 2  OK
+   Synchronization phase # 3
+   Resynchronizing world clock...
+   Connection to NTP server OK!
+   Checking delta threshold...
+   Within range. Updating...
+   Get time check...
+   Current WorldClock NTP (UTC) time: 2023-10-05 19:57:34.718479
+   Initialization done!
+
 
 
 Robot
