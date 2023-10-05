@@ -176,6 +176,10 @@ First set the delta threshold to 40 milliseconds instead of the default value.
 
 .. code-block:: python
 
+   from robotime.clocks import WorldClock # create the clock
+
+   wc = WorldClock()
+
    wc.getDelta()
    50
    
@@ -194,9 +198,11 @@ Then a first attempt to initialize is made
    Unable to connect to NTP server!
    WorldClock not initialized!
 
-The result is theat the WorldClock time stays at the beginning
-of its epoch since it was not able to communicate with the 
-global NTP/UTC system and synchronize its clock.
+
+Since WorldClock was not able to communicate with the global
+NTP/UTC system and synchronize its clock, the time
+stays at the beginning of its epoch.
+
 
 .. code-block:: python
 
@@ -205,9 +211,8 @@ global NTP/UTC system and synchronize its clock.
    1970-01-01 00:08:08 219501
    2023-10-05 15:56:55 423132
 
-Next try **init()** again. The initialization partially completes,
-but the last step of resync does not get a valid UTC time that
-is within the Delta threshold.
+
+Next try **init()** again. 
 
 .. code-block:: python
 
@@ -235,6 +240,10 @@ is within the Delta threshold.
    2023-10-05 19:57:18 886031
    2023-10-05 15:57:18 896963
 
+Here the initialization partially completes,
+but the last step of resync does not get a valid 
+UTC time that is within the Delta threshold.
+
 So run init again.
 
 .. code-block:: python
@@ -259,7 +268,6 @@ So run init again.
    Get time check...
    Current WorldClock NTP (UTC) time: 2023-10-05 19:57:34.718479
    Initialization done!
-
 
 
 
