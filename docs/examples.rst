@@ -242,7 +242,7 @@ Next try **init()** again.
 
 Here the initialization partially completes,
 but the last step of resync does not get a valid 
-UTC time that is within the Delta threshold.
+UTC time that is within the Delta threshold. 
 
 It is possible to run the full **init()** again
 after a partial initialization. 
