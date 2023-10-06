@@ -16,6 +16,8 @@ robo-time
    test
    examples
 
+.. index:: single: execution
+           single: execution; context
   
 * :ref:`genindex`
 
