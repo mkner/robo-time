@@ -26,9 +26,13 @@ object that the function returns is refered to in the suffix. For example,
 
 For instance:
 
-uptime() # is the command line version
-getUptimeStr() # returns formatted uptime in a string 
-getUptimeFp() # returns uptime as a floating point numerical value
+.. code-block:: python
+   
+   uptime() # is the command line version
+
+   getUptimeStr() # returns formatted uptime in a string 
+
+   getUptimeFp() # returns uptime as a floating point numerical value
 
 
 .. function:: uptime()
