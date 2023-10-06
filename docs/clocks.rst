@@ -4,8 +4,8 @@ Clocks
 .. py:mod: 
 .. py:mod:: py_mod
 
-The three primary clocks are UptimeClock, WorldClock, and SystemClock.
-Both World Clock and System Clock are directly derived from the primordal class Clock. 
+The three primary clocks are **UptimeClock**, **WorldClock**, and **SystemClock**.
+Both **WorldClock** and **SystemClock** are directly derived from the primordal class Clock. 
 The projects object oriented design produces a symmetry of decendent functionality that
 makes it easier to use the various clocks in logical and consistent way.
 
@@ -20,7 +20,8 @@ does it.
 
 If the prefix **get** precedes the base name then some object is returned. The type of 
 object that the function returns may be indicated in the suffix. For example, 
-**Str* for string, **Fp** for a floating point numerical value.
+**Str** for string, **Fp** for a floating point numerical value.
+
 
 For instance:
 
