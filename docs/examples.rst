@@ -278,78 +278,6 @@ Also, If the initialzaiton is paritally completed, a shorter update
 by running **resync()** is also possible.
 
 
-Robot
-*****
-
-Example using python command line interface
-
-Accsss some basic clock functions of an autonomous mobile robot 
-that is running the primary clocks: Clock, WorldClock, and SystemClock
-
-The robot has been logged into via a secure shell and
-python (command mode) is launched from there
-
-
-.. code-block:: python
-
-   user@robot:~$ python
-   Python 3.8.10 (default, Mar 13 2023, 10:26:41) 
-   [GCC 9.4.0] on linux
-   Type "help", "copyright", "credits" or "license" for more information.
-   >>> from robot import Robot
-   >>> robot = Robot()
-   >>> robot.whoami()
-   Robot v0.01.23x11c 
-   >>> robot.uptime()
-   00:00:38
-   >>> robot.worldclock.now()
-   1970-01-01 00:00:48 UTC
-   >>> robot.worldclock.ts()
-   1970-01-01 00:00:54 704200
-   >>> robot.worldclock.init()
-
-   WorldClock version: v0.01.14b
-   
-   Starting up...
-   Current WorldClock NTP (UTC) time: 1970-01-01 00:01:06.353826
-   Begin initialization from global NTP system...
-   Checking NTP connection...
-   Connection established...
-   Initializing UTC time from NTP reference signal...
-   Synchronization phase # 1  OK
-   Synchronization phase # 2  OK
-   Synchronization phase # 3
-   Resynchronizing world clock...
-   Connection to NTP server OK!
-   Checking delta threshold...
-   Within range. Updating...
-   Get time check...
-   Current WorldClock NTP (UTC) time: 2023-09-22 03:28:29.001089
-   Initialization done!
-   
-   >>> robot.worldclock.now() 
-   2023-09-22 03:28:37 UTC
-   >>> robot.sysclock.now()
-   2023-09-22 03:29:02 UTC
-   >>> robot.sysclock.now();robot.worldclock.now()
-   2023-09-22 03:29:20 UTC
-   2023-09-22 03:29:20 UTC
-   >>> robot.worldclock.resync()
-   Resynchronizing world clock...
-   Connection to NTP server OK!
-   Checking delta threshold...
-   Within range. Updating...
-   Get time check...
-   Current WorldClock NTP (UTC) time: 2023-09-22 03:29:52.343513
-   >>> robot.worldclock.timestamp()
-   2023-09-22 03:30:07 932513
-   >>> robot.worldclock.setTimestampFormat('iso-utc')
-   >>> robot.worldclock.timestamp()                  
-   2023-09-22T03:30:53.398023Z
-   >>> robot.uptime()
-   00:04:35
-
-
 Timestamps
 **********
 
@@ -590,6 +518,77 @@ enough and is widely used as a standard globally.
    2023-09-23T20:17:44.850927Z
    2023-09-23T16:17:44.851667-0400
    
+
+Robot
+*****
+
+Example using python command line interface
+
+Accsss some basic clock functions of an autonomous mobile robot 
+that is running the primary clocks: Clock, WorldClock, and SystemClock
+
+The robot has been logged into via a secure shell and
+python (command mode) is launched from there
+
+
+.. code-block:: python
+
+   user@robot:~$ python
+   Python 3.8.10 (default, Mar 13 2023, 10:26:41) 
+   [GCC 9.4.0] on linux
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>> from robot import Robot
+   >>> robot = Robot()
+   >>> robot.whoami()
+   Robot v0.01.23x11c 
+   >>> robot.uptime()
+   00:00:38
+   >>> robot.worldclock.now()
+   1970-01-01 00:00:48 UTC
+   >>> robot.worldclock.ts()
+   1970-01-01 00:00:54 704200
+   >>> robot.worldclock.init()
+
+   WorldClock version: v0.01.14b
+   
+   Starting up...
+   Current WorldClock NTP (UTC) time: 1970-01-01 00:01:06.353826
+   Begin initialization from global NTP system...
+   Checking NTP connection...
+   Connection established...
+   Initializing UTC time from NTP reference signal...
+   Synchronization phase # 1  OK
+   Synchronization phase # 2  OK
+   Synchronization phase # 3
+   Resynchronizing world clock...
+   Connection to NTP server OK!
+   Checking delta threshold...
+   Within range. Updating...
+   Get time check...
+   Current WorldClock NTP (UTC) time: 2023-09-22 03:28:29.001089
+   Initialization done!
+   
+   >>> robot.worldclock.now() 
+   2023-09-22 03:28:37 UTC
+   >>> robot.sysclock.now()
+   2023-09-22 03:29:02 UTC
+   >>> robot.sysclock.now();robot.worldclock.now()
+   2023-09-22 03:29:20 UTC
+   2023-09-22 03:29:20 UTC
+   >>> robot.worldclock.resync()
+   Resynchronizing world clock...
+   Connection to NTP server OK!
+   Checking delta threshold...
+   Within range. Updating...
+   Get time check...
+   Current WorldClock NTP (UTC) time: 2023-09-22 03:29:52.343513
+   >>> robot.worldclock.timestamp()
+   2023-09-22 03:30:07 932513
+   >>> robot.worldclock.setTimestampFormat('iso-utc')
+   >>> robot.worldclock.timestamp()                  
+   2023-09-22T03:30:53.398023Z
+   >>> robot.uptime()
+   00:04:35
 
 
 
