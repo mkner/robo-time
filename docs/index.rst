@@ -19,6 +19,8 @@ robo-time
 .. index:: single: execution
    entry1
    entry2
+   ts()
+
            single: execution; context
   
 * :ref:`genindex`
