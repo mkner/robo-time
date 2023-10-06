@@ -14,6 +14,23 @@ Clocks
 |
 
 
+Many functions are availible as a base command line version that just prints out 
+to the console but doesnt return anything. And then also with variations
+that return something for specific formats. The semantics of the interface function
+names are designed to follow a pattern that relates what the function does and how it
+does it.
+
+If the prefix **get** precedes the base name then returns some object. The type of 
+object that the function returns is refered to in the suffix. For example, 
+**Str* for string, **Fp** for Floating point numerical value.
+
+For instance:
+
+uptime() # is the command line version
+getUptimeStr() # returns formatted uptime in a string 
+getUptimeFp() # returns uptime as a floating point numerical value
+
+
 .. function:: uptime()
    
     Prints the uptime for the clock as HH:MM:SS at a minimal
