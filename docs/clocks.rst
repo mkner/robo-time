@@ -63,6 +63,19 @@ For example:
    00:00:38
    00:00:39
    >>> 
+   >>> # some time later
+   ... 
+   >>> 
+   >>> for i in range(3):c.up();c.ts();delay(1000)
+   ... 
+   00:23:10
+   0000-00-00 00:23:10 891130
+   00:23:11
+   0000-00-00 00:23:11 891285
+   00:23:12
+   0000-00-00 00:23:12 891372
+
+
 
 The patterning of semantics, form and function enhances the logic 
 and intuition of using the same base interface call in both shell 
