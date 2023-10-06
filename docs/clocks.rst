@@ -4,35 +4,37 @@ Clocks
 .. py:mod: 
 .. py:mod:: py_mod
 
-| The three primary clocks are Uptime Clock, World Clock,
-| and System Clock. The primordal clock is the Clock. Both World Clock
-| and System Clock are directly derived from Clock. The projects object oriented
-| design makes it easier to use the various clocks in logical and consistent way.
-|
-| There is a common interface for many features. Additional functionality is provided
-| for the type of time awareness, time variations and time representation.
-|
+The three primary clocks are UptimeClock, WorldClock, and SystemClock.
+Both World Clock and System Clock are directly derived from the primordal class Clock. 
+The projects object oriented design produces a symmetry of decendent functionality that
+makes it easier to use the various clocks in logical and consistent way.
 
+There is a common interface for many features. Additional functionality is provided
+for the type of time awareness, time variations and time representation.
 
-Many functions are availible as a base command line version that just prints out 
+Many functions are available first as a base command line version that just prints out 
 to the console but doesnt return anything. And then also with variations
 that return something for specific formats. The semantics of the interface function
 names are designed to follow a pattern that relates what the function does and how it
 does it.
 
-If the prefix **get** precedes the base name then returns some object. The type of 
-object that the function returns is refered to in the suffix. For example, 
-**Str* for string, **Fp** for Floating point numerical value.
+If the prefix **get** precedes the base name then some object is returned. The type of 
+object that the function returns may be indicated in the suffix. For example, 
+**Str* for string, **Fp** for a floating point numerical value.
 
 For instance:
 
 .. code-block:: python
    
-   uptime() # is the command line version
+   uptime()  # command line version prints to the console
 
-   getUptimeStr() # returns formatted uptime in a string 
+   getUptimeStr()  # returns formatted uptime in a string 
 
-   getUptimeFp() # returns uptime as a floating point numerical value
+   getUptimeFp()  # returns uptime as a floating point numerical value
+
+The patterning of semantics, form and function enhances the logic 
+and intuition of using the same base interface call in both shell 
+programs and inline code.
 
 
 .. function:: uptime()
