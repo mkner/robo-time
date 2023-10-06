@@ -17,6 +17,8 @@ robo-time
    examples
 
   
+* :ref:`genindex`
+
 
 
 
