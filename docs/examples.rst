@@ -297,7 +297,7 @@ Calling **roll()**  cycles through the functions
 
 With the output below **WorldClock** is not yet intialized to **UTC** time via **NTP**
 So the only concept of time that **WorldClock** has is its internal uptime counter.
-And its only reference for any year, month or day is in its epoch! **1970-01-01 00:00:00**
+And its only reference for any year, month or day is its epoch! **1970-01-01 00:00:00**
 So its hours, minutes and seconds match those of UptimeClock but *only* because
 they started running at the same time within microseconds when the objects were
 instantiated. Each clock type has an internal uptime clock counter whether that
