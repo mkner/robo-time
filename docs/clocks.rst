@@ -7,10 +7,8 @@ Clocks
 There are three primary clocks: **UptimeClock**, **WorldClock**, and **SystemClock**.
 
 Both WorldClock and SystemClock are directly derived from primary time keeping device
-Clock (UptimeClock). 
-
-The projects object oriented design produces a symmetry of decendent functionality
-that makes it easier to use the various clocks in logical and consistent way.
+Clock (UptimeClock).  The projects object oriented design produces a symmetry of decendent
+functionality that makes it easier to use the various clocks in logical and consistent way.
 
 There is a common interface for many features. Additional functionality is provided
 for the type of time awareness, time variations and time representation.
