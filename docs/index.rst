@@ -17,6 +17,8 @@ robo-time
    examples
 
 .. index:: single: execution
+   entry1
+   entry2
            single: execution; context
   
 * :ref:`genindex`
