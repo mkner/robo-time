@@ -31,6 +31,8 @@ robo-time
            
   
 * :ref:`genindex`
+* :ref:`modindex`
+
 
 
 
