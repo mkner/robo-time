@@ -5,7 +5,6 @@ Clocks
 .. py:mod:: py_mod
 
 There are three primary clocks: **UptimeClock**, **WorldClock**, and **SystemClock**.
-Both **WorldClock** and **SystemClock** are directly derived from the primordal class **Clock**.
 The projects object oriented design produces a symmetry of decendent functionality that
 makes it easier to use the various clocks in logical and consistent way.
 
@@ -37,6 +36,8 @@ The patterning of semantics, form and function enhances the logic
 and intuition of using the same base interface call in both shell 
 programs and inline code.
 
+
+The following functions are available on the interface of all clocks
 
 .. function:: uptime()
    
