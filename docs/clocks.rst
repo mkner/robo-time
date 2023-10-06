@@ -34,6 +34,36 @@ object that the function returns may be indicated in the suffix. For example,
 
    getUptimeFp()  # returns uptime as a floating point numerical value
 
+Rapid prototyping and testing are some of the keypoints of Python there 
+often short versions of functions. These are especially convenient for
+the shell command line. 
+
+For example using command line python:
+
+.. code-block:: python
+
+   >>> from robotime import Clock, delay
+   >>> c = Clock()
+   >>> c.version()
+   v01.02.11
+   >>> c.vers()
+   v01.02.11
+   >>> c.uptime()
+   00:00:14
+   >>> c.up()
+   00:00:17
+   >>> c.timestamp()
+   0000-00-00 00:00:22 753061
+   >>> c.ts()
+   0000-00-00 00:00:26 957314
+   >>> 
+   >>> for i in range(3):c.up();delay(1000)
+   ... 
+   00:00:37
+   00:00:38
+   00:00:39
+   >>> 
+
 The patterning of semantics, form and function enhances the logic 
 and intuition of using the same base interface call in both shell 
 programs and inline code.
