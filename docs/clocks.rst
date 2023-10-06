@@ -34,11 +34,11 @@ object that the function returns may be indicated in the suffix. For example,
 
    getUptimeFp()  # returns uptime as a floating point numerical value
 
-Rapid prototyping and testing are some of the keypoints of Python there 
-often short versions of functions. These are especially convenient for
-the shell command line. 
+Rapid prototyping and testing are some of the keypoints of Python. So there 
+are often short versions of function calls available. These are really useful
+for shell command line Python.
 
-For example using command line python:
+For example:
 
 .. code-block:: python
 
