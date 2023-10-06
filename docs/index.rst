@@ -16,12 +16,19 @@ robo-time
    test
    examples
 
-.. index:: single: execution
+.. index:: 
+
    entry1
    entry2
    ts()
+           
 
-           single: execution; context
+.. index:: single: execution
+
+   entry1
+   entry2
+   ts()
+           
   
 * :ref:`genindex`
 
