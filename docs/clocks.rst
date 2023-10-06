@@ -14,7 +14,7 @@ for the type of time awareness, time variations and time representation.
 Many functions are available first as a base command line version that just prints out 
 to the console but doesnt return anything. And then also with variations
 that return something for specific formats. The semantics of the interface function
-names are designed to follow a pattern that relates what the function does and how it
+names are designed to follow a pattern that relates what the function does to how it
 does it.
 
 If the prefix **get** precedes the base name then some object is returned. The type of 
