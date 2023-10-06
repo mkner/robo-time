@@ -30,8 +30,6 @@ robo-time
    ts()
            
   
-* :ref:`genindex`
-* :ref:`modindex`
 
 
 
