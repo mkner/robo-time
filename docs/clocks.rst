@@ -19,12 +19,12 @@ that return something for specific formats. The semantics of the interface funct
 names are designed to follow a pattern that relates what the function does to how it
 does it.
 
+For instance:
+
 If the prefix **get** precedes the base name then some object is returned. The type of 
 object that the function returns may be indicated in the suffix. For example, 
 **Str** for string, **Fp** for a floating point numerical value.
 
-
-For instance:
 
 .. code-block:: python
    
