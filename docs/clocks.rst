@@ -4,8 +4,8 @@ Clocks
 .. py:mod: 
 .. py:mod:: py_mod
 
-The three primary clocks are **UptimeClock**, **WorldClock**, and **SystemClock**.
-Both **WorldClock** and **SystemClock** are directly derived from the primordal class Clock. 
+There are three primary clocks: **UptimeClock**, **WorldClock**, and **SystemClock**.
+Both **WorldClock** and **SystemClock** are directly derived from the primordal class **Clock**.
 The projects object oriented design produces a symmetry of decendent functionality that
 makes it easier to use the various clocks in logical and consistent way.
 
