@@ -14,7 +14,7 @@ There is a common interface for many features. Additional functionality is provi
 for the type of time awareness, time variations and time representation.
 
 Many functions are available first as a base command line version that just prints out 
-to the console but doesnt return anything. And then also with variations
+to the console but doesn't return anything. And then also with variations
 that return something for specific formats. The semantics of the interface function
 names are designed to follow a pattern that relates what the function does to how it
 does it.
