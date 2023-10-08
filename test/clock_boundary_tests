@@ -1,1 +1,552 @@
 
+#!/usr/bin/env python
+
+
+#
+# clock_boundary_tests
+# 
+# v0.01.03
+#
+
+#
+# robotime - clocks
+# for mobile robotics and related applications
+#
+# (c) 2022 - 2023  Mike Knerr
+#
+
+#
+# primary Clock() time integrity tests
+# uptime, time increment and "calendar" boundary tests
+# using builtin symmetric 360 calendar
+# years, months, days, hours, minutes, seconds
+# milliseconds, microseconds
+# for both zero and first based counting 
+# easy to run from shell background &  
+# and dump output > somefile.txt for analysis
+#
+
+#from clocks import Clock, SystemClock, WorldClock #local src test
+
+from robotime.clocks import Clock, SystemClock, WorldClock
+from robotime.time import delay
+
+
+# def init():
+#     c = Clock()
+#     sc = SystemClock()
+#     wc = WorldClock()
+#     return (c,sc,wc)
+
+
+def signon(c,sc,wc):
+    
+    print()
+    print("***** STARTING TESTS *****")
+    print()
+    
+    c.up()
+    c.now()
+    c.today()
+    c.setTimestampFormat('basic')
+    c.ts()
+    c.setTimestampFormat('iso-utc')
+    c.ts()
+    c.setTimestampFormat('basic')
+
+    print()
+    
+    sc.up()
+    sc.now()
+    sc.today()
+    sc.setTimestampFormat('basic')
+    sc.ts()
+    sc.setTimestampFormat('iso-utc')
+    sc.ts()
+    sc.setTimestampFormat('basic')
+    
+    print()
+    
+    wc.up()
+    wc.now()
+    wc.today()
+    wc.setTimestampFormat('basic')
+    wc.ts()
+    wc.setTimestampFormat('iso-utc')
+    wc.ts()
+    wc.setTimestampFormat('basic')
+
+def signoff(c,sc,wc):
+    
+    print()
+    print("***** END ALL TESTS *****")
+    print()
+    
+    c.up()
+    c.now()
+    c.today()
+    c.setTimestampFormat('basic')
+    c.ts()
+    c.setTimestampFormat('iso-utc')
+    c.ts()
+    
+    print()
+    
+    sc.up()
+    sc.now()
+    sc.today()
+    sc.setTimestampFormat('basic')
+    sc.ts()
+    sc.setTimestampFormat('iso-utc')
+    sc.ts()
+    
+    print()
+    
+    wc.up()
+    wc.now()
+    wc.today()
+    wc.setTimestampFormat('basic')
+    wc.ts()
+    wc.setTimestampFormat('iso-utc')
+    wc.ts()
+    
+    
+def runtestA(tc, caltype, counttype, noff, time_inc, delay_interval, desc):
+   
+    if (counttype =='zerobased'): #TEST_ZEROBASED):
+        tc.setZeroBasedFormatOn()
+    
+    if (counttype =='firstbased'): #TEST_ZEROBASED):
+        tc.setZeroBasedFormatOff()
+      
+    tc.setDebugOn()
+    
+    tc.setCalType(caltype) 
+    
+    tc._setNtest(noff+time_inc)
+    
+    a=[]
+    print()
+    print(desc)
+    print()
+    for i in range(6):
+        x=tc.getUptimeStr() + " --- " +tc.getTimestampStr()
+        print(x)
+        #y=tc.getUptime()
+        #print(y)
+        a.append(x)
+        
+        #delay(1000)
+        #delay_sp(delay_interval)
+        
+        tc.delay(delay_interval) # 
+        
+        #delay_tm(1000)
+        #delay(1000)
+        #time.sleep(1)
+        
+    print()
+    
+    return a
+
+#short sample
+leapyears = [2020,2024,2028,2032,2036,2040,2044,2048,2052,2056,2060]
+notleapyears = [2019,2021,2022,2023,2025,2026]
+#v0.18 WORKS
+def isLeapYear(year):
+    
+    leap = False
+    
+    if year%4 ==0:
+        if year%100 != 0:
+            leap = True
+        else:
+            if year%400 == 0:
+                leap = True
+    else:
+        leap = False
+    
+    return leap
+
+                
+#=================================
+### TEST WITH LEAP YEARS
+
+## works leap year check test
+
+#for i in range(len(leapyears)):
+#    print (i,leapyears[i],isLeapYear(leapyears[i]))
+    
+#for i in range(len(notleapyears)):
+#    print (i,notleapyears[i],isLeapYear(notleapyears[i]))
+############################################################3    
+ 
+
+
+#def runtest(tc, caltype, counttype, time_inc):
+
+def runtest(caltype, counttype, time_inc, delay_inc): 
+    
+    
+    #print("delay interval =",delay_inc)
+    
+    tc = Clock()
+    
+    print()
+    #clock_epoch=tc._start_epoch_time
+    print("Running Clock version:",tc.getVersion())
+    print()
+    print("Clock has time epoch ",end='');tc.epoch()
+    
+    #print("that starts at:",tc.mkTimestampStr(tc._start_epoch_time))
+    #print()
+    
+    tc.setDebugOn()
+    #tc.setDebugOff()
+    #  days_in_year = tc._cal_days_in_year
+    #   days_in_month = tc._cal_days_in_month      
+    #   sec_in_min = tc._cal_seconds_in_minute
+ 
+    #### NOTE: THIS IS ASSUMING A LOT
+    # that ALL clocks will have same seconds in hour
+    tc.setCalType(caltype) 
+    sec_in_hour = tc._cal_minutes_in_hour*tc._cal_seconds_in_minute
+    sec_in_day = sec_in_hour*tc._cal_hours_in_day
+    
+    #sec_in_year = sec_in_day * days_in_year  
+    #min_in_hour = tc._cal_minutes_in_hour #_seconds_in_minute
+
+    ga=[] # zero based dates
+    #gb=[] # first based dates
+   
+    #time_inc=time_offset
+    
+    print()
+    print("Running boundary crossover tests")
+    print()
+    print("for calender type: ",caltype) # CALTYPE)
+    
+    if (counttype=='zerobased' ): #TEST_ZEROBASED):
+        print("with indexing set for ZERO BASED")
+    if (counttype=='firstbased'): #TEST_FIRSTBASED):
+        print("with indexing set for FIRST BASED")
+    print("and clock advanced ",time_inc,"seconds into the future")
+    print("using a time increment of",delay_inc,"(ms)")
+    print()
+    
+    #-----------------------------------------------------------
+    
+    
+    # cross over 1st day to 2nd day boundary - ok         
+    tc=Clock()
+    
+    tc.setDebugOn()
+    desc="crossover 1st day to 2nd day boundary" #- ok
+    n_offset =0       
+    n_offset += 0*sec_in_day + (sec_in_day-3) # add days to test
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc)
+    #x=runtestA(tc,CALTYPE,n_offset,time_inc,desc)
+    ga.append(x)
+    
+    #-----------------------------------------------------------
+       
+    #-----------------------------------------------------------
+    
+    #1st -> 2nd month: from last day of month to first day next month
+    tc = Clock()
+    tc.setDebugOn()
+    desc="1st -> 2nd month: from last day of month to first day next month"
+    n_offset=0
+    
+    if (caltype=='gregorian'):
+        n_offset += (30)*sec_in_day + (sec_in_day-3)
+    elif (caltype=='sym360'):
+        n_offset += (29)*sec_in_day + (sec_in_day-3)
+        
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc)
+    ga.append(x)
+    
+    #-----------------------------------------------------------
+      
+    #-----------------------------------------------------------
+     
+    #2nd -> 3rd month: last day of month to first day next month
+    
+    tc = Clock()
+    tc.setDebugOn()
+    desc = "2nd -> 3rd month: last day of month to first day next month"
+    n_offset=0
+    
+    if (caltype=='gregorian'):
+        n_offset += (30+28)*sec_in_day + (sec_in_day-3)
+    elif (caltype=='sym360'):
+        n_offset += (2*(29)+1)*sec_in_day + (sec_in_day-3)
+        
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc)
+    ga.append(x)
+    
+    
+    #-----------------------------------------------------------
+    #(30+28+31+30+31+30+31+31+30+31+30+31)
+    #-----------------------------------------------------------
+    
+    #3rd -> 4th month: last day of month to first day next month
+    tc = Clock()
+    tc.setDebugOn()
+    desc = "3rd -> 4th month: last day of month to first day next month"
+    n_offset=0
+    
+    if (caltype=='gregorian'):
+        n_offset += (30+28+31)*sec_in_day + (sec_in_day-3)
+    elif (caltype=='sym360'):
+        n_offset += (3*(29)+2)*sec_in_day + (sec_in_day-3)
+        
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc)
+    ga.append(x)
+    
+    #-----------------------------------------------------------
+                  
+    #-----------------------------------------------------------
+    
+    #4th -> 5th month: last day of month to first day next month
+    tc = Clock()
+    tc.setDebugOn()
+    desc = "4th -> 5th month: last day of month to first day next month"
+    n_offset=0
+    
+    if (caltype=='gregorian'):
+        n_offset += (30+28+31+30)*sec_in_day + (sec_in_day-3)
+    elif (caltype=='sym360'):
+        n_offset += (4*(29)+3)*sec_in_day + (sec_in_day-3)
+        
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc)
+    ga.append(x)
+   
+    #*HERE
+    # return ga
+    #-----------------------------------------------------------
+                 
+    #-----------------------------------------------------------
+    
+    #5th -> 6th month: last day of month to first day next month
+    tc = Clock()
+    tc.setDebugOn()
+    desc = "5th -> 6th month: last day of month to first day next month"
+    n_offset=0
+    
+    if (caltype=='gregorian'):
+        n_offset += (30+28+31+30+31)*sec_in_day + (sec_in_day-3)
+    elif (caltype=='sym360'):
+        n_offset += (5*(29)+4)*sec_in_day + (sec_in_day-3)
+   
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc)
+    ga.append(x)
+       
+    #-----------------------------------------------------------
+    
+    #-----------------------------------------------------------
+    
+    #6th -> 7th month: last day of month to first day next month
+    tc = Clock()
+    tc.setDebugOn()
+    desc = "6th -> 7th month: last day of month to first day next month"
+    n_offset=0
+    
+    if (caltype=='gregorian'):
+        n_offset += (30+28+31+30+31+30)*sec_in_day + (sec_in_day-3)
+    elif (caltype=='sym360'):
+        n_offset += (6*(29)+5)*sec_in_day + (sec_in_day-3)
+        
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc)
+    ga.append(x)
+    
+    #-----------------------------------------------------------
+    
+    #-----------------------------------------------------------
+    
+    #7th -> 8th month: last day of month to first day next month
+    tc = Clock()
+    tc.setDebugOn()
+    desc = "7th -> 8th month: last day of month to first day next month"
+    n_offset=0
+    
+    if (caltype=='gregorian'):
+        n_offset += (30+28+31+30+31+30+31)*sec_in_day + (sec_in_day-3)
+    elif (caltype=='sym360'):
+        n_offset += (7*(29)+6)*sec_in_day + (sec_in_day-3)
+  
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc)
+    ga.append(x)
+                     
+    #-----------------------------------------------------------
+    
+    #-----------------------------------------------------------
+    
+    #8th -> 9th month: last day of month to first day next month
+    tc = Clock()
+    tc.setDebugOn()
+    desc = "8th -> 9th month: last day of month to first day next month"
+    n_offset=0
+    
+    if (caltype=='gregorian'):
+        n_offset += (30+28+31+30+31+30+31+31)*sec_in_day + (sec_in_day-3)
+    elif (caltype=='sym360'):
+        n_offset += (8*(29)+7)*sec_in_day + (sec_in_day-3)
+        
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc)
+    ga.append(x)
+   
+    #-----------------------------------------------------------
+    
+    #-----------------------------------------------------------
+    
+    #9th -> 10th month: last day of month to first day next month
+    tc = Clock()
+    tc.setDebugOn()
+    desc = "9th -> 10th month: last day of month to first day next month"
+    n_offset=0
+    
+    if (caltype=='gregorian'):
+        n_offset +=  (30+28+31+30+31+30+31+31+30)*sec_in_day + (sec_in_day-3)
+    elif (caltype=='sym360'):
+        n_offset += (9*(29)+8)*sec_in_day + (sec_in_day-3)
+   
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc)
+    ga.append(x)
+               
+    #-----------------------------------------------------------
+
+    #-----------------------------------------------------------
+    
+    #10th -> 11th month: last day of month to first day next month
+    tc = Clock()
+    tc.setDebugOn()
+    desc = "10th -> 11th month: last day of month to first day next month"
+    n_offset=0
+    
+    if (caltype=='gregorian'):
+        n_offset +=  (30+28+31+30+31+30+31+31+30+31)*sec_in_day + (sec_in_day-3)
+    elif (caltype=='sym360'):
+        n_offset += (10*(29)+9)*sec_in_day + (sec_in_day-3)
+        
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc)
+    ga.append(x)
+    
+    #-----------------------------------------------------------
+    
+    #-----------------------------------------------------------
+    
+    #11th -> 12th month: last day of month to first day next month
+    tc = Clock()
+    tc.setDebugOn()
+    desc = "11th -> 12th month: last day of month to first day next month"
+    n_offset=0
+    
+    if (caltype=='gregorian'):
+        n_offset +=  (30+28+31+30+31+30+31+31+30+31+30)*sec_in_day + (sec_in_day-3)
+    elif (caltype=='sym360'):
+        n_offset += (11*(29)+10)*sec_in_day + (sec_in_day-3)
+        
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc) 
+    ga.append(x)
+        
+    #-----------------------------------------------------------
+    
+    #-----------------------------------------------------------
+    
+    ### LAST ONE GERGORIAN
+    
+    # END OF YEAR
+    #12th --> 1st month: last day last month to 1st day next year
+    tc = Clock()
+    tc.setDebugOn()
+    desc = "12th --> 1st month: last day last month to 1st day next year"
+    n_offset=0
+    
+    if (caltype=='gregorian'):
+        n_offset +=  (30+28+31+30+31+30+31+31+30+31+30+31)*sec_in_day + (sec_in_day-3)
+    elif (caltype=='sym360'):
+        n_offset += (12*(29)+11)*sec_in_day + (sec_in_day-3)
+  
+    x=runtestA(tc, caltype, counttype, n_offset, time_inc, delay_inc, desc)
+    ga.append(x)
+  
+    return ga
+
+    #return ga,gb
+
+#-----------------------------------------------------------
+
+# hey, start here
+
+
+
+c = Clock()
+sc = SystemClock()
+wc = WorldClock()
+
+wc.init()
+
+#init()
+signon(c,sc,wc)
+
+
+time_inc=0 # advance into future seconds
+
+## run these 2 first
+
+# for Clock class only 
+
+print()
+print("***** STARTING CAL 360 TESTS *****")
+print()
+
+
+print()
+print("***** RUNNING CAL 360 -- ZERO-BASED TEST *****")
+print()
+a = runtest('sym360', 'zerobased', time_inc, 1000)
+delay(2000)
+
+#input("Waiting...")
+
+print()
+print("***** RUNNING CAL 360 -- FIRST-BASED TEST *****")
+print()
+a = runtest('sym360', 'firstbased', time_inc, 1000)
+delay(2000)
+
+
+print()
+print("***** STARING MILLISECOND TESTS *****")
+print()
+
+a = runtest('sym360', 'firstbased', time_inc, 1000)
+delay(2000)
+
+# check millisecond fractional part
+# AND not cross day boundaries, or min or second depending
+a = runtest('sym360', 'firstbased', time_inc, 500)
+delay(2000)
+a = runtest('sym360', 'firstbased', time_inc, 250)
+delay(2000)
+a = runtest('sym360', 'firstbased', time_inc, 100)
+delay(2000)
+a = runtest('sym360', 'firstbased', time_inc, 10)
+delay(2000)
+a = runtest('sym360', 'firstbased', time_inc, 1)
+delay(2000)
+print ("----  -- END miliseconds TESTS -------------")
+
+print()
+print("***** END CAL 360 TESTS *****")
+print()
+
+signoff(c,sc,wc)
+
+#g = runtest('gregorian', 'firstbased', time_inc,1000)
+#delay(2000)
+
+
+
+
