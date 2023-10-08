@@ -10,7 +10,7 @@ Test
 | quickly check on and compare formatting of all clocks
 | 
 
-- Clock (UptimeClock)
+- Clock
 - WorldClock
 - SystemClock
 
