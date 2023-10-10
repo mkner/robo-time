@@ -21,13 +21,12 @@ for output, storage, calculations, and reformatting. This is consistent across a
 - integers (numeric)
 - floating point (numeric)
 
-Many functions are available as a base command line version that just prints out 
+There are interface functions for a  base command line version that just prints out 
 to the console but doesn't return anything and then also with variations
-that return something for specific formats and data types. 
+that return something for the specific formats and data types. 
 
-The semantics of the interface function
-names are designed to follow a pattern that relates what the function does to how it
-does it.
+The semantics of the interface function names are designed to follow a pattern that
+relates what the function does to how it does it.
 
 For instance:
 
