@@ -17,7 +17,7 @@ To verify **robo-time** is installed run from the command line
     $  python3 -m pip list --format=columns | grep robo-
     robo-base                          0.1.4
     robo-time                          0.1.8
-    robo-utils                         0.2.5
+    robo-utils                         0.2.6
 
 The output should be something similar with a minimal of
 **robo-base** and **robo-time** listed
