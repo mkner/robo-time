@@ -43,6 +43,12 @@ object that the function returns may be indicated in the suffix. For example,
 
    getUptimeFp()  # returns uptime as a floating point numerical value
 
+
+The patterning of semantics, form and function enhances the logic 
+and intuition of using the same base interface call in both shell 
+programs and inline code across the various types of clocks and 
+timekeeping systems.
+
 Rapid prototyping and testing are some of the keypoints of Python. So there 
 are often short versions of function calls available. These are really useful
 for shell command line Python.
@@ -83,12 +89,6 @@ For example:
    0000-00-00 00:23:11 891285
    00:23:12
    0000-00-00 00:23:12 891372
-
-
-The patterning of semantics, form and function enhances the logic 
-and intuition of using the same base interface call in both shell 
-programs and inline code across the various types of clocks and 
-timekeeping systems.
 
 
 The following functions are available on the interface of all clocks
