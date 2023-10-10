@@ -17,11 +17,11 @@ For all clocks, the same instant in time-date space is available in the most use
 for output, storage, calculations, and reformatting. This is consistent across all clock types.
 
 - print (command line mode) 
-- strings
+- strings (character)
 - integers (numeric)
 - floating point (numeric)
 
-There are interface functions for a  base command line version that just prints out 
+There are interface functions for a base command line version that just prints out 
 to the console but doesn't return anything and then also with variations
 that return something for the specific formats and data types. 
 
@@ -85,10 +85,10 @@ For example:
    0000-00-00 00:23:12 891372
 
 
-
 The patterning of semantics, form and function enhances the logic 
 and intuition of using the same base interface call in both shell 
-programs and inline code.
+programs and inline code across the various types of clocks and 
+timekeeping systems.
 
 
 The following functions are available on the interface of all clocks
