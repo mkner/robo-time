@@ -13,17 +13,19 @@ functionality that makes it easier to use the various clocks in a logical and co
 There is a common interface for many features. Additional functionality is provided
 for the type of time awareness, time variations and time representation.
 
-For all clocks, the same time and date representation is available in the most useful forms
+For all clocks, the same instant in time-date space is available in the most useful forms
 for output, storage, calculations, and reformatting. This is consistent across all clock types.
 
-- print out (command line mode) 
+- print (command line mode) 
 - strings
 - integers (numeric)
 - floating point (numeric)
 
-Many functions are available first as a base command line version that just prints out 
-to the console but doesn't return anything. And then also with variations
-that return something for specific formats. The semantics of the interface function
+Many functions are available as a base command line version that just prints out 
+to the console but doesn't return anything and then also with variations
+that return something for specific formats and data types. 
+
+The semantics of the interface function
 names are designed to follow a pattern that relates what the function does to how it
 does it.
 
