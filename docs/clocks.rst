@@ -6,8 +6,8 @@ Clocks
 
 There are three primary clocks: **Clock**, **WorldClock**, and **SystemClock**.
 
-Both WorldClock and SystemClock are directly derived from primary time keeping device
-Clock.  The projects object oriented design produces a symmetry of decendent
+Both **WorldClock** and **SystemClock** are directly derived from primary time keeping device
+**Clock**.  The projects object oriented design produces a symmetry of decendent
 functionality that makes it easier to use the various clocks in a logical and consistent way.
 
 There is a common interface for many features. Additional functionality is provided
