@@ -520,72 +520,82 @@ enough and is widely used as a standard globally.
 Example using  WorldClock and converting its date 
 and time representation to the python datetime object form
 
- .. code-block:: python
+.. code-block:: python
    
-    from robotime.clocks import WorldClock
-    
-    from dateutil.parser import parse
-    from dateutil import tz
-
-    import datetime
+   from robotime.clocks import WorldClock
    
-    wc = WorldClock()
+   from dateutil.parser import parse
+   from dateutil import tz
    
-    # before init, beginning of epoch
-    wc.ts()
-    1970-01-01 00:00:03 285931
+   import datetime
    
-    wc.init()
-    WorldClock version: v0.01.14c
+   wc = WorldClock()
    
-    Starting up...
-    Current WorldClock NTP (UTC) time: 1970-01-01 00:00:04.896149
-    Begin initialization from global NTP system...
-    Checking NTP connection...
-    Connection established...
-    Initializing UTC time from NTP reference signal...
-    Synchronization phase # 1  OK
-    Synchronization phase # 2  OK
-    Synchronization phase # 3
-    Resynchronizing world clock...
-    Connection to NTP server OK!
-    Checking delta threshold...
-    Above threshold. Not updating time
-    Current WorldClock NTP (UTC) time: 2023-10-11 19:51:37.602130
-    Initialization done!
+   # before init, beginning of epoch
+   wc.ts()
+   1970-01-01 00:00:03 285931
+   
+   wc.init()
+   WorldClock version: v0.01.14c
+   
+   Starting up...
+   Current WorldClock NTP (UTC) time: 1970-01-01 00:00:04.896149
+   Begin initialization from global NTP system...
+   Checking NTP connection...
+   Connection established...
+   Initializing UTC time from NTP reference signal...
+   Synchronization phase # 1  OK
+   Synchronization phase # 2  OK
+   Synchronization phase # 3
+   Resynchronizing world clock...
+   Connection to NTP server OK!
+   Checking delta threshold...
+   Above threshold. Not updating time
+   Current WorldClock NTP (UTC) time: 2023-10-11 19:51:37.602130
+   Initialization done!
    
    
-    wc.ts() # time now
-    2023-10-11 19:51:37 653657
+   wc.ts() # time now
+   2023-10-11 19:51:37 653657
    
-    wc.getTimestampStr() # in string form
-    '2023-10-11 19:51:52 195322'
+   wc.getTimestampStr() # in string form
+   '2023-10-11 19:51:52 195322'
    
-    # use iso-8601 format
-    wc.setTimestampFormat('iso-utc')
+   # use iso-8601 format
+   wc.setTimestampFormat('iso-utc')
    
-    wc.ts()
-    2023-10-11T19:51:55.350156Z
+   wc.ts()
+   2023-10-11T19:51:55.350156Z
    
-    wc.getTimestampStr()
+   wc.getTimestampStr()
    '2023-10-11T19:51:57.680778Z'
-
-    # use parse to get the datetime equivalent
-    parse(wc.getTimestampStr())
-    datetime.datetime(2023, 10, 11, 19, 52, 1, 299908, tzinfo=tzutc())
    
-    # side by side comparison, usually equiv to the millisecond
-    wc.ts();parse(wc.getTimestampStr())
-    2023-10-11T19:52:03.786771Z
-    datetime.datetime(2023, 10, 11, 19, 52, 3, 786935, tzinfo=tzutc())
+   # use parse to get the datetime equivalent
+   parse(wc.getTimestampStr())
+   datetime.datetime(2023, 10, 11, 19, 52, 1, 299908, tzinfo=tzutc())
    
-    # now get the datetime object representation
-    # using code returned by parse
+   # side by side comparison, usually equiv to the millisecond
+   wc.ts();parse(wc.getTimestampStr())
+   2023-10-11T19:52:03.786771Z
+   datetime.datetime(2023, 10, 11, 19, 52, 3, 786935, tzinfo=tzutc())
    
-    tzutc = tz.tzutc
-    dt=datetime.datetime(2023, 10, 11, 19, 38, 33, 307749, tzinfo=tzutc())
+   # now get the datetime object representation
+   # using code returned by parse
+   
+   tzutc = tz.tzutc
+   dt=datetime.datetime(2023, 10, 11, 19, 38, 33, 307749, tzinfo=tzutc())
+   
+   
+.. code-block:: python
 
-
+   from robotime.clocks import Clock
+   from robotime.clocks import WorldClock
+   from robotime.clocks import SystemClock
+   
+   from robotime.time import delay
+   
+   c = Clock()
+   wc = WorldClock()
 
 
 Robot
