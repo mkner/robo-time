@@ -587,10 +587,6 @@ and time representation to the python datetime object form
    
 .. code-block:: python
 
-   from robotime.clocks import Clock
-   from robotime.clocks import WorldClock
-   from robotime.clocks import SystemClock
-   
    from robotime.time import delay
    from robotime.clocks import WorldClock
    from dateutil.parser import parse
@@ -606,6 +602,8 @@ and time representation to the python datetime object form
    
    wc.init()
    WorldClock version: v0.01.14c
+
+
    c = Clock()
    wc = WorldClock()
    
