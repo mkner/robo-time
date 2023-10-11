@@ -49,47 +49,6 @@ and intuition of using the same base interface call in both shell
 programs and inline code across the various types of clocks and 
 timekeeping systems.
 
-Rapid prototyping and testing are some of the keypoints of Python. So there 
-are often short versions of function calls available. These are really useful
-for shell command line Python.
-
-For example:
-
-.. code-block:: python
-
-   >>> from robotime import Clock, delay
-   >>> c = Clock()
-   >>> c.version()
-   v01.02.11
-   >>> c.vers()
-   v01.02.11
-   >>> c.uptime()
-   00:00:14
-   >>> c.up()
-   00:00:17
-   >>> c.timestamp()
-   0000-00-00 00:00:22 753061
-   >>> c.ts()
-   0000-00-00 00:00:26 957314
-   >>> 
-   >>> for i in range(3):c.up();delay(1000)
-   ... 
-   00:00:37
-   00:00:38
-   00:00:39
-   >>> 
-   >>> # some time later
-   ... 
-   >>> 
-   >>> for i in range(3):c.up();c.ts();delay(1000)
-   ... 
-   00:23:10
-   0000-00-00 00:23:10 891130
-   00:23:11
-   0000-00-00 00:23:11 891285
-   00:23:12
-   0000-00-00 00:23:12 891372
-
 
 The following functions are available on the interface of all clocks
 
@@ -191,6 +150,7 @@ The following functions are available on the interface of all clocks
   :return: clocks uptime 
   :rtype: float
 
+**Delay Functions**
 
 .. function:: millis()
      
@@ -242,6 +202,47 @@ The following functions are available on the interface of all clocks
   :return: current monotonic time 
   :rtype: float
 
+
+Rapid prototyping and testing are some of the keypoints of Python. There 
+are often short versions of function calls available. These are really useful
+for shell command line Python.
+
+For example:
+
+.. code-block:: python
+
+   >>> from robotime import Clock, delay
+   >>> c = Clock()
+   >>> c.version()
+   v01.02.11
+   >>> c.vers()
+   v01.02.11
+   >>> c.uptime()
+   00:00:14
+   >>> c.up()
+   00:00:17
+   >>> c.timestamp()
+   0000-00-00 00:00:22 753061
+   >>> c.ts()
+   0000-00-00 00:00:26 957314
+   >>> 
+   >>> for i in range(3):c.up();delay(1000)
+   ... 
+   00:00:37
+   00:00:38
+   00:00:39
+   >>> 
+   >>> # some time later
+   ... 
+   >>> 
+   >>> for i in range(3):c.up();c.ts();delay(1000)
+   ... 
+   00:23:10
+   0000-00-00 00:23:10 891130
+   00:23:11
+   0000-00-00 00:23:11 891285
+   00:23:12
+   0000-00-00 00:23:12 891372
 
 WorldClock
 ----------
