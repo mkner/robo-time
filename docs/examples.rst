@@ -523,7 +523,6 @@ and time representation to the python datetime object form
 .. code-block:: python
    
    from robotime.clocks import WorldClock
-   
    from dateutil.parser import parse
    from dateutil import tz
    
@@ -593,10 +592,23 @@ and time representation to the python datetime object form
    from robotime.clocks import SystemClock
    
    from robotime.time import delay
+   from robotime.clocks import WorldClock
+   from dateutil.parser import parse
+   from dateutil import tz
    
+   import datetime
+   
+   wc = WorldClock()
+   
+   # before init, beginning of epoch
+   wc.ts()
+   1970-01-01 00:00:03 285931
+   
+   wc.init()
+   WorldClock version: v0.01.14c
    c = Clock()
    wc = WorldClock()
-
+   
 
 Robot
 *****
