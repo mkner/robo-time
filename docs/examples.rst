@@ -16,16 +16,16 @@ Clock
    
    from robotime.clocks import Clock
 
-    # alternate forms 
-    # from robotime import Clock
+   # alternate forms 
+   # from robotime import Clock
 
-    c = Clock() 
+   c = Clock() 
    
-    c.uptime()
-    00:00:08
+   c.uptime()
+   00:00:08
    
-    c.time()
-    00:00:14
+   c.time()
+   00:00:14
    
    c.date()
    0000-00-00
