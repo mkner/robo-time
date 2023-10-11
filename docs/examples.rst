@@ -440,9 +440,6 @@ enough and is widely used as a standard globally.
    wc.timestamp()
    sc.timestamp()
 
-
-.. code-block:: python
-   
    1.5001420569988113
    1.5001360289988952
    1695500245.02725
