@@ -567,15 +567,17 @@ and time representation to the python datetime object form
    '2023-10-11T19:51:57.680778Z'
    
    # use parse to get the datetime equivalent
+   # take a look at what parse(...) returns
    parse(wc.getTimestampStr())
    datetime.datetime(2023, 10, 11, 19, 52, 1, 299908, tzinfo=tzutc())
    
-   # side by side comparison, usually equiv to the millisecond
+   # side by side comparison WorldClock timestamp and datetime
    wc.ts();parse(wc.getTimestampStr())
    2023-10-11T19:52:03.786771Z
    datetime.datetime(2023, 10, 11, 19, 52, 3, 786935, tzinfo=tzutc())
-   
-   # now get the datetime object representation
+
+   # 
+   # assign datetime object created from WorldClock timestamp
    # using code returned by parse
    
    tzutc = tz.tzutc
