@@ -558,7 +558,7 @@ and time representation to the python datetime object form
    2023-10-12 21:22:03 631231
    
    wc.getTimestampStr() # in string form
-   Out[10]: '2023-10-12 21:22:04 807266'
+   '2023-10-12 21:22:04 807266'
    
    # use iso-8601 format
    wc.setTimestampFormat('iso-utc')
@@ -567,28 +567,23 @@ and time representation to the python datetime object form
    2023-10-12T21:22:12.942284Z
    
    wc.getTimestampStr()
-   Out[14]: '2023-10-12T21:22:16.724796Z'
+   '2023-10-12T21:22:16.724796Z'
    
    # use parse to get the datetime equivalent
    # take a look at what parse(...) returns
    parse(wc.getTimestampStr())
-   Out[17]: datetime.datetime(2023, 10, 12, 21, 22, 22, 565356, tzinfo=tzutc())
+   datetime.datetime(2023, 10, 12, 21, 22, 22, 565356, tzinfo=tzutc())
    
    # side by side comparison WorldClock timestamp and datetime
    wc.ts();parse(wc.getTimestampStr())
    2023-10-12T21:22:26.208415Z
-   Out[19]: datetime.datetime(2023, 10, 12, 21, 22, 26, 208730, tzinfo=tzutc())
-   
-   # assign datetime object created from WorldClock timestamp
-   # using code returned by parse
-   tzutc = tz.tzutc
-   dt=datetime.datetime(2023, 10, 11, 19, 38, 33, 307749, tzinfo=tzutc())
+   datetime.datetime(2023, 10, 12, 21, 22, 26, 208730, tzinfo=tzutc())
    
    # ck directly assigned object returned
    dt = parse(wc.getTimestampStr())
    
    dt
-   Out[26]: datetime.datetime(2023, 10, 12, 21, 22, 33, 541604, tzinfo=tzutc())
+   datetime.datetime(2023, 10, 12, 21, 22, 33, 541604, tzinfo=tzutc())
    
 
 Robot
