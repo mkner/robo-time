@@ -5,7 +5,7 @@ See Also
 
 For another must have robotic python package see...
 
-A Robotic Utility Function Toolkit aka simply **roboutils** 
+A Robotic Utility Function Toolkit aka simply **roboutils**
 Maybe it might end up being called ARUFT anyway!
 
 Documentation is `here <https://robo-utils.readthedocs.io/en/latest/>`_
