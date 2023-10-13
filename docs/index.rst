@@ -16,6 +16,8 @@ robo-time
    timestamps
    test
    examples
+   reference
+   also
 
 .. index:: 
 
