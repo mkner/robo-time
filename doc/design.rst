@@ -2,6 +2,7 @@
 Motivation
 ----------
 
+
 This project evolved in the course of designing and implementing an OS for mobile robotics, in particular, small differential drive robots. These robots are both individual mobile robots and interactive robots in a dynamic distributed mobile environment.
 
 Mobile robots exist in continuous cycle of modes: See, Think and Do. Within these are the ongoing questions a robot needs to answer:
@@ -15,8 +16,6 @@ Perception is based on continuous measurements and readings from electronic and 
 The interpretation of incoming measurements and their associated events have one thing in common. They all depend on some representation of time, relative time and time synchronization.
 
 
-Design
-------
 
 
 
