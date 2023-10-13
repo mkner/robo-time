@@ -1,6 +1,7 @@
 
+
 Motivation
-----------
+==========
 
 
 This project evolved in the course of designing and implementing an OS for mobile robotics, in particular, small differential drive robots. These robots are both individual mobile robots and interactive robots in a dynamic distributed mobile environment.
