@@ -40,8 +40,10 @@ sphinx==5.0.2
     # via
     #   -r docs/requirements.in
     #   sphinx-rtd-theme
+# latest 2023-01-04
+sphinx-rtd-theme==1.2.0
 # 0.3.1 for rtd site python code highlighting?
-sphinx_rtd_theme>=0.3.1
+#sphinx_rtd_theme>=0.3.1
 #sphinx-rtd-theme==1.0.0
     # via -r docs/requirements.in
 sphinxcontrib-applehelp==1.0.2
