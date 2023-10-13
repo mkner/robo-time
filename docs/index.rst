@@ -8,6 +8,7 @@ robo-time
    :maxdepth: 1
 
    about
+   motivation
    design
    install
    timing 
