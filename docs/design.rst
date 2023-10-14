@@ -15,7 +15,7 @@ And for every motion oriented task, the starting point always goes back to the f
 
 Perception is based on continuous measurements and readings from electronic and electro-mechanical and possibly electro-chemical devices. These sensors measure various aspects of the environment, both external and internal. Mobile robotic perception starts at this interface.
 
-The interpretation of incoming measurements and their associated events have one thing in common. They all depend on some representation of time, relative time and time synchronization.
+The interpretation of incoming measurements and their associated events have one thing in common. They all depend on some representation of time, absolute time, relative time and time synchronization.
 
 
 
