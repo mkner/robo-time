@@ -17,7 +17,7 @@ Timing Functions
     time available. Monotonic time moves unidirectionally forward and runs
     independently of the variations that occur with a system clock. This delay
     function can be  used safely inside a process thread. It is named after
-    the **arduino** delay function.
+    the **Arduino** delay function.
 
   :param delay_time: amount of time to delay (milliseconds)
 
