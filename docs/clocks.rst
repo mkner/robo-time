@@ -290,7 +290,7 @@ Additional interface functions for **WorldClock**
 
 .. function:: setDeltaThreshold(delta)
     
-     Sets the current **Delta** threshold setting in milliseconds. 
+     Sets the current **Delta** threshold (milliseconds)
 
      The Delta theshold is the upper bound within which curent **UTC**
      time can be updated and corrected from a global **UTC/NTP** syncronization.
