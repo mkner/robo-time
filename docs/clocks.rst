@@ -295,7 +295,7 @@ Additional interface functions for **WorldClock**
      The Delta theshold is the upper bound within which curent **UTC**
      time can be updated and corrected from a global **UTC/NTP** syncronization.
      Any difference between current UTC and the updated **UTC** retreived from
-     an **NTP** server that is above this threshold will be ignored and the
+     the **NTP** system that is above this threshold will be ignored and the
      **UTC** will remain at its current setting.
      
   :param: delta
