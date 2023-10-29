@@ -289,12 +289,15 @@ Additional interface functions for **WorldClock**
 
 
 .. function:: setDeltaThreshold(delta)
+    
+     Sets the current delta threshold setting in milliseconds. 
 
-     Sets the current Delta threshold setting in milliseconds. 
-     When WorldClock updates its time via an init() or a re
-     The delta theshold is the maximum bound that the curent UTC/NTP time
+     The Delta theshold is the upper bound within which curent **UTC**
+     time can be updated and corrected from a global **UTC/NTP** syncronization.
+     Any difference between current UTC and the updated **UTC** retreived from
+     an **NTP** server that is above this threshold will be ignored and the
+     **UTC** will remain at its current setting.
      
-        
   :param: delta
   :return: None
   :rtype: None
@@ -312,11 +315,11 @@ Additional interface functions for **WorldClock**
 
 .. function:: resync()
 
-   Resyncronizes WorldClock to gobal UTC time. Calling **resync()** is not as 
-   thorough as an full initialization, but can  be useful to keep WorldClock
-   accurate within the delta threshold. After a successful init() routine, 
-   WorldClock can resynced at any time. It is useful to scheduled *resync() to run
-   periodically at some interval as frequently as required.
+   Resyncronizes **WorldClock to gobal UTC time. Calling **resync()** is not as 
+   thorough as an full initialization, but can  be useful to keep **WorldClock**
+   accurate within the delta threshold. After a successful **init()** routine, 
+   **WorldClock** can resynced at any time. It is useful to scheduled **resync()** to run
+   periodically at some reqular interval to keep UTC time updated 
         
   :param: None
   :return: None
