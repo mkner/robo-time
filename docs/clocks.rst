@@ -252,7 +252,7 @@ Additional interface functions for **WorldClock**
 
 .. function:: initialize()
 
-   Multistage initialization and syncronization of **WorldClock**
+   Multi-stage initialization and syncronization of **WorldClock**
    to UTC time using the NTP network
         
   :param: None
@@ -290,7 +290,10 @@ Additional interface functions for **WorldClock**
 
 .. function:: setDeltaThreshold(delta)
 
-     Sets the current Delta threshold setting in milliseconds
+     Sets the current Delta threshold setting in milliseconds. 
+     When WorldClock updates its time via an init() or a re
+     The delta theshold is the maximum bound that the curent UTC/NTP time
+     
         
   :param: delta
   :return: None
@@ -307,6 +310,15 @@ Additional interface functions for **WorldClock**
      same as **getDeltaThreshold()**
 
 
-.. code-block:: python
+.. function:: resync()
+
+   Resyncronizes WorldClock to gobal UTC time. Calling **resync()** is not as 
+   thorough as an full initialization, but can  be useful to keep WorldClock
+   accurate within the delta threshold. After a successful init() routine, 
+   WorldClock can resynced at any time. It is useful to scheduled *resync() to run
+   periodically at some interval as frequently as required.
+        
+  :param: None
+  :return: None
 
 .. code-block:: python
