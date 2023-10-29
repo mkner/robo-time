@@ -315,9 +315,9 @@ Additional interface functions for **WorldClock**
 
 .. function:: resync()
 
-   Resyncronizes **WorldClock to gobal UTC time. Calling **resync()** is not as 
-   thorough as an full initialization, but can  be useful to keep **WorldClock**
-   accurate within the delta threshold. After a successful **init()** routine, 
+   Resynchronizes  **WorldClock** to global UTC time. Calling **resync()** is not as 
+   thorough as an full initialization, but will adjust **WorldClock** to be
+   accurate within the Delta threshold if possible. After a successful **init()** routine, 
    **WorldClock** can resynced at any time. It is useful to scheduled **resync()** to run
    periodically at some reqular interval to keep UTC time updated 
         
