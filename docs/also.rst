@@ -8,6 +8,10 @@ For another must have robotic python package see...
 A Robotic Utility Function Toolkit aka simply **roboutils**
 Maybe it might end up being called ARUFT anyway!
 
+This small toolkit contains mapping, bounding, ranging, trigonmetric conversion
+and velocity functions for the development of autonomous mobile robotic software
+and systems that are frequently needed and convenient to have in one place
+
 Documentation is `here <https://robo-utils.readthedocs.io/en/latest/>`_
 
 To use the toolkit, first install it using pip:
