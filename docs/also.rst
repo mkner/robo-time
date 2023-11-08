@@ -20,11 +20,13 @@ The main python package download site is: `here <https://pypi.org/project/robo-u
 
 
 
-And for motion and robotic device control see...
+And for robotic motion and device control see...
 
 **RoboPID** -- a Python PID Controller designed to handle the combined kinematic 
 and dynamic complexity of mobile robotics. The controller implements timestep integration
-that can be used in discretized time regulators.
+that can be used in discretized time regulators.  Deployed in actual mobile robotic systems, the 
+PID controller design has proven to be tested and reliable for the dynamic balance and rapid 
+response required for differential drive linear and lateral wheeled motion control. 
 
 Documentation is `here <https://robo-pid.readthedocs.io/en/latest/>`_
 
