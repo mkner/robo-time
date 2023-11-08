@@ -18,7 +18,6 @@ To use the toolkit, first install it using pip:
 
 The main python package download site is: `here <https://pypi.org/project/robo-utils/>`_
 
-|
 
 
 And for motion and robotic device control see...
