@@ -9,6 +9,15 @@ To use this project, first install it using pip:
 
     $ pip install robo-time
 
+Note that the install requires **robo-base** to be installed first. This is usually flagged as a 
+dependency when installing **robo-time** with *pip*. If not then manually install.
+
+.. code-block:: console
+
+    $ pip install robo-base
+
+Also robotime requires python >= 3.x
+
 
 To verify **robo-time** is installed run from the command line
 
