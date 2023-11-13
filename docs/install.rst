@@ -3,14 +3,14 @@
 Installation
 ------------
 
-To use this project, first install it using pip:
+To use this project, first install it using **pip**:
 
 .. code-block:: console
 
     $ pip install robo-time
 
 Note that the install requires **robo-base** to be installed first. This is usually flagged as a 
-dependency when installing **robo-time** with **pip**. If not then manually install.
+dependency when installing **robo-time** using **pip**. If not then manually install.
 
 .. code-block:: console
 
