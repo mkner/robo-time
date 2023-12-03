@@ -5,7 +5,7 @@ About
 *robo-time*
 ===========
  
-Clocks, timing, and timestamp functionality for mobile robotics and other applications
+Clocks, timing, and timestamp functionality in Python for mobile robotics and other applications
 
 
 * Includes 3 fundamental clocks: Uptime Clock, System Clock, and World Clock (NTP/UTC)
