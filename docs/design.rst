@@ -24,8 +24,11 @@ The **system clock** provides the same basic features as an uptime clock but als
 
 The **world clock** provides the same basic features as an uptime clock and also represents time in an absolute, but still localized to a particular planet, time reference frame. This clock and its calendar system is synchronized to the global UTC time standard via the NTP protocol.
 
-Each clock type has a common functional interface for basic date and time readouts and timestamps in frequently used
+Each clock type has the *same* common interface for basic date, time and timestamp functions in frequently used
 formats and data types. This isomorphic pattern across the clock types is by design in the object oriented structure of 
-the clock type classes. Having the same interface makes the implementaiton of different clock types running simultaneoiusly
-a lot easier. 
+the clock type classes. Having the same unified interface makes the implementaton of different clock types a lot easier. 
+
+
+
+
 
