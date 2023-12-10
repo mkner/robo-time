@@ -13,7 +13,7 @@ And for every motion oriented task, the starting point always goes back to the f
 
 Perception is based on time-based measurements and readings from various analog and digital electro-sensory devices. These sensors measure various aspects of the environment, both external and internal. Mobile robotic perception starts at this interface.
 
-The interpretation of incoming measurements and their associated events have one thing in common. They all depend on some primary representation of time, relative time and time synchronization. There are also reference frames in which time occurs: inter-machine, localized intra-machine, and global intra-machine. 
+The interpretation of incoming measurements and their associated events have one thing in common - they all depend on some primary representation of time, relative time and time synchronization. There are also reference frames in which time occurs: inter-machine, localized intra-machine, and global intra-machine. 
 
 Inter-machine events are measured and recorded with respect to various representations of a clock counting or quantizing time as discrete units. For electro-mechanical robots and devices this first occurs on a microprocessor or microchip level. Even though the robots OS and operational programs usually work on a much higher level, the common entry point of discretized time is the beginning of the system startup on a micro-electronic level.  Uptime is the relative offset to this ongoing forward moving time and forms a reference point for localized time related events.
 
