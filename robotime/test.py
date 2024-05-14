@@ -7,7 +7,7 @@
 # some useful functions for testing
 # and sanity checks using robo-time
 #
-# (c) 2022 - 2023  Mike Knerr
+# (c) 2022 - 2024  Mike Knerr
 #
 #
 #
