@@ -3,7 +3,7 @@
 # robo-time - time
 # for mobile robotics and related applications
 #
-# (c) 2022 - 2023  Mike Knerr
+# (c) 2022 - 2024  Mike Knerr
 #
 # 
 #
