@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "robotime - clocks, timing, timestamps for mobile robotics"
-copyright = "(c) 2023 Mike Knerr"
+copyright = "(c) 2023-2024 Mike Knerr"
 author = ""
 
 
