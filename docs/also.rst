@@ -30,7 +30,7 @@ that can be used in discretized time regulators.  Deployed in actual mobile robo
 PID controller design has proven to be tested and reliable for the dynamic balance and rapid 
 response required for differential drive linear and lateral wheeled motion control. 
 
-This PID controller has been fairly popular with thousands of downloads since its release.
+This PID controller has been popular with thousands of downloads since its release.
 
 Documentation is `here <https://robo-pid.readthedocs.io/en/latest/>`_
 
